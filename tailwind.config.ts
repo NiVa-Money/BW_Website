@@ -14,7 +14,7 @@ const config: Config = {
             },
         },
         fontFamily: {
-            sans: ["var(--font-inter)", "sans-serif"],
+            sans: ["Poppins", "sans-serif"],
         },
         screens: {
             sm: "375px",
