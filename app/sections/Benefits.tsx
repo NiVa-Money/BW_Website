@@ -46,7 +46,7 @@ const features = [
 
 const Benefits: React.FC = () => {
   return (
-    <section className="flex flex-col px-16 py-12 mt-10 max-md:px-5">
+    <section className="flex flex-col px-16 py-10 mt-10 max-md:px-5">
       <div className="flex flex-col items-center justify-center w-full text-center max-md:max-w-full">
         <h1 className="text-4xl font-medium text-black max-md:max-w-full">
           No Coding.

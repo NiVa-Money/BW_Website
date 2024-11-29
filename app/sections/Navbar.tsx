@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <div className="relative flex h-20 items-center justify-between gap-3 rounded-full bg-[#0B031E] px-3 shadow-lg shadow-white/[0.03] backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+        <div className="relative flex h-20 items-center justify-between gap-3 rounded-full bg-white/50 px-3 shadow-lg shadow-black/30 backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
           {/* Site branding */}
           <div className="flex flex-1 items-center">
             <Link href="/" className="flex-shrink-0">
@@ -89,7 +89,7 @@ const Navbar: React.FC = () => {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="px-2 py-4 text-white hover:text-[#A221AF] transition-colors"
+                  className="px-2 py-4 text-black hover:text-[#A221AF] transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -98,7 +98,7 @@ const Navbar: React.FC = () => {
             <li>
               <Link
                 href="/signin"
-                className="px-4 py-2 border-2 text-white border-[#A221AF] rounded-full hover:bg-purple-50 hover:text-black transition-colors "
+                className="px-4 py-2 border-2 text-black border-[#A221AF] rounded-full hover:bg-purple-50 hover:text-black transition-colors "
               >
                 Sign in
               </Link>

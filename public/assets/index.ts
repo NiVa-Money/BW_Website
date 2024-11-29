@@ -16,8 +16,18 @@ import twiceLogo from "../../public/assets/logo/twice.svg";
 import Icon1 from "../../public/assets/icons/Icon1.png";
 import Icon2 from "../../public/assets/icons/Icon2.png";
 import Icon3 from "../../public/assets/icons/Icon3.png";
+import PFeatures1 from "../../public/assets/features/PFeatures1.png";
+import PFeatures2 from "../../public/assets/features/PFeatures2.png";
+import PFeatures3 from "../../public/assets/features/PFeatures3.png";
+import PFeatures4 from "../../public/assets/features/PFeatures4.png";
+import PFeatures5 from "../../public/assets/features/PFeatures5.png";
 export {
     logoImage,
+    PFeatures1,
+    PFeatures2,
+    PFeatures3,
+    PFeatures4,
+    PFeatures5,
     Icon1,
     Icon2,
     Icon3,

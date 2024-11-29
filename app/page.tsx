@@ -6,6 +6,7 @@ import LogoTicker from "./sections/LogoTicker";
 import { Benefits } from "./sections/Benefits";
 import Footer from "./sections/Footer";
 import Faqs from "./sections/Faqs";
+import FeatureSection from "./sections/Features";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Benefits />
+      <FeatureSection/>
       <LogoTicker />
       <Integrations />
       <Faqs/>
