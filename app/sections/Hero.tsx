@@ -3,8 +3,8 @@ import * as React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="relative py-20 mt-12 px-6 lg:px-8 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex  mt-12 flex-col lg:flex-row items-stretch gap-10">
+    <section className="relative py-20 px-6 lg:px-8 overflow-hidden w-full">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-10">
         {/* Left Section */}
         <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-12 space-y-6 lg:space-y-8 h-full">
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">

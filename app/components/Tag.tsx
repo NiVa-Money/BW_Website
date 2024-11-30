@@ -7,7 +7,7 @@ export default function Tag(props: HTMLAttributes<HTMLDivElement>) {
     return (
         <div 
             className={
-                twMerge("inline-flex border border-black gap-2 text-[#9A83DB] font-semibold rounded-full px-3 py-1 uppercase items-center", 
+                twMerge("inline-flex border border-black gap-2 text-[#9A83DB] rounded-full px-3 py-1 uppercase items-center", 
                 className)
             } 
             {...otherProps}

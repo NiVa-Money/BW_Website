@@ -7,7 +7,10 @@ import { Benefits } from "./sections/Benefits";
 import Footer from "./sections/Footer";
 import Faqs from "./sections/Faqs";
 import FeatureSection from "./sections/Features";
-
+import GetStartedSection from "./sections/GetStartedSection";
+import ScrollToTop from "./components/ScrollToTop";
+import DetailedFeatures from "./sections/DetailedFeatures";
+import TestimonialSection from "./sections/Testimonials";
 export default function Home() {
   return (
     <>
@@ -15,10 +18,14 @@ export default function Home() {
       <HeroSection />
       <Benefits />
       <FeatureSection/>
+      <DetailedFeatures />
       <LogoTicker />
       <Integrations />
+      <TestimonialSection/>
       <Faqs/>
+      <GetStartedSection/>
       <Footer />
+      <ScrollToTop/>
     </>
   );
 }

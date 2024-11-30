@@ -1,50 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import {
-  PFeatures1,
-  PFeatures2,
-  PFeatures3,
-  PFeatures4,
-  PFeatures5,
-} from "../../public/assets";
-
-const features = [
-  {
-    title: "Real-Time Sentiment Insights",
-    description:
-      "Gain actionable insights into customer emotions, enabling adaptive, empathetic interactions in real time.",
-    bgColor: "bg-[#77C9F1]",
-    imgSrc: PFeatures1,
-  },
-  {
-    title: "Personalized Recommendations that Evolve",
-    description:
-      "BotWot's AI-driven recommendations adapt to user behavior, enhancing relevance across each customer journey.",
-    bgColor: "bg-[#A221AF]/65",
-    imgSrc: PFeatures2,
-  },
-  {
-    title: "Visual Insights for Smarter Engagement",
-    description:
-      "Leverage vision-based prompts to gain deeper understanding and make multimedia content engagement more interactive.",
-    bgColor: "bg-[#402282]/65",
-    imgSrc: PFeatures3,
-  },
-  {
-    title: "Empathy-Driven Conversations",
-    description:
-      "Detect and respond to customer emotions, delivering empathetic experiences that strengthen brand loyalty.",
-    bgColor: "bg-[#2E2F5F]/65",
-    imgSrc: PFeatures4,
-  },
-  {
-    title: "Connect with your favorite apps and library",
-    description:
-      "Quickly add visuals to slides, import your data, and keep your team in sync.",
-    bgColor: "bg-[#A6FED6]/65",
-    imgSrc: PFeatures5,
-  },
-];
+import { features } from "../data/data";
 
 const ProductFeatures: React.FC = () => {
   return (

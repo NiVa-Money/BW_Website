@@ -1,17 +1,11 @@
-import Button from "./Button";
-import Pointer from "./Pointer";
-import Tag from "./Tag";
-import FeatureCard from "./FeatureCard";
 import Avatar from "./Avatar";
-import Key from "./Key";
+import Button from "./Button";
 import IntegrationsColumn from "./IntegrationsColumn";
+import Tag from "./Tag";
 
 export {
     Button,
-    Pointer,
     Tag,
-    FeatureCard,
     Avatar,
-    Key,
     IntegrationsColumn
 };

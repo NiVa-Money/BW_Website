@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import * as React from "react";
-import { Icon1, Icon2, Icon3 } from "../../public/assets";
+import { benefits } from "../data/data";
+import GradientAnimation from "../components/GradientAnimation";
 
 interface FeatureCardProps {
   icon: StaticImageData;
@@ -8,9 +9,11 @@ interface FeatureCardProps {
   iconAlt?: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, iconAlt }) => {
+const BenefitCard: React.FC<FeatureCardProps> = ({ icon, title, iconAlt }) => {
   return (
     <div className="flex overflow-hidden flex-col flex-1 shrink justify-center self-stretch p-px my-auto bg-white rounded-xl shadow-lg basis-0 min-w-[240px]">
+      <GradientAnimation />
+
       <div className="flex gap-2 justify-center items-center py-9 pr-7 pl-8 bg-white min-h-[99px] max-md:px-5">
         <Image
           loading="lazy"
@@ -25,24 +28,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, iconAlt }) => {
     </div>
   );
 };
-
-const features = [
-  {
-    icon: Icon1,
-    title: "Seamless Integrations",
-    iconAlt: "Integration icon",
-  },
-  {
-    icon: Icon2,
-    title: "Launch in minutes",
-    iconAlt: "Launch icon",
-  },
-  {
-    icon: Icon3,
-    title: "Personalized Interactions",
-    iconAlt: "Personalization icon",
-  },
-];
 
 const Benefits: React.FC = () => {
   return (
@@ -59,8 +44,8 @@ const Benefits: React.FC = () => {
       </div>
 
       <div className="flex flex-wrap gap-8 justify-center items-center mt-12 w-full text-xl text-black max-md:mt-10 max-md:max-w-full">
-        {features.map((feature, index) => (
-          <FeatureCard
+        {benefits.map((feature, index) => (
+          <BenefitCard
             key={index}
             icon={feature.icon}
             title={feature.title}
