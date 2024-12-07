@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react";
 interface Testimonial {
   text: string;
   clientName: string;
-  date: string;
 }
 
 // Define the props for the carousel component
@@ -38,7 +37,6 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   return (
     <>
       <section className="py-10 px-4 sm:px-6 lg:px-8">
-       
         <h2 className="text-2xl sm:text-3xl lg:text-4xl bg-[#B0B7C3]/50 font-semibold text-gray-800 mb-10 text-center py-4 rounded-lg">
           Testimonials
         </h2>
@@ -56,9 +54,6 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
             </p>
             <span className="text-sm font-bold">
               {testimonials[current].clientName}
-            </span>
-            <span className="text-xs font-medium text-[#666]">
-              {testimonials[current].date}
             </span>
           </div>
         </div>

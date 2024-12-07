@@ -26,7 +26,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   textColor,
 }) => (
   <div
-  className={`flex flex-col p-4 bg-white rounded-xl shadow-lg flex-1 transition-all duration-300 ease-in-out hover:border-[${bgColor}] hover:shadow-[0px_0px_20px_0px_${bgColor}]`}
+    className={`flex flex-col p-4 bg-white rounded-xl shadow-lg flex-1 transition-all duration-300 ease-in-out hover:border-[${bgColor}] hover:shadow-[0px_0px_20px_0px_${bgColor}]`}
     style={{
       borderColor: bgColor,
       boxShadow: `0px 0px 10px 0px ${bgColor}`, // default shadow
@@ -51,19 +51,19 @@ const DetailedFeatures: React.FC = () => {
       image: DFeatures1,
       cards: [
         {
-          title: "Playlists & Reels",
+          title: "Customer Mood Detection",
           description:
-            "All meetings belong to your team Library, but playlists and reels make it easy to curate, create, and share team training content.",
+            "Instantly gauge customer emotions and tailor responses that instantly connect, making your support feel human and genuine.",
         },
         {
-          title: "Time-stamped Comments",
+          title: "Proactive Support Solutions",
           description:
-            "No more game of telephone, select any transcript text to leave a comment for your reps at the exact relevant moment.",
+            "Spot frustration early and deploy immediate solutions, turning potential dissatisfaction into lasting loyalty.",
         },
         {
-          title: "Timeline & Coaching Stats",
+          title: "Empathy-Driven Engagement",
           description:
-            "Everyone knows when their reps talk too much, but with coaching stats, you finally have the data too.",
+            "Analyze sentiment in real time, and ensure each interaction is handled with the empathy and care your customers deserve.",
         },
       ],
     },
@@ -77,19 +77,19 @@ const DetailedFeatures: React.FC = () => {
       image: DFeatures2,
       cards: [
         {
-          title: "AI Notes & Templates",
+          title: "Product Showcase Assistance",
           description:
-            "BotWot will join your calendar meetings to generate a recording, transcript, and AI-powered notes with the content you want, in the format you want.",
+            "Enable customers to upload images for precise product recommendations, reducing confusion and boosting purchase confidence.",
         },
         {
-          title: "Custom AI Note Prompts",
+          title: "Visual Issue Identification",
           description:
-            "Never settle for generic AI outputs. Ask questions of the transcript until satisfied with the response, then add it to your notes.",
+            "Let customers share photos of damaged goods or issues, speeding up resolution and enhancing support efficiency.",
         },
         {
-          title: "Video Highlights & Sharing",
+          title: "Interactive Tutorials",
           description:
-            "Click any AI note or select text in the transcript to create a video highlight you can share anywhere you can paste a link.",
+            "Create step-by-step guides with images or videos, helping customers easily understand product usage or setup.",
         },
       ],
     },
@@ -103,19 +103,19 @@ const DetailedFeatures: React.FC = () => {
       image: DFeatures3,
       cards: [
         {
-          title: "Sync AI Notes w/ CRMs",
+          title: "Personalized Shopping Experience",
           description:
-            "BotWot matches meeting participants with CRM records to automatically sync the AI notes as an activity on the Contact or Deal record.",
+            "Tailor suggestions in real time, making each interaction feel uniquely crafted to match the customer’s needs.",
         },
         {
-          title: "CRM Field Enrichment",
+          title: "Dynamic Product Discovery",
           description:
-            "Automatically enrich your CRM fields whenever BotWot detects a match with data contained within your meeting transcripts.",
+            "Adapt to every user behavior and instantly refine recommendations, creating a truly dynamic, engaging experience.",
         },
         {
-          title: "AI-powered Followup Emails",
+          title: "Always-Relevant Suggestions",
           description:
-            "Save hours per week prepping meeting follow-ups by having BotWot write them for you using the transcript content. ",
+            "BotWot learns and evolves with each interaction, delivering recommendations that are more accurate, timely, and relevant.",
         },
       ],
     },
@@ -129,19 +129,19 @@ const DetailedFeatures: React.FC = () => {
       image: DFeatures4,
       cards: [
         {
-          title: "Topic Trackers",
+          title: "Empathy at Scale",
           description:
-            "Ever wished to see all topically-related moments mentioned across your team's calls? Topic trackers give you x-ray vision.",
+            "Detect emotional shifts in customer interactions and respond with the care and understanding they expect.",
         },
         {
-          title: "Keyword Alerts",
+          title: "Human-Like Conversations",
           description:
-            "Simply set keyword dictionary and enable notifications to be alerted whenever BotWot detects an exact match.",
+            "BotWot’s emotional intelligence ensures every customer feels heard, building stronger bonds and increasing brand loyalty.s",
         },
         {
-          title: "Deal Insights",
+          title: "Support with Heart",
           description:
-            "What gets measured gets managed, and BotWot's deal insights make it easier than ever to track the activity and status of any deal.",
+            "BotWot recognizes frustration or delight, adjusting its tone and responses to enhance the customer journey with compassion.",
         },
       ],
     },

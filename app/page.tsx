@@ -11,12 +11,14 @@ import GetStartedSection from "./sections/GetStartedSection";
 import ScrollToTop from "./components/ScrollToTop";
 import DetailedFeatures from "./sections/DetailedFeatures";
 import TestimonialSection from "./sections/Testimonials";
+// import { BentoGridThirdDemo } from "./sections/BentoGrid";
 export default function Home() {
   return (
     <>
       <Navbar />
       <HeroSection />
       <Benefits />
+      {/* <BentoGridThirdDemo/> */}
       <FeatureSection/>
       <DetailedFeatures />
       <LogoTicker />
