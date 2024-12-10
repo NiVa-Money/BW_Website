@@ -238,23 +238,36 @@ const Navbar: React.FC = () => {
                   </Link>
 
                   {/* Submenu */}
-
                   {hoveredTab === link.label && link.submenu && (
-                    <div className="absolute left-0 mt-2 w-100 bg-white shadow-lg rounded-lg p-4">
-                      <ul className="space-y-2">
+                    <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-4">
+                      <div
+                        className={`grid ${
+                          link.submenu.length <= 6
+                            ? "grid-cols-1 w-[350px]"
+                            : "grid-cols-2 w-[600px]"
+                        } gap-x-4 gap-y-6`}
+                      >
                         {link.submenu.map((submenuItem, index) => (
-                          <li key={index}>
-                            <Link
-                              href={submenuItem.href}
-                              className="block text-black hover:text-[#A221AF] transition-colors"
-                            >
-                              <div className="flex items-center gap-2">
-                                <span>{submenuItem.label}</span>
+                          <div key={index} className="flex items-start gap-4">
+                            {submenuItem.icon && (
+                              <div className="flex-shrink-0 text-[#A221AF]">
+                                <submenuItem.icon className="h-5 w-5" />
                               </div>
-                            </Link>
-                          </li>
+                            )}
+                            <div>
+                              <Link
+                                href={submenuItem.href}
+                                className="block font-medium text-black hover:text-[#A221AF] transition-colors"
+                              >
+                                {submenuItem.label}
+                              </Link>
+                              <p className="text-sm text-gray-500 mt-1">
+                                {submenuItem.description}
+                              </p>
+                            </div>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
                   )}
                 </li>

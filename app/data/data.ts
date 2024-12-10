@@ -8,72 +8,231 @@ import {
   PFeatures4,
   PFeatures5,
 } from "../../public/assets";
+import InfoIcon from "@mui/icons-material/Info";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import HistoryIcon from "@mui/icons-material/History";
+import GroupIcon from "@mui/icons-material/Group";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
+import WorkIcon from "@mui/icons-material/Work";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
+import SettingsIcon from "@mui/icons-material/Settings";
+import BarChartIcon from "@mui/icons-material/BarChart";
+import LanguageIcon from "@mui/icons-material/Language";
+import ShareIcon from "@mui/icons-material/Share";
+import LinkIcon from "@mui/icons-material/Link";
+import SecurityIcon from "@mui/icons-material/Security";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import RecommendIcon from "@mui/icons-material/Recommend";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import RssFeedIcon from "@mui/icons-material/RssFeed";
+import GroupWorkIcon from "@mui/icons-material/GroupWork";
+import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 
-// export const navLinks = [
-//   { label: "About Us", href: "/about" },
-//   { label: "Products", href: "/products" },
-//   { label: "Solutions", href: "/solutions" },
-//   { label: "Pricing", href: "/pricing" },
-//   { label: "Resources", href: "/resources" },
-//   { label: "Blog", href: "/blog" },
-// ];
 
 export const navLinks = [
   {
     label: "About Us",
     href: "/about",
     submenu: [
-      { label: "Introduction", href: "/about#introduction" },
-      { label: "Our Value Proposition", href: "/about#value-proposition" },
-      { label: "Our Story", href: "/about#our-story" },
-      { label: "Partnerships & Alliances", href: "/about#partnerships" },
-      { label: "Media Center", href: "/about#media-center" },
-      { label: "Careers", href: "/about#careers" },
+      {
+        label: "Introduction",
+        href: "/about#introduction",
+        icon: InfoIcon,
+        description: "Learn more about who we are.",
+      },
+      {
+        label: "Our Value Proposition",
+        href: "/about#value-proposition",
+        icon: CheckCircleIcon,
+        description: "What makes us unique.",
+      },
+      {
+        label: "Our Story",
+        href: "/about#our-story",
+        icon: HistoryIcon,
+        description: "Discover our journey.",
+      },
+      {
+        label: "Partnerships & Alliances",
+        href: "/about#partnerships",
+        icon: GroupIcon,
+        description: "Our collaborations and alliances.",
+      },
+      {
+        label: "Media Center",
+        href: "/about#media-center",
+        icon: NewspaperIcon,
+        description: "Stay updated with the latest news.",
+      },
+      {
+        label: "Careers",
+        href: "/about#careers",
+        icon: WorkIcon,
+        description: "Join our team.",
+      },
     ],
   },
   {
     label: "Products",
     href: "/products",
     submenu: [
-      { label: "Ready-to-Go AI Agents", href: "/products#ai-agents" },
-      { label: "Custom AI Solutions for Enterprises", href: "/products#custom-ai-solutions" },
-      { label: "Reports & Analytics", href: "/products#reports-analytics" },
-      { label: "BotWot LLM", href: "/products#botwot-llm" },
-      { label: "Channels", href: "/products#channels" },
-      { label: "Integrations", href: "/products#integrations" },
-      { label: "Data Security & Privacy", href: "/products#data-security" },
+      {
+        label: "AI Agents",
+        href: "/products#ai-agents",
+        icon: SmartToyIcon,
+        description: "Prebuilt AI solutions.",
+      },
+      {
+        label: "Custom AI Solutions",
+        href: "/products#custom-ai-solutions",
+        icon: SettingsIcon,
+        description: "Tailored AI for enterprises.",
+      },
+      {
+        label: "Reports & Analytics",
+        href: "/products#reports-analytics",
+        icon: BarChartIcon,
+        description: "Actionable insights.",
+      },
+      {
+        label: "BotWot LLM",
+        href: "/products#botwot-llm",
+        icon: LanguageIcon,
+        description: "Advanced language model.",
+      },
+      {
+        label: "Channels",
+        href: "/products#channels",
+        icon: ShareIcon,
+        description: "Omnichannel support.",
+      },
+      {
+        label: "Integrations",
+        href: "/products#integrations",
+        icon: LinkIcon,
+        description: "Seamless third-party sync.",
+      },
+      {
+        label: "Data Security",
+        href: "/products#data-security",
+        icon: SecurityIcon,
+        description: "Top-tier data protection.",
+      },
     ],
-  },
+  },  
   {
     label: "Solutions",
     href: "/solutions",
     submenu: [
-      { label: "Online Reputation Management", href: "/solutions#reputation-management" },
-      { label: "Recommendation Engine", href: "/solutions#recommendation-engine" },
-      { label: "Sales & Lead Generation", href: "/solutions#sales-lead-generation" },
-      { label: "Customer Support", href: "/solutions#customer-support" },
-      { label: "Compliance & Risk Management", href: "/solutions#compliance-risk-management" },
-      { label: "Collections & Payment Recovery", href: "/solutions#payment-recovery" },
-      { label: "Retention & Loyalty", href: "/solutions#retention-loyalty" },
-      { label: "HR & Employee Support", href: "/solutions#hr-employee-support" },
-      { label: "Workflow Optimization", href: "/solutions#workflow-optimization" },
-      { label: "Productivity & Task Automation", href: "/solutions#task-automation" },
-      { label: "Intelligent Survey & Feedback Collection", href: "/solutions#survey-feedback" },
-      { label: "Market Research & Insights", href: "/solutions#market-research" },
+      {
+        label: "Reputation Management",
+        href: "/solutions#reputation-management",
+        icon: ThumbUpIcon,
+        description: "Enhance your image.",
+      },
+      {
+        label: "Recommendation Engine",
+        href: "/solutions#recommendation-engine",
+        icon: RecommendIcon,
+        description: "Personalized suggestions.",
+      },
+      {
+        label: "Sales & Leads",
+        href: "/solutions#sales-lead-generation",
+        icon: AttachMoneyIcon,
+        description: "Boost sales & engagement.",
+      },
+      {
+        label: "Customer Support",
+        href: "/solutions#customer-support",
+        icon: SupportAgentIcon,
+        description: "Exceptional service.",
+      },
+      {
+        label: "Risk Management",
+        href: "/solutions#compliance-risk",
+        icon: CheckCircleIcon,
+        description: "Manage risks & compliance.",
+      },
+      {
+        label: "Collections & Payments",
+        href: "/solutions#collections-payment",
+        icon: AttachMoneyIcon,
+        description: "Automate payments & collections.",
+      },
+      {
+        label: "Loyalty & Retention",
+        href: "/solutions#retention-loyalty",
+        icon: ThumbUpIcon,
+        description: "Build customer loyalty.",
+      },
+      {
+        label: "HR Support",
+        href: "/solutions#hr-employee-support",
+        icon: WorkIcon,
+        description: "Empower HR with AI.",
+      },
+      {
+        label: "Workflow Optimization",
+        href: "/solutions#workflow-optimization",
+        icon: SettingsIcon,
+        description: "Streamline processes.",
+      },
+      {
+        label: "Task Automation",
+        href: "/solutions#productivity-task-automation",
+        icon: SmartToyIcon,
+        description: "Automate repetitive tasks.",
+      },
+      {
+        label: "Survey & Feedback",
+        href: "/solutions#survey-feedback",
+        icon: LibraryBooksIcon,
+        description: "AI-driven surveys.",
+      },
+      {
+        label: "Market Insights",
+        href: "/solutions#market-research",
+        icon: BarChartIcon,
+        description: "Gain market insights.",
+      },
     ],
-  },
+  },  
   {
     label: "Pricing",
     href: "/pricing",
+    description: "No Surprises—Just Value",
   },
   {
     label: "Resources",
     href: "/resources",
     submenu: [
-      { label: "Use Cases", href: "/resources#use-cases" },
-      { label: "Blogs", href: "/resources#blogs" },
-      { label: "Community", href: "/resources#community" },
-      { label: "Help Center & FAQs", href: "/resources#help-center" },
+      {
+        label: "Use Cases",
+        href: "/resources#use-cases",
+        icon: LibraryBooksIcon,
+        description: "Discover how others use our platform.",
+      },
+      {
+        label: "Blogs",
+        href: "/resources#blogs",
+        icon: RssFeedIcon,
+        description: "Insights from industry leaders.",
+      },
+      {
+        label: "Community",
+        href: "/resources#community",
+        icon: GroupWorkIcon,
+        description: "Join our community of innovators.",
+      },
+      {
+        label: "Help Center & FAQs",
+        href: "/resources#help-center",
+        icon: HelpCenterIcon,
+        description: "Find answers to common questions.",
+      },
     ],
   },
 ];
