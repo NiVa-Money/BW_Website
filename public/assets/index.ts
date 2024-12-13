@@ -40,6 +40,7 @@ import avatar4 from "../../public/assets/avatars/avatar-owen-garcia.jpg";
 
 export {
   logoImage,
+  
   MenuIcon,
   ArrowUp,
   avatar1,
