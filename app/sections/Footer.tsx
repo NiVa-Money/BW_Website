@@ -157,7 +157,17 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { logoImage } from "../../public/assets";
+import {
+  facebook,
+  india,
+  instagram,
+  linkedin,
+  logoImage,
+  nigeria,
+  twitterx,
+  uae,
+  youtube,
+} from "../../public/assets";
 
 const LINKS = [
   {
@@ -217,28 +227,28 @@ const officeLocations = [
     color: "bg-gray-300",
     name: "Purpleant Technologies Pvt Ltd",
     address: "F-102, Microtek Greenberg, Sector 86, Gurugram, Haryana, India",
-    mapSVG: "/assets/map-icon-india.svg", // Replace with the actual map SVG file path
+    mapSVG: india,
   },
   {
     color: "bg-gray-300",
     name: "Purpleant Technologies FZ-LLC",
     address: "Premise no. HD07C, In5 Tech, Dubai Internet City, Dubai, UAE",
-    mapSVG: "/assets/map-icon-uae.svg", // Replace with the actual map SVG file path
+    mapSVG: uae,
   },
   {
     color: "bg-gray-300",
     name: "Purpleant Tech Services Limited",
     address: "11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria",
-    mapSVG: "/assets/map-icon-nigeria.svg", // Replace with the actual map SVG file path
+    mapSVG: nigeria,
   },
 ];
 
 const socialLinks = [
-  "Facebook",
-  "Twitter",
-  "LinkedIn",
-  "Instagram",
-  "YouTube",
+  { name: "Facebook", icon: facebook },
+  { name: "Twitter", icon: twitterx },
+  { name: "LinkedIn", icon: linkedin },
+  { name: "Instagram", icon: instagram },
+  { name: "YouTube", icon: youtube },
 ];
 
 export default function Footer({ border = false }: { border?: boolean }) {
@@ -291,7 +301,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
         </div>
 
         {/* Line separator */}
-        <div className="my-4 border-t border-gray-200" />
+        <div className="my-2 border-t w-full border-gray-400" />
 
         {/* Office Locations and Social Links in a row */}
         <div className="flex justify-between space-x-6 py-4">
@@ -318,24 +328,27 @@ export default function Footer({ border = false }: { border?: boolean }) {
           </div>
 
           {/* Social Links */}
-          <div className="space-y-2 text-sm text-right">
-            <h3 className="font-medium">Follow Us</h3>
-            <ul className="space-y-1 text-gray-600">
+          <div className="flex items-center space-x-6">
+            {/* Social Icons */}
+            <div className="flex space-x-6">
               {socialLinks.map((social, idx) => (
-                <li key={idx}>
-                  <Link
-                    href="#0"
-                    className="transition hover:text-gray-900"
-                  >
-                    {social}
-                  </Link>
-                </li>
+                <Link
+                  key={idx}
+                  href="#0"
+                  className="transition hover:text-gray-900"
+                >
+                  <Image
+                    src={social.icon} // Assuming social.icon is the image source
+                    alt={social.name}
+                    width={60} 
+                    height={60} 
+                  />
+                </Link>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-

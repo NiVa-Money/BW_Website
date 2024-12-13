@@ -31,16 +31,31 @@ import DFeatures3 from "../../public/assets/features/DFeatures3.png";
 import DFeatures4 from "../../public/assets/features/DFeatures4.png";
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
-
-
 import avatar1 from "../../public/assets/avatars/avatar-ashwin-santiago.jpg";
 import avatar2 from "../../public/assets/avatars/avatar-lula-meyers.jpg";
 import avatar3 from "../../public/assets/avatars/avatar-florence-shaw.jpg";
 import avatar4 from "../../public/assets/avatars/avatar-owen-garcia.jpg";
 
+import india from "../../public/assets/icons/india.svg";
+import uae from "../../public/assets/icons/uae.svg";
+import nigeria from "../../public/assets/icons/nigeria.svg";
+import instagram from "../../public/assets/icons/instagram.svg";
+import facebook from "../../public/assets/icons/facebook.svg";
+import youtube from "../../public/assets/icons/youtube.svg";
+import linkedin from "../../public/assets/icons/linkedin.svg";
+import twitterx from "../../public/assets/icons/twitterx.svg";
+
+
 export {
   logoImage,
-  
+  india,
+  uae,
+  nigeria,
+  instagram,
+  twitterx,
+  facebook,
+  youtube,
+  linkedin,
   MenuIcon,
   ArrowUp,
   avatar1,
