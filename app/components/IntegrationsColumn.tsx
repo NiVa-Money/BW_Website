@@ -22,7 +22,7 @@ export default function IntegrationsColumn(props: {
         y: reverse ? 0 : "-50%",
       }}
       transition={{
-        duration: 10,
+        duration: 25,
         repeat: Infinity,
         ease: "linear",
       }}
