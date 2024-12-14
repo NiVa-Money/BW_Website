@@ -30,7 +30,6 @@ import RssFeedIcon from "@mui/icons-material/RssFeed";
 import GroupWorkIcon from "@mui/icons-material/GroupWork";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 
-
 export const navLinks = [
   {
     label: "About Us",
@@ -38,37 +37,37 @@ export const navLinks = [
     submenu: [
       {
         label: "Introduction",
-        href: "/about#introduction",
+        href: "/about/introduction",
         icon: InfoIcon,
         description: "Learn more about who we are.",
       },
       {
         label: "Our Value Proposition",
-        href: "/about#value-proposition",
+        href: "/about/value-proposition",
         icon: CheckCircleIcon,
         description: "What makes us unique.",
       },
       {
         label: "Our Story",
-        href: "/about#our-story",
+        href: "/about/our-story",
         icon: HistoryIcon,
         description: "Discover our journey.",
       },
       {
         label: "Partnerships & Alliances",
-        href: "/about#partnerships",
+        href: "/about/partnerships",
         icon: GroupIcon,
         description: "Our collaborations and alliances.",
       },
       {
         label: "Media Center",
-        href: "/about#media-center",
+        href: "/about/media-center",
         icon: NewspaperIcon,
         description: "Stay updated with the latest news.",
       },
       {
         label: "Careers",
-        href: "/about#careers",
+        href: "/about/careers",
         icon: WorkIcon,
         description: "Join our team.",
       },
@@ -80,163 +79,162 @@ export const navLinks = [
     submenu: [
       {
         label: "AI Agents",
-        href: "/products#ai-agents",
+        href: "/products/ai-agents",
         icon: SmartToyIcon,
         description: "Prebuilt AI solutions.",
       },
       {
         label: "Custom AI Solutions",
-        href: "/products#custom-ai-solutions",
+        href: "/products/custom-ai-solutions",
         icon: SettingsIcon,
         description: "Tailored AI for enterprises.",
       },
       {
         label: "Reports & Analytics",
-        href: "/products#reports-analytics",
+        href: "/products/reports-analytics",
         icon: BarChartIcon,
         description: "Actionable insights.",
       },
       {
         label: "BotWot LLM",
-        href: "/products#botwot-llm",
+        href: "/products/botwot-llm",
         icon: LanguageIcon,
         description: "Advanced language model.",
       },
       {
         label: "Channels",
-        href: "/products#channels",
+        href: "/products/channels",
         icon: ShareIcon,
         description: "Omnichannel support.",
       },
       {
         label: "Integrations",
-        href: "/products#integrations",
+        href: "/products/integrations",
         icon: LinkIcon,
         description: "Seamless third-party sync.",
       },
       {
         label: "Data Security",
-        href: "/products#data-security",
+        href: "/products/data-security",
         icon: SecurityIcon,
         description: "Top-tier data protection.",
       },
     ],
-  },  
+  },
   {
     label: "Solutions",
     href: "/solutions",
     submenu: [
       {
         label: "Reputation Management",
-        href: "/solutions#reputation-management",
+        href: "/solutions/reputation-management",
         icon: ThumbUpIcon,
         description: "Enhance your image.",
       },
       {
         label: "Recommendation Engine",
-        href: "/solutions#recommendation-engine",
+        href: "/solutions/recommendation-engine",
         icon: RecommendIcon,
         description: "Personalized suggestions.",
       },
       {
         label: "Sales & Leads",
-        href: "/solutions#sales-lead-generation",
+        href: "/solutions/sales-leads",
         icon: AttachMoneyIcon,
         description: "Boost sales & engagement.",
       },
       {
         label: "Customer Support",
-        href: "/solutions#customer-support",
+        href: "/solutions/customer-support",
         icon: SupportAgentIcon,
         description: "Exceptional service.",
       },
       {
         label: "Risk Management",
-        href: "/solutions#compliance-risk",
+        href: "/solutions/risk-management",
         icon: CheckCircleIcon,
         description: "Manage risks & compliance.",
       },
       {
         label: "Collections & Payments",
-        href: "/solutions#collections-payment",
+        href: "/solutions/collections-payments",
         icon: AttachMoneyIcon,
         description: "Automate payments & collections.",
       },
       {
         label: "Loyalty & Retention",
-        href: "/solutions#retention-loyalty",
+        href: "/solutions/loyalty-retention",
         icon: ThumbUpIcon,
         description: "Build customer loyalty.",
       },
       {
         label: "HR Support",
-        href: "/solutions#hr-employee-support",
+        href: "/solutions/hr-support",
         icon: WorkIcon,
         description: "Empower HR with AI.",
       },
       {
         label: "Workflow Optimization",
-        href: "/solutions#workflow-optimization",
+        href: "/solutions/workflow-optimization",
         icon: SettingsIcon,
         description: "Streamline processes.",
       },
       {
         label: "Task Automation",
-        href: "/solutions#productivity-task-automation",
+        href: "/solutions/task-automation",
         icon: SmartToyIcon,
         description: "Automate repetitive tasks.",
       },
       {
         label: "Survey & Feedback",
-        href: "/solutions#survey-feedback",
+        href: "/solutions/survey-feedback",
         icon: LibraryBooksIcon,
         description: "AI-driven surveys.",
       },
       {
         label: "Market Insights",
-        href: "/solutions#market-research",
+        href: "/solutions/market-insights",
         icon: BarChartIcon,
         description: "Gain market insights.",
       },
     ],
-  },  
+  },
   {
     label: "Pricing",
     href: "/pricing",
     description: "No Surprises—Just Value",
+  },
+
+  {
+    label: "Case Studies",
+    href: "/case-studies",
+    description: "Case Studies",
   },
   {
     label: "Resources",
     href: "/resources",
     submenu: [
       {
-        label: "Use Cases",
-        href: "/resources#use-cases",
-        icon: LibraryBooksIcon,
-        description: "Discover how others use our platform.",
-      },
-      {
         label: "Blogs",
-        href: "/resources#blogs",
+        href: "/resources/blogs",
         icon: RssFeedIcon,
         description: "Insights from industry leaders.",
       },
       {
         label: "Community",
-        href: "/resources#community",
+        href: "/resources/community",
         icon: GroupWorkIcon,
         description: "Join our community of innovators.",
       },
       {
         label: "Help Center & FAQs",
-        href: "/resources#help-center",
+        href: "/resources/help-center",
         icon: HelpCenterIcon,
         description: "Find answers to common questions.",
       },
     ],
   },
 ];
-
 
 export const faqs = [
   {

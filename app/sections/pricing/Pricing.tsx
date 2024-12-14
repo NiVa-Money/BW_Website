@@ -1,6 +1,7 @@
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
-import { Tag } from "@mui/icons-material";
+import { Tag } from "../../components";
+import Faqs from "../Faqs";
 
 interface PlanProps {
   title: string;
@@ -23,9 +24,9 @@ const PlanCard: React.FC<PlanProps> = ({
 }) => (
   <div
     className={`flex flex-col p-8 w-64 rounded-2xl ${
-      isPopular ? "bg-white text-zinc-900" : "bg-slate-950 text-white"
+      isPopular ? "bg-[#9A83DB] text-black" : "bg-black text-white"
     } border ${
-      isPopular ? "border-transparent" : "border-white border-opacity-20"
+      isPopular ? "border-transparent" : "border-black border-opacity-20"
     } min-w-[240px] max-md:px-5`}
   >
     <div className="flex flex-col w-full">
@@ -37,12 +38,22 @@ const PlanCard: React.FC<PlanProps> = ({
           </span>
         )}
       </div>
-      <p className="mt-3 text-sm leading-5 text-gray-400">{description}</p>
+      <p
+        className={`mt-3 text-sm leading-5 ${
+          isPopular ? "text-white" : "text-gray-400"
+        }`}
+      >
+        {description}
+      </p>
     </div>
     <div className="flex items-end gap-2 mt-8 w-full">
       <div className="flex flex-col">
         <span className="text-4xl font-bold leading-snug">{price}</span>
-        <span className="text-sm text-gray-400">{priceType}</span>
+        <span
+          className={`text-sm ${isPopular ? "text-white" : "text-gray-400"}`}
+        >
+          {priceType}
+        </span>
       </div>
     </div>
     <button
@@ -103,9 +114,7 @@ const PricingSection: React.FC = () => {
   return (
     <div className="flex flex-col items-center p-24 max-md:px-5">
       <div className="max-w-[1008px] w-full text-center">
-        <div className="flex justify-center">
-          <Tag>Pricing Plans</Tag>
-        </div>
+        <Tag>Pricing Plans</Tag>
         <h2 className="mt-5 text-6xl font-bold leading-none max-md:text-4xl">
           Choose Your Plan
         </h2>
@@ -119,6 +128,7 @@ const PricingSection: React.FC = () => {
           <PlanCard key={index} {...plan} />
         ))}
       </div>
+      <Faqs/>
     </div>
   );
 };
