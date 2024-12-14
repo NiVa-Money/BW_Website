@@ -289,6 +289,43 @@ export const faqs = [
   },
 ];
 
+interface Job {
+  title: string;
+  description: string;
+  category: string;
+}
+
+export const jobListings: Job[] = [
+  {
+    title: "Product Designer",
+    description: "We’re looking for a mid-level product designer to join our team.",
+    category: "Design",
+  },
+  {
+    title: "Engineering Manager",
+    description:
+      "We’re looking for an experienced engineering manager to join our team.",
+    category: "Development",
+  },
+  {
+    title: "Customer Success Manager",
+    description:
+      "We’re looking for a customer success manager to join our team.",
+    category: "Customer Service",
+  },
+  {
+    title: "Account Executive",
+    description: "We’re looking for an account executive to join our team.",
+    category: "Operations",
+  },
+  {
+    title: "SEO Marketing Manager",
+    description:
+      "We’re looking for an experienced SEO marketing manager to join our team.",
+    category: "Marketing",
+  },
+];
+
 export const benefits = [
   {
     icon: Icon1,

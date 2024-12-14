@@ -1,5 +1,9 @@
+import Careers from "../../sections/about/Careers";
+
 const CareersPage = () => {
-  return <></>;
+  return <>
+  <Careers/>
+  </>;
 };
 
 export default CareersPage;
