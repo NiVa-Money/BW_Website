@@ -19,6 +19,7 @@ export const aiAgentsContent = {
       ],
     },
     {
+      pageId: "ai-agents",
       title: "Zero-Code Integration with Your Existing Systems",
       description:
         "These AI employees integrate effortlessly with your existing business systems—whether it's CRM, e-commerce platforms, or help desks—without requiring any coding expertise. This reduces implementation time and accelerates the time-to-value for your business.",
@@ -31,6 +32,7 @@ export const aiAgentsContent = {
       ],
     },
     {
+      pageId: "ai-agents",
       title: "24/7 Multilingual Support",
       description:
         "BotWot’s Ready-to-Go AI workforce offers multilingual support, allowing your business to scale globally while offering round-the-clock assistance to customers in their preferred language. This feature enables enhanced customer satisfaction and accessibility.",
@@ -43,6 +45,7 @@ export const aiAgentsContent = {
       ],
     },
     {
+      pageId: "ai-agents",
       title: "Seamless Human Handoff",
       description:
         "While the AI workforce efficiently manages routine queries, it detects when human intervention is required and smoothly escalates complex issues to a human employee, ensuring a seamless customer experience at all times.",
@@ -55,6 +58,7 @@ export const aiAgentsContent = {
       ],
     },
     {
+      pageId: "ai-agents",
       title: "Continuous Learning and Adaptation",
       description:
         "The Ready-to-Go AI workforce have built-in machine learning capabilities that enable them to continuously learn from customer interactions. Over time, the workforce improve their responses and accuracy, providing even better service as they gather more data.",

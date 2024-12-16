@@ -36,26 +36,18 @@ import avatar2 from "../../public/assets/avatars/avatar-lula-meyers.jpg";
 import avatar3 from "../../public/assets/avatars/avatar-florence-shaw.jpg";
 import avatar4 from "../../public/assets/avatars/avatar-owen-garcia.jpg";
 
+import robot  from "../../public/assets/avatars/robot.svg";
+
 import india from "../../public/assets/icons/india.svg";
 import uae from "../../public/assets/icons/uae.svg";
 import nigeria from "../../public/assets/icons/nigeria.svg";
-import instagram from "../../public/assets/icons/instagram.svg";
-import facebook from "../../public/assets/icons/facebook.svg";
-import youtube from "../../public/assets/icons/youtube.svg";
-import linkedin from "../../public/assets/icons/linkedin.svg";
-import twitterx from "../../public/assets/icons/twitterx.svg";
-
 
 export {
   logoImage,
   india,
   uae,
   nigeria,
-  instagram,
-  twitterx,
-  facebook,
-  youtube,
-  linkedin,
+robot,
   MenuIcon,
   ArrowUp,
   avatar1,
