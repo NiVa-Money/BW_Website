@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
                   priority
                 />
               </Link>
-              <span className="text-lg font-bold text-black">BotWot ICX</span>
+              <span className="text-lg font-bold text-black">BotWot</span>
             </div>
 
             {/* Mobile menu toggle */}
