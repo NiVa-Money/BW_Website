@@ -12,7 +12,7 @@ import Navbar from "./sections/Navbar";
 // });
 
 export const metadata: Metadata = {
-  title: "BotWot ICX",
+  title: "BotWot",
   description:
     "BotWot’s ICX platform leverages proprietary AI to predict, adapt, and respond, transforming every customer interaction into a personalized journey",
 };

@@ -8,18 +8,17 @@ const HeroSection: React.FC = () => {
         {/* Left Section */}
         <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-12 space-y-6 lg:space-y-8 h-full">
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-            Revolutionizing Customer Engagement with Cutting-Edge AI
+            Revolutionizing Work: Meet the Autonomous Workforce That Scales
+            Businesses Overnight
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl">
-            BotWot’s ICX platform harnesses next-gen AI to predict, adapt, and
-            deliver personalized customer journeys at scale. Our intelligent
-            agents manage complex conversations with unmatched
-            precision—transforming every interaction into a seamless, human-like
-            experience.
+            BotWot AI enables businesses to scale globally without increasing
+            headcount, providing a workforce that operates 24/7 with precision
+            and consistency.
           </p>
           <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
             <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:bg-white hover:text-indigo-600 transition duration-300">
-              Explore the Future of CX Now
+              Explore the Future of Workforce Now
             </button>
           </div>
         </div>

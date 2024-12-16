@@ -298,7 +298,8 @@ interface Job {
 export const jobListings: Job[] = [
   {
     title: "Product Designer",
-    description: "We’re looking for a mid-level product designer to join our team.",
+    description:
+      "We’re looking for a mid-level product designer to join our team.",
     category: "Design",
   },
   {
@@ -348,35 +349,35 @@ export const features = [
   {
     title: "Multi-Agent Orchestrator",
     description:
-      "Effortlessly manage multiple AI agents working together to handle complex conversations. BotWot’s Multi-Agent Orchestrator ensures smooth interactions, even with varied customer needs, giving you a powerful, unified experience across all touchpoints.",
+      "Enable your AI workforce to work together like a well-coordinated team. BotWot’s Multi-Agent Orchestrator ensures seamless collaboration among specialized AI workforce, handling complex workflows and delivering unified, efficient outcomes across all touchpoints.",
     bgColor: "bg-[#77C9F1]",
     imgSrc: PFeatures1,
   },
   {
     title: "Intelligent Intent Recognition",
     description:
-      "BotWot’s AI agents understand the intent behind every customer message. From simple queries to intricate requests, our system ensures accurate responses every time, making each conversation feel more like talking to a human.",
+      "BotWot’s AI workforce goes beyond simple queries by deeply understanding customer intent. From straightforward requests to intricate challenges, it delivers precise, actionable responses, making every interaction intelligent and impactful.",
     bgColor: "bg-[#A221AF]/65",
     imgSrc: PFeatures2,
   },
   {
     title: "Robust Context Management",
     description:
-      "BotWot keeps track of every detail in an ongoing conversation, ensuring that your AI agents remember past interactions and provide personalized, contextually relevant responses that drive meaningful customer experiences.",
+      "With BotWot, your AI workforce remembers every interaction, enabling continuity and personalization. Whether solving issues or closing deals, it leverages context to ensure each response is relevant, meaningful, and aligned with past conversations.",
     bgColor: "bg-[#402282]/65",
     imgSrc: PFeatures3,
   },
   {
     title: "No-Code Customization",
     description:
-      "Create and modify your AI-powered bots without any coding knowledge. BotWot's intuitive no-code platform allows you to customize workflows, responses, and logic to match your brand’s unique voice and business needs.",
+      "Shape your AI workforce to fit your business needs—no coding required. BotWot’s no-code platform lets you easily customize workflows, dialogue, and decision-making processes, empowering you to deliver tailored solutions with minimal effort.",
     bgColor: "bg-[#2E2F5F]/65",
     imgSrc: PFeatures4,
   },
   {
     title: "Scalable Architecture",
     description:
-      "As your business expands, so does BotWot. Its scalable infrastructure handles increasing volumes of interactions without a hitch, ensuring that you always have the capacity to deliver exceptional service—no matter how fast you grow.",
+      "Scale your AI workforce effortlessly as your business grows. Whether managing millions of interactions or integrating new processes, BotWot’s robust architecture ensures your digital workforce evolves with your needs, always staying one step ahead.",
     bgColor: "bg-[#A6FED6]/65",
     imgSrc: PFeatures5,
   },
