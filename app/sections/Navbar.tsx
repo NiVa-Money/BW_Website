@@ -105,8 +105,8 @@ const Navbar: React.FC = () => {
                         className={`grid ${
                           link.submenu.length <= 6
                             ? "grid-cols-1 w-[350px]"
-                            : "grid-cols-2 w-[600px]"
-                        } gap-x-4 gap-y-6`}
+                            : "grid-cols-2 w-[640px]"
+                        } gap-x-4 gap-y-5`}
                       >
                         {link.submenu.map((submenuItem, index) => (
                           <div key={index} className="flex items-start gap-4">

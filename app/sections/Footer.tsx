@@ -99,7 +99,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               className="object-contain"
               priority
             />
-            <span className="text-lg font-bold text-black">BotWot</span>
+            <span className="text-lg text-center justify-center items-center font-bold text-black">
+              BotWot
+            </span>
           </div>
 
           {/* Dynamic Links */}
@@ -152,7 +154,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
                 Premise no. HD07C, In5 Tech, Dubai Internet City, Dubai, UAE
               </p>
               <p>+971 501178803</p>
-              <p className="text-blue-500">info@botwot.io</p>
+              <p className="text-[#A5FFD6]">info@botwot.io</p>
             </div>
 
             {/* India */}

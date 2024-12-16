@@ -78,13 +78,13 @@ export const navLinks = [
     href: "/products",
     submenu: [
       {
-        label: "AI Agents",
+        label: "Ready-to-Go AI workforce",
         href: "/products/ai-agents",
         icon: SmartToyIcon,
         description: "Prebuilt AI solutions.",
       },
       {
-        label: "Custom AI Solutions",
+        label: "Custom AI Solutions for Enterprises",
         href: "/products/custom-ai-solutions",
         icon: SettingsIcon,
         description: "Tailored AI for enterprises.",
@@ -114,7 +114,7 @@ export const navLinks = [
         description: "Seamless third-party sync.",
       },
       {
-        label: "Data Security",
+        label: "Data Security & Privacy",
         href: "/products/data-security",
         icon: SecurityIcon,
         description: "Top-tier data protection.",
