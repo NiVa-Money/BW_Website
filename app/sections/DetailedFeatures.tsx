@@ -45,77 +45,77 @@ const DetailedFeatures: React.FC = () => {
       icon: Icon4,
       title: "Real Time Sentiment Analysis",
       description:
-        "Gain Actionable Insights into customer emotions, enabling adaptive, empathetic interactions in real time.",
+        "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
       bgColor: "#77C9F1",
       textColor: "#77C9F1",
       image: DFeatures1,
       cards: [
         {
-          title: "Customer Mood Detection",
+          title: "Customer Emotion Detection",
           description:
-            "Instantly gauge customer emotions and tailor responses that instantly connect, making your support feel human and genuine.",
+            "Instantly identify customer emotions—whether frustration, delight, or confusion—to personalize interactions and enhance satisfaction.",
         },
         {
-          title: "Proactive Support Solutions",
+          title: " Frustration-Triggered Solutions",
           description:
-            "Spot frustration early and deploy immediate solutions, turning potential dissatisfaction into lasting loyalty.",
+            "Proactively address customer frustration by detecting negative sentiment early and offering targeted solutions to turn challenges into opportunities.",
         },
         {
-          title: "Empathy-Driven Engagement",
+          title: "Empathy-Powered Engagement",
           description:
-            "Analyze sentiment in real time, and ensure each interaction is handled with the empathy and care your customers deserve.",
+            "Equip your AI workforce to respond with care and understanding, ensuring every interaction feels human and builds trust.",
         },
       ],
     },
     {
       icon: Icon5,
-      title: "Vision Analysis",
+      title: "Vision Intelligence",
       description:
-        "Leverage vision-based prompts to gain deeper understanding and make multimedia content engagement more interactive.",
+        "Unlock the Power of Visual Inputs for Smarter Interactions Enhance customer engagement by seamlessly integrating visual data into the conversation.",
       bgColor: "#402282",
       textColor: "#402282",
       image: DFeatures2,
       cards: [
         {
-          title: "Product Showcase Assistance",
+          title: " Visual Product Matching",
           description:
-            "Enable customers to upload images for precise product recommendations, reducing confusion and boosting purchase confidence.",
+            "Let customers upload images to receive precise product suggestions, simplifying decision-making and boosting purchase confidence.",
         },
         {
-          title: "Visual Issue Identification",
+          title: "Photo-Based Issue Resolution",
           description:
-            "Let customers share photos of damaged goods or issues, speeding up resolution and enhancing support efficiency.",
+            "Quickly resolve customer complaints by analyzing images of damaged products or issues, streamlining the support process.",
         },
         {
-          title: "Interactive Tutorials",
+          title: "Visual How-To Guides",
           description:
-            "Create step-by-step guides with images or videos, helping customers easily understand product usage or setup.",
+            "Deliver interactive tutorials using images or videos, empowering customers to easily set up or use your products.",
         },
       ],
     },
     {
       icon: Icon6,
-      title: "Adaptive Recommendation Engine",
+      title: "Adaptive AI Recommendations",
       description:
-        "BotWot’s AI-driven recommendations adapt to user behavior , enhancing relevance across each customer journey.",
+        "Tailored Experiences That Evolve with Every Interaction BotWot’s AI workforce delivers dynamic, personalized suggestions that enhance every stage of the customer journey.",
       bgColor: "#A221AF",
       textColor: "#A221AF",
       image: DFeatures3,
       cards: [
         {
-          title: "Personalized Shopping Experience",
+          title: "Hyper-Personalized Shopping",
           description:
-            "Tailor suggestions in real time, making each interaction feel uniquely crafted to match the customer’s needs.",
+            "Offer product recommendations tailored in real time to the customer’s unique preferences, creating memorable shopping experiences.",
         },
         {
-          title: "Dynamic Product Discovery",
+          title: "Behavioral-Based Discovery",
           description:
-            "Adapt to every user behavior and instantly refine recommendations, creating a truly dynamic, engaging experience.",
+            "Adapt recommendations on the fly as user behavior evolves, making every interaction feel fresh and engaging.",
         },
         {
-          title: "Always-Relevant Suggestions",
+          title: "Evolving Intelligence",
           description:
-            "BotWot learns and evolves with each interaction, delivering recommendations that are more accurate, timely, and relevant.",
+            "With each interaction, BotWot learns and refines its suggestions, ensuring they are consistently accurate, relevant, and valuable.",
         },
       ],
     },
@@ -123,25 +123,25 @@ const DetailedFeatures: React.FC = () => {
       icon: Icon7,
       title: "Emotional Intelligence AI",
       description:
-        "Detect and respond to customer emotions, delivering empathetic experiences that strengthen brand loyalty.",
+        "Deliver Empathy at Scale with Emotion-Aware AI Detect, understand, and adapt to customer emotions to foster meaningful relationships.",
       bgColor: "#2E2F5F",
       textColor: "#2E2F5F",
       image: DFeatures4,
       cards: [
         {
-          title: "Empathy at Scale",
+          title: "Emotion Recognition in Action",
           description:
-            "Detect emotional shifts in customer interactions and respond with the care and understanding they expect.",
+            "Identify emotional cues during conversations, allowing your AI workforce to respond with genuine care and attentiveness.",
         },
         {
-          title: "Human-Like Conversations",
+          title: "Empathetic Conversations That Connect",
           description:
-            "BotWot’s emotional intelligence ensures every customer feels heard, building stronger bonds and increasing brand loyalty.s",
+            "Humanize customer interactions with emotional intelligence, ensuring every response reflects understanding and support.",
         },
         {
-          title: "Support with Heart",
+          title: "Adaptive Tone and Response",
           description:
-            "BotWot recognizes frustration or delight, adjusting its tone and responses to enhance the customer journey with compassion.",
+            "Recognize shifts in customer sentiment and dynamically adjust tone and messaging to create more compassionate, satisfying experiences.",
         },
       ],
     },
