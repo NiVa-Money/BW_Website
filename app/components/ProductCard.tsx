@@ -29,26 +29,22 @@ const aiAgentsContent = [
 ];
 
 const ProductCard = () => {
-  const [selectedCard, setSelectedCard] = useState<number | null>(null);
+  const [selectedCard] = useState<number | null>(null);
 
-  const handleCardClick = (index: number) => {
-    setSelectedCard(index === selectedCard ? null : index);  // Toggle selection
-  };
 
   const ProductCard = ({
     title,
     description,
     useCase,
-    onClick,
+
   }: {
     title: string;
     description: string;
     useCase: string;
-    onClick: () => void;
   }) => (
     <div
       className="bg-white shadow-lg rounded-lg p-6 cursor-pointer transition-transform transform hover:scale-105"
-      onClick={onClick}
+
     >
       <h3 className="text-xl font-semibold">{title}</h3>
       <p className="text-sm text-gray-600 mt-2">{description}</p>
@@ -104,7 +100,6 @@ const ProductCard = () => {
                 title={product.title}
                 description={product.description}
                 useCase={product.useCase}
-                onClick={() => handleCardClick(index)}
               />
             </div>
           ))}
