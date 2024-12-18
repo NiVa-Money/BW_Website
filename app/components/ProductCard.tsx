@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
@@ -19,26 +19,23 @@ const ProductCard = ({
 );
 
 interface ProductSectionProps {
-  title: string;
-  description: string;
   useCases: { industry: string; description: string }[];
 }
 
-const ProductSection = ({ title, description, useCases }: ProductSectionProps) => {
+const ProductSection = ({ useCases }: ProductSectionProps) => {
   const [selectedCard] = useState<number | null>(null);
 
   return (
     <div>
-      {/* Existing Section */}
       <section className="relative py-20 px-6 lg:px-8 overflow-hidden w-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-10">
           {/* Left Section */}
           <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-12 space-y-6 lg:space-y-8 h-full">
             <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-              {title}
+              AI Workforce Built for Seamless Customer Engagement
             </h1>
             <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl">
-              {description}
+              Simple to set up. Ready to transform your businesses with AI.
             </p>
             <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
               <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:bg-white hover:text-indigo-600 transition duration-300">
@@ -69,7 +66,9 @@ const ProductSection = ({ title, description, useCases }: ProductSectionProps) =
           {useCases.map((useCase, index) => (
             <div
               key={index}
-              className={`transform transition-all ${selectedCard === index ? 'scale-110' : ''}`}
+              className={`transform transition-all ${
+                selectedCard === index ? "scale-110" : ""
+              }`}
             >
               <ProductCard
                 title={useCase.industry}

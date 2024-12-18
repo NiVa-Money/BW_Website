@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  logoImage,
-} from "../../public/assets";
+import { logoImage } from "../../public/assets";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -232,15 +230,18 @@ export default function Footer({ border = false }: { border?: boolean }) {
               2024 &copy; Purpleant Technologies Private Limited, Inc. All
               Rights Reserved.
             </p>
-            <div className="flex items-center space-x-2">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
-              />
-              <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                Sign Up
-              </button>
+            <div className="flex flex-col space-y-2">
+              <p className="text-gray-500 text-sm mt-4">Subscribe to our newsletter</p>
+              <div className="flex items-center space-x-2">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
+                />
+                <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                  Sign Up
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -2,10 +2,12 @@ export const aiAgentsContent = {
   content: [
     {
       pageId: "ai-agents",
-      title: "Pre-Trained Workforce for Industry-Specific Use Cases",
-      description:
-        "BotWot’s Ready-to-Go AI workforce are pre-trained on a variety of industry-specific scenarios. This workforce is tailored to address common challenges across sectors like retail, healthcare, financial services, and more. They’re equipped to handle a wide range of customer interactions right out of the box.",
       useCases: [
+        {
+          industry: "Pre-Trained Workforce for Industry-Specific Use Cases",
+          description:
+            "BotWot’s Ready-to-Go AI workforce are pre-trained on a variety of industry-specific scenarios. This workforce is tailored to address common challenges across sectors like retail, healthcare, financial services, and more. They’re equipped to handle a wide range of customer interactions right out of the box.",
+        },
         {
           industry: "Retail",
           description:
@@ -20,10 +22,12 @@ export const aiAgentsContent = {
     },
     {
       pageId: "ai-agents",
-      title: "Zero-Code Integration with Your Existing Systems",
-      description:
-        "These AI employees integrate effortlessly with your existing business systems—whether it's CRM, e-commerce platforms, or help desks—without requiring any coding expertise. This reduces implementation time and accelerates the time-to-value for your business.",
       useCases: [
+        {
+          industry: "Zero-Code Integration with Your Existing Systems",
+          description:
+            "These AI employees integrate effortlessly with your existing business systems—whether it's CRM, e-commerce platforms, or help desks—without requiring any coding expertise. This reduces implementation time and accelerates the time-to-value for your business.",
+        },
         {
           industry: "E-commerce",
           description:
@@ -33,10 +37,13 @@ export const aiAgentsContent = {
     },
     {
       pageId: "ai-agents",
-      title: "24/7 Multilingual Support",
-      description:
-        "BotWot’s Ready-to-Go AI workforce offers multilingual support, allowing your business to scale globally while offering round-the-clock assistance to customers in their preferred language. This feature enables enhanced customer satisfaction and accessibility.",
+
       useCases: [
+        {
+          industry: "24/7 Multilingual Support",
+          description:
+            "BotWot’s Ready-to-Go AI workforce offers multilingual support, allowing your business to scale globally while offering round-the-clock assistance to customers in their preferred language. This feature enables enhanced customer satisfaction and accessibility.",
+        },
         {
           industry: "Global Business Expansion",
           description:
@@ -46,10 +53,13 @@ export const aiAgentsContent = {
     },
     {
       pageId: "ai-agents",
-      title: "Seamless Human Handoff",
-      description:
-        "While the AI workforce efficiently manages routine queries, it detects when human intervention is required and smoothly escalates complex issues to a human employee, ensuring a seamless customer experience at all times.",
+
       useCases: [
+        {
+          industry: "Seamless Human Handoff",
+          description:
+            "While the AI workforce efficiently manages routine queries, it detects when human intervention is required and smoothly escalates complex issues to a human employee, ensuring a seamless customer experience at all times.",
+        },
         {
           industry: "Customer Support",
           description:
@@ -59,10 +69,13 @@ export const aiAgentsContent = {
     },
     {
       pageId: "ai-agents",
-      title: "Continuous Learning and Adaptation",
-      description:
-        "The Ready-to-Go AI workforce have built-in machine learning capabilities that enable them to continuously learn from customer interactions. Over time, the workforce improve their responses and accuracy, providing even better service as they gather more data.",
+
       useCases: [
+        {
+          industry: "Continuous Learning and Adaptation",
+          description:
+            "The Ready-to-Go AI workforce have built-in machine learning capabilities that enable them to continuously learn from customer interactions. Over time, the workforce improve their responses and accuracy, providing even better service as they gather more data.",
+        },
         {
           industry: "Customer Feedback Loop",
           description:
@@ -74,19 +87,21 @@ export const aiAgentsContent = {
 };
 
 export const botwotLLMContent = {
-  content: {
-    pageId: "botwot-llm",
-    introduction: {
+  content: [
+    {
+      pageId: "botwot-llm",
       title: "Transform Your Business with Unmatched AI Intelligence",
       description:
         "At BotWot, we don’t just build AI—we craft intelligent, secure, and custom-made solutions tailored to your unique business needs. Proprietary Large Language Models (LLMs) are the backbone of this transformation, setting us apart from the competition by ensuring the highest standards of security, precision, and adaptability.",
     },
-    proprietaryLLM: {
+    {
+      pageId: "botwot-llm",
       title: "What Does Proprietary LLM Mean for Your Business?",
       description:
-        "Imagine an AI system that not only understands your data but is built specifically for your business’s challenges and goals. A Proprietary LLM is a model created and trained with your unique datasets, business logic, and internal processes. It’s an AI system that’s built for your business from the ground up, ensuring it can deliver better accuracy, unparalleled customization, and above all, rock-solid data security. Unlike open-source models that rely on generalized datasets, BotWot’s proprietary LLMs are entirely yours, ensuring better efficiency, accuracy, and security.",
+        "Imagine an AI system that not only understands your data but is built specifically for your business’s challenges and goals. A Proprietary LLM is a model created and trained with your unique datasets, business logic, and internal processes. It’s an AI system that’s built for your business from the ground up, ensuring it can deliver better accuracy, unparalleled customization, and above all, rock-solid data security.",
     },
-    comparison: {
+    {
+      pageId: "botwot-llm",
       title: "Proprietary LLM vs Open Source LLM",
       useCases: [
         {
@@ -124,7 +139,8 @@ export const botwotLLMContent = {
         },
       ],
     },
-    uniqueSellingPoints: {
+    {
+      pageId: "botwot-llm",
       title: "Unlock the Power of Tailored AI: Here’s Why BotWot Leads the Way",
       points: [
         {
@@ -159,19 +175,20 @@ export const botwotLLMContent = {
         },
       ],
     },
-  },
+  ],
 };
 
 export const channelsContent = {
-  content: {
-    pageId: "channels",
-    introduction: {
+  content: [
+    {
+      pageId: "channels",
       title:
         "Enhance Your Business with AI-Powered Workforce Across Multiple Channels",
       description:
         "Unleash the potential of AI across various communication channels, including websites, mobile apps, and WhatsApp. Our AI workforce seamlessly integrates into these platforms to provide 24/7 support, personalized experiences, and real-time customer interaction. Boost engagement, increase efficiency, and drive conversions with our tailored AI workforce solutions.",
     },
-    websiteAIWorkforce: {
+    {
+      pageId: "channels",
       title: "AI Workforce for Your Website",
       benefits: {
         title: "Why Add AI Workforce to Your Website?",
@@ -199,7 +216,8 @@ export const channelsContent = {
         ],
       },
     },
-    mobileAppAIWorkforce: {
+    {
+      pageId: "channels",
       title: "AI Workforce for Your Mobile App",
       benefits: {
         title: "Why Add AI Workforce to Your Mobile App?",
@@ -227,7 +245,8 @@ export const channelsContent = {
         ],
       },
     },
-    whatsappAIWorkforce: {
+    {
+      pageId: "channels",
       title: "AI Workforce for WhatsApp",
       benefits: {
         title: "Why Use AI Workforce for WhatsApp?",
@@ -255,7 +274,8 @@ export const channelsContent = {
         ],
       },
     },
-    industries: {
+    {
+      pageId: "channels",
       title: "Industries That Benefit from AI Workforce Across Channels",
       points: [
         {
@@ -280,7 +300,8 @@ export const channelsContent = {
         },
       ],
     },
-    faqs: {
+    {
+      pageId: "channels",
       title: "Frequently Asked Questions",
       questions: [
         {
@@ -312,44 +333,48 @@ export const channelsContent = {
         },
       ],
     },
-  },
+  ],
 };
 
 export const reportsAnalyticsContent = {
-  content: {
-    pageId: "reports-analytics",
-    comprehensiveAnalyticsDashboard: {
+  content: [
+    {
+      pageId: "reports-analytics",
       title: "Comprehensive Analytics Dashboard",
       description:
         "Connect all the dots for actionable insights. Get a consolidated view of key metrics like CSAT, response times, and issue resolution rates. Dive deeper into bot and agent performance data to help your team make informed decisions and optimize strategies for better customer engagement.",
     },
-    realTimePerformanceMonitoring: {
+    {
+      pageId: "reports-analytics",
       title: "Real-time Performance Monitoring",
       description:
         "Track performance in real-time. Gain live insights into agent and bot activities. Monitor chat statuses, agent availability, and response quality instantly, enabling quick adjustments and proactive decision-making to improve performance on the spot.",
     },
-    customizableReporting: {
+    {
+      pageId: "reports-analytics",
       title: "Customizable Reporting",
       description:
         "Tailor reports to your business needs. Generate reports based on your unique business goals. Customize the data you need, whether it's specific metrics, time frames, or agent performance, ensuring the reports align perfectly with your strategic objectives.",
     },
-    botAgentComparisonInsights: {
+    {
+      pageId: "reports-analytics",
       title: "Bot & Agent Comparison Insights",
       description:
         "Compare AI and human agent effectiveness. Evaluate how AI workforce stack up against human agents. Understand key performance differences and identify opportunities for bot improvement or areas where human agents outperform, driving optimization decisions.",
     },
-    historicalTrendsDataAnalysis: {
+    {
+      pageId: "reports-analytics",
       title: "Historical Trends & Data Analysis",
       description:
         "Gain long-term insights with historical data. Dive into historical performance trends, examining data over time to identify recurring patterns and long-term opportunities for improvement. Use these insights to fine-tune your AI strategies and continuously improve your processes.",
     },
-  },
+  ],
 };
 
 export const customAISolutionsContent = {
-  content: {
-    pageId: "custom-ai-solutions",
-    fastestDeploymentWithPreBuiltAIWorkforce: {
+  content: [
+    {
+      pageId: "custom-ai-solutions",
       title: "Fastest Deployment with Pre-Built AI Workforce",
       description:
         "BotWot’s AI workforce are pre-equipped to handle specific business tasks like HR operations, legal drafts, customer support, and market research. With minimal customization required, businesses can deploy AI workforce within minutes, dramatically reducing the time to value.",
@@ -359,7 +384,8 @@ export const customAISolutionsContent = {
           "Manages case research, drafts contracts, and organizes legal documentation. Whether via precise chat support or detailed voice guidance, Legal Assistant ensures clients and teams navigate legal processes smoothly and with confidence.",
       },
     },
-    hyperCustomizableWithMinimalSetup: {
+    {
+      pageId: "custom-ai-solutions",
       title: "Hyper-Customizable with Minimal Setup",
       description:
         "BotWot’s AI workforce is designed to be quickly customized via intuitive PDF form-based knowledge bases. Businesses can align the agent’s knowledge with internal policies and procedures, ensuring that the AI fits seamlessly into their existing workflows without needing technical expertise.",
@@ -369,7 +395,8 @@ export const customAISolutionsContent = {
           "Streamlines recruitment by sourcing candidates, conducting initial screenings, and scheduling interviews. It engages candidates with personalized chat messages or conversational voice interactions, ensuring a smooth hiring process for both recruiters and applicants.",
       },
     },
-    seamlessIntegrationIntoExistingInfrastructure: {
+    {
+      pageId: "custom-ai-solutions",
       title: "Seamless Integration into Existing Infrastructure",
       description:
         "Our solutions easily integrate with your existing tools and platforms—whether it's an ERP, CRM, or other business management systems—allowing businesses to enhance and automate processes without disrupting daily operations.",
@@ -379,7 +406,8 @@ export const customAISolutionsContent = {
           "Integrate BotWot’s AI workforce with your CRM system to automatically process customer service inquiries, generate reports, and follow up with customers—simplifying workflows and enhancing overall efficiency.",
       },
     },
-    multiAgentOrchestratorForOptimizedTaskHandling: {
+    {
+      pageId: "custom-ai-solutions",
       title: "Multi-Agent Orchestrator for Optimized Task Handling",
       description:
         "BotWot’s Multi-Agent Orchestrator enables seamless coordination between multiple AI Agents, optimizing task delegation across agents to ensure that complex, multi-step processes are handled efficiently. This allows different agents to perform specialized tasks while working in sync to deliver high-quality results.",
@@ -389,7 +417,8 @@ export const customAISolutionsContent = {
           "A team of AI workforce, each specializing in different aspects of sales, such as lead qualification, personalized communication, and order processing, can be orchestrated by the Multi-Agent system to work together and improve conversion rates without any manual intervention.",
       },
     },
-    collaborativeAIWorkforceForComplexTasks: {
+    {
+      pageId: "custom-ai-solutions",
       title: "Collaborative AI Workforce for Complex Tasks",
       description:
         "BotWot’s AI workforce can collaborate to solve multi-step problems, working together as a cohesive virtual team. This makes it possible to tackle complex tasks that require input from different areas of expertise, all managed by the AI workforce.",
@@ -399,7 +428,7 @@ export const customAISolutionsContent = {
           "Handles the entire collections process, from initial contact to payment confirmation, managing payment plans and follow-ups while ensuring full regulatory compliance.",
       },
     },
-  },
+  ],
 };
 
 export const dataSecurityContent = {
@@ -552,60 +581,6 @@ export const integrationsContent = {
           title: "Checkout Assistance",
           description:
             "Automate payment processing and customer inquiries during checkout, ensuring a smooth and quick payment experience.",
-        },
-      },
-    },
-    messagingChannelsIntegrations: {
-      whatsapp: {
-        title: "WhatsApp",
-        description:
-          "BotWot’s integration with WhatsApp allows businesses to engage with customers via their preferred messaging platform. From answering FAQs to processing orders, this integration leverages the power of WhatsApp’s massive reach and BotWot’s AI capabilities. AI Workforce are available 24/7 to provide instant support, helping customers with everything from product inquiries to troubleshooting, all within WhatsApp’s familiar interface.",
-        useCase: {
-          title: "Customer Support on WhatsApp",
-          description:
-            "Provide instant customer support and automate product inquiries via WhatsApp, enhancing the customer experience.",
-        },
-      },
-      instagramMessenger: {
-        title: "Instagram Messenger",
-        description:
-          "Integrating BotWot with Instagram Messenger allows businesses to provide personalized customer support and create interactive experiences. Whether handling inquiries about products, booking appointments, or offering special promotions, the AI Workforce can manage interactions effortlessly. With the integration, customers can enjoy quick, responsive conversations through Instagram Messenger, improving engagement and boosting brand loyalty.",
-        useCase: {
-          title: "Interactive Support on Instagram",
-          description:
-            "Manage customer inquiries, bookings, and promotions seamlessly on Instagram Messenger.",
-        },
-      },
-      facebookMessenger: {
-        title: "Facebook Messenger",
-        description:
-          "With BotWot’s Facebook Messenger integration, businesses can create a seamless customer service experience on one of the world’s most popular messaging platforms. AI Workforce assist with common queries, handle product recommendations, and streamline booking or support processes. This integration helps businesses maintain consistent, 24/7 customer engagement, making it easy to provide personalized and efficient support within the Facebook ecosystem.",
-        useCase: {
-          title: "24/7 Support on Facebook Messenger",
-          description:
-            "Provide continuous customer service and streamline interactions through Facebook Messenger integration.",
-        },
-      },
-    },
-    moreAppsIntegrations: {
-      shopify: {
-        title: "Shopify",
-        description:
-          "Integrating BotWot with Shopify enhances the e-commerce experience by automating tasks such as order tracking, customer inquiries, and product recommendations. AI Workforce can interact with customers in real time, answering questions about products, assisting with purchases, and handling order statuses. This integration allows businesses to focus on growth while AI Workforce take care of routine customer interactions, making for a smoother and more efficient shopping experience.",
-        useCase: {
-          title: "E-commerce Support Automation",
-          description:
-            "Automate order tracking, customer inquiries, and product recommendations within Shopify.",
-        },
-      },
-      magento: {
-        title: "Magento",
-        description:
-          "BotWot’s integration with Magento provides an intelligent AI assistant that helps businesses manage their online store more efficiently. Whether it's processing orders, handling customer queries, or tracking inventory, the AI Workforce are capable of automating key e-commerce tasks. This integration ensures that businesses using Magento can streamline operations, reduce manual work, and enhance the overall customer experience with AI-driven support.",
-        useCase: {
-          title: "AI-Driven E-commerce Management",
-          description:
-            "Automate inventory tracking, order processing, and customer queries for Magento users.",
         },
       },
     },
