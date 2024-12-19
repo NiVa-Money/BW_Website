@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from "react";
 import Image from "next/image";
 import { robot } from "../../public/assets";
@@ -8,25 +7,45 @@ import { robot } from "../../public/assets";
 const ProductCard = ({
   title,
   description,
+  useCases,
 }: {
   title: string;
   description: string;
+  useCases: { industry: string; description: string }[];
 }) => (
   <div className="bg-white shadow-lg rounded-lg p-6 cursor-pointer transition-transform transform hover:scale-105">
     <h3 className="text-xl font-semibold">{title}</h3>
     <p className="text-sm text-gray-600 mt-2">{description}</p>
+    {/* Iterate over the useCases and render each one below the description */}
+    <div className="mt-4">
+      {useCases.map((useCase, index) => (
+        <div key={index} className="mt-2 p-4 bg-gray-100 rounded-lg">
+          <h4 className="text-lg font-semibold">{useCase.industry}</h4>
+          <p className="text-sm text-gray-500">{useCase.description}</p>
+        </div>
+      ))}
+    </div>
   </div>
 );
 
 interface ProductSectionProps {
+  pageId: string;
+  title: string;
+  description: string;
   useCases: { industry: string; description: string }[];
 }
 
-const ProductSection = ({ useCases }: ProductSectionProps) => {
-  const [selectedCard] = useState<number | null>(null);
+const ProductSection = ({
+  pageId,
+  title,
+  description,
+  useCases,
+}: ProductSectionProps) => {
+  const [selectedCard, setSelectedCard] = useState<number | null>(null);
 
   return (
     <div>
+      {/* Section for the general description and image, shown once */}
       <section className="relative py-20 px-6 lg:px-8 overflow-hidden w-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-10">
           {/* Left Section */}
@@ -63,16 +82,20 @@ const ProductSection = ({ useCases }: ProductSectionProps) => {
       <section className="max-w-7xl mx-auto py-12 px-6">
         <h2 className="text-3xl font-bold text-center mb-12">Products</h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Render ProductCard for each use case */}
           {useCases.map((useCase, index) => (
             <div
               key={index}
               className={`transform transition-all ${
                 selectedCard === index ? "scale-110" : ""
               }`}
+              onMouseEnter={() => setSelectedCard(index)}
+              onMouseLeave={() => setSelectedCard(null)}
             >
               <ProductCard
-                title={useCase.industry}
-                description={useCase.description}
+                title={title}
+                description={description}
+                useCases={[useCase]} 
               />
             </div>
           ))}
