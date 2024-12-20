@@ -64,7 +64,7 @@ const LINKS = [
   {
     title: "Resources",
     items: [
-      { name: "Use Cases", path: "/resources/use-cases" },
+      { name: "Case Studies", path: "/resources/use-cases" },
       { name: "Blogs", path: "/resources/blogs" },
       { name: "Community", path: "/resources/community" },
       { name: "Help Center & FAQ's", path: "/resources/help-center" },

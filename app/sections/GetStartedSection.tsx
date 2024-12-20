@@ -8,11 +8,12 @@ const GetStartedSection: React.FC = () => {
         <div className="text-center w-full max-w-[681px]">
           {/* Heading */}
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight whitespace-nowrap text-black leading-tight">
-            Revolutionize your operations
+            Explore the Future of ICX
           </h2>
           {/* Subheading */}
           <p className="mt-4 text-base md:text-xl text-black/70 leading-relaxed">
-            Schedule a free demo and experience the AI workforce in action
+            Elevate customer relationships with BotWot ICX. <br />
+            Schedule a free demo to see AI in action!
           </p>
           {/* Buttons */}
           <div className="flex justify-center gap-4 mt-8">

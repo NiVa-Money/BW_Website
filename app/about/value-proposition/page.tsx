@@ -1,5 +1,10 @@
+import OurValue from "../../sections/about/OurValue";
+
 const ValuePropositionPage = () => {
-  return <></>;
+  return <>
+  
+  <OurValue/>
+  </>;
 };
 
 export default ValuePropositionPage;

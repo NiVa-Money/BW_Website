@@ -35,25 +35,38 @@ import avatar1 from "../../public/assets/avatars/avatar-ashwin-santiago.jpg";
 import avatar2 from "../../public/assets/avatars/avatar-lula-meyers.jpg";
 import avatar3 from "../../public/assets/avatars/avatar-florence-shaw.jpg";
 import avatar4 from "../../public/assets/avatars/avatar-owen-garcia.jpg";
-
-import robot  from "../../public/assets/avatars/robot.svg";
+import CEO from "../../public/assets/avatars/CEO.svg";
+import CTO from "../../public/assets/avatars/CTO.svg";
+import COO from "../../public/assets/avatars/COO.svg";
+import robot from "../../public/assets/avatars/robot.svg";
 
 import india from "../../public/assets/icons/india.svg";
 import uae from "../../public/assets/icons/uae.svg";
 import nigeria from "../../public/assets/icons/nigeria.svg";
+import Products from "../../public/assets/icons/products.svg";
+import Solutions from "../../public/assets/icons/solutions.svg";
+import OurStory from "../../public/assets/charts/StoryImage.svg";
+import AboutUs from "../../public/assets/icons/AboutUs.svg";
 
 export {
   logoImage,
+  AboutUs,
+  Products,
+  Solutions,
+  OurStory,
   india,
   uae,
   nigeria,
-robot,
+  robot,
   MenuIcon,
   ArrowUp,
   avatar1,
   avatar2,
   avatar3,
   avatar4,
+  CTO,
+  CEO,
+  COO,
   PFeatures1,
   PFeatures2,
   PFeatures3,
