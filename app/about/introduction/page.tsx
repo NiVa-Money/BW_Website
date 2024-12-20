@@ -1,5 +1,9 @@
+import Introduction from "../../sections/about/Introduction";
+
 const IntroductionPage = () => {
-  return <></>;
+  return <>
+  <Introduction/>
+  </>;
 };
 
 export default IntroductionPage;

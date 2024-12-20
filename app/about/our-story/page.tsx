@@ -1,5 +1,9 @@
+import StoryPage from "../../sections/about/OurStory";
+
 const OurStoryPage = () => {
-  return <></>;
+  return <>
+  <StoryPage/>
+  </>;
 };
 
 export default OurStoryPage;

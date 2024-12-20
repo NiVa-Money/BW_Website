@@ -1,11 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  logoImage,
-  // nigeria,
-  // twitterx,
-  // uae,
-} from "../../public/assets";
+import { logoImage } from "../../public/assets";
 
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -69,7 +64,7 @@ const LINKS = [
   {
     title: "Resources",
     items: [
-      { name: "Use Cases", path: "/resources/use-cases" },
+      { name: "Case Studies", path: "/resources/use-cases" },
       { name: "Blogs", path: "/resources/blogs" },
       { name: "Community", path: "/resources/community" },
       { name: "Help Center & FAQ's", path: "/resources/help-center" },
@@ -99,7 +94,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               className="object-contain"
               priority
             />
-            <span className="text-lg font-bold text-black">BotWot</span>
+            <span className="text-lg text-center justify-center items-center font-bold text-black">
+              BotWot
+            </span>
           </div>
 
           {/* Dynamic Links */}
@@ -131,21 +128,29 @@ export default function Footer({ border = false }: { border?: boolean }) {
         <div className="container mx-auto px-4">
           {/* Contact Details */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {/* USA */}
+            {/* India */}
             <div className="space-y-2">
               <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2">\ud83c\uddfa\ud83c\uddf8</span> Nigeria
+                <span className="mr-2" role="img" aria-label="India Flag">
+                  🇮🇳
+                </span>{" "}
+                India
               </h3>
-              <p>Purpleant Tech Services Limited</p>
-              <p>11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
-              <p>+234 (703) 789-6529</p>
+              <p>Purpleant Technologies Pvt Ltd</p>
+              <p>
+                F-102, Microtek Greenberg, Sector 86, Gurugram, Haryana, India
+              </p>
+              <p>+91 9582474246</p>
               <p className="text-blue-500">info@botwot.io</p>
             </div>
 
             {/* UAE */}
             <div className="space-y-2">
               <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2">\ud83c\udde6\ud83c\uddea</span> UAE
+                <span className="mr-2" role="img" aria-label="UAE Flag">
+                  🇦🇪
+                </span>{" "}
+                UAE
               </h3>
               <p>Purpleant Technologies FZ-LLC</p>
               <p>
@@ -155,16 +160,17 @@ export default function Footer({ border = false }: { border?: boolean }) {
               <p className="text-blue-500">info@botwot.io</p>
             </div>
 
-            {/* India */}
+            {/* Nigeria */}
             <div className="space-y-2">
               <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2">\ud83c\uddee\ud83c\uddf3</span> India
+                <span className="mr-2" role="img" aria-label="Nigeria Flag">
+                  🇳🇬
+                </span>{" "}
+                Nigeria
               </h3>
-              <p>Purpleant Technologies Pvt Ltd</p>
-              <p>
-                F-102, Microtek Greenberg, Sector 86, Gurugram, Haryana, India
-              </p>
-              <p>+91 9582474246</p>
+              <p>Purpleant Tech Services Limited</p>
+              <p>11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
+              <p>+234 (703) 789-6529</p>
               <p className="text-blue-500">info@botwot.io</p>
             </div>
           </div>
@@ -213,26 +219,29 @@ export default function Footer({ border = false }: { border?: boolean }) {
             {/* Phone Numbers */}
             <div className="text-gray-600 text-sm text-center md:text-right">
               <p>India : +91 9582474246</p>
-              <p>Nigeria : +234 (703) 789-6529</p>
               <p>UAE : +971 501178803</p>
+              <p>Nigeria : +234 (703) 789-6529</p>
             </div>
           </div>
 
           {/* Newsletter */}
-          <div className="mt-8 flex flex-col md:flex-row items-center justify-between border-t pt-6">
+          <div className="mt-8 flex flex-col md:flex-row mb-10 items-center justify-between border-t pt-6">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
               2024 &copy; Purpleant Technologies Private Limited, Inc. All
               Rights Reserved.
             </p>
-            <div className="flex items-center space-x-2">
-              <input
-                type="email"
-                placeholder="Your Work Email"
-                className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
-              />
-              <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                Sign Up
-              </button>
+            <div className="flex flex-col space-y-2">
+              <p className="text-gray-500 text-sm mt-4">Subscribe to our newsletter</p>
+              <div className="flex items-center space-x-2">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
+                />
+                <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                  Sign Up
+                </button>
+              </div>
             </div>
           </div>
         </div>
