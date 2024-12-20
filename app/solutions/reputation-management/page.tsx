@@ -1,14 +1,14 @@
 'use client'
 
-import { useRouter } from "next/router";
-import SolutionSection from "../../components/SolutionCard";
+// import { useRouter } from "next/router";
+// import SolutionSection from "../../components/SolutionCard";
 
 const ReputationManagementPage = () => {
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <>
-      <SolutionSection router={router} />
+      {/* <SolutionSection router={router} /> */}
     </>
   );
 };
