@@ -11,10 +11,10 @@ interface FeatureCardProps {
 
 const BenefitCard: React.FC<FeatureCardProps> = ({ icon, title, iconAlt }) => {
   return (
-    <div className="flex overflow-hidden flex-col flex-1 shrink justify-center self-stretch p-px my-auto bg-white rounded-xl shadow-lg basis-0 min-w-[240px]">
+    <div className="flex overflow-hidden flex-col flex-1 shrink justify-center self-stretch p-px my-auto  rounded-xl shadow-lg basis-0 min-w-[240px]">
       <GradientAnimation />
 
-      <div className="flex gap-2 justify-center items-center py-9 pr-7 pl-8 bg-white min-h-[99px] max-md:px-5">
+      <div className="flex gap-2 justify-center items-center py-9 pr-7 pl-8  min-h-[99px] max-md:px-5">
         <Image
           loading="lazy"
           src={icon}

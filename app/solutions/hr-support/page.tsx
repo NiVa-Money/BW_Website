@@ -1,20 +1,46 @@
-import { WobbleCard } from "../../components/AnimationCards";
-import cardData from "../../../data.json";
+"use client";
 
-const HrSupportPage = () => {
+import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+import { solutions } from "../../data/solution";
+import HeroSection from "../../components/HeroSection";
 
-  const pageData = cardData.find((page) => page.pageId === "hr-support");
+// Dynamically import the component
+const SolutionSection = dynamic(() => import("../../components/SolutionCard"));
 
-  const cards = pageData?.cards || [];
+const HrSupportPage: React.FC = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null; // Render nothing on the server-side
+  }
+
+  // Find the solution data by matching the href in the solutions array to the current route
+  const solutionData = solutions.find((solution) => solution.href === pathname);
+
+  if (!solutionData) {
+    return (
+      <div className="text-center py-10">No data found for this solution.</div>
+    );
+  }
 
   return (
-    <div className="p-10 bg-gray-100 min-h-screen grid grid-cols-1 md:grid-cols-3 gap-6">
-      {cards.map((card, index) => (
-        <WobbleCard key={index} containerClassName="bg-white border ">
-          <h2 className="text-[#2E2F5F] text-2xl font-bold">{card.title}</h2>
-          <p className="text-[#2E2F5F] font-normal mt-1">{card.description}</p>
-        </WobbleCard>
-      ))}
+    <div>
+      {/* Render HeroSection once */}
+      <HeroSection />
+
+      <SolutionSection
+        title={solutionData.details[0].title}
+        description={solutionData.details[0].description}
+        details={solutionData.details}
+      />
     </div>
   );
 };

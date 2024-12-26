@@ -22,7 +22,7 @@ const GetStartedSection: React.FC = () => {
               Try for Free
             </button>
             {/* Book a Demo Button */}
-            <button className="px-5 md:px-6 py-3 text-emerald-500 bg-white border border-emerald-500 rounded-full transition hover:bg-emerald-100">
+            <button className="px-5 md:px-6 py-3 text-emerald-500  border border-emerald-500 rounded-full transition hover:bg-emerald-100">
               Book a Demo
             </button>
           </div>

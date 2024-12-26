@@ -26,7 +26,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   textColor,
 }) => (
   <div
-    className={`flex flex-col p-4 bg-white rounded-xl shadow-lg flex-1 transition-all duration-300 ease-in-out hover:border-[${bgColor}] hover:shadow-[0px_0px_20px_0px_${bgColor}]`}
+    className={`flex flex-col p-4  rounded-xl shadow-lg flex-1 transition-all duration-300 ease-in-out hover:border-[${bgColor}] hover:shadow-[0px_0px_20px_0px_${bgColor}]`}
     style={{
       borderColor: bgColor,
       boxShadow: `0px 0px 10px 0px ${bgColor}`, // default shadow

@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
     <>
       <header className="fixed top-2 z-30 w-full md:top-6">
         <div className="mx-auto max-w-8xl lg:px-8 px-6 sm:px-6">
-          <div className="relative flex h-20 items-center rounded-2xl bg-white/50 px-3 shadow-lg shadow-black/30 backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+          <div className="relative flex h-20 items-center rounded-2xl /50 px-3 shadow-lg shadow-black/30 backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
             {/* Site branding */}
             <div className="flex flex-1 items-center">
               <Link href="/" className="flex-shrink-0">
@@ -159,7 +159,7 @@ const Navbar: React.FC = () => {
             initial={{ height: 0 }}
             animate={{ height: "auto" }}
             exit={{ height: 0 }}
-            className="overflow-hidden bg-white shadow-md"
+            className="overflow-hidden  shadow-md"
           >
             <div className="flex flex-col items-center gap-4 py-20">
               {navLinks.map((link) => (

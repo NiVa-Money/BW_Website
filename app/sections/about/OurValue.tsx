@@ -45,7 +45,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
       alt={name}
       width={280}
       height={280}
-      className="rounded-lg object-cover"
+      className="rounded-lg object-cover filter grayscale"
       priority
     />
     <h3 className="mt-4 text-xl font-semibold text-gray-900">{name}</h3>

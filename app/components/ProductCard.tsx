@@ -13,7 +13,7 @@ const ProductCard = ({
   description: string;
   useCases: { industry: string; description: string }[];
 }) => (
-  <div className="bg-white shadow-lg rounded-lg p-6 cursor-pointer transition-transform transform hover:scale-105">
+  <div className=" shadow-lg rounded-lg p-6 cursor-pointer transition-transform transform hover:scale-105">
     <h3 className="text-xl font-semibold">{title}</h3>
     <p className="text-sm text-gray-600 mt-2">{description}</p>
     {/* Iterate over the useCases and render each one below the description */}
@@ -46,7 +46,7 @@ const ProductSection = ({
     <div>
       {/* Products Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="grid grid-cols-1 gap-6">
+        <div className="grid grid-cols-2 gap-6">
           {/* Render ProductCard for each use case */}
           {useCases.map((useCase, index) => (
             <div

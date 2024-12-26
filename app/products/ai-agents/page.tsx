@@ -14,7 +14,7 @@ const AiAgentsPage = () => {
   );
 
   return (
-    <div className="p-10 bg-white flex flex-col min-h-screen">
+    <div className="p-10  flex flex-col min-h-screen">
       {/* Render HeroSection once */}
       <HeroSection />
 
