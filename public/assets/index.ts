@@ -13,6 +13,19 @@ import outsideLogo from "../../public/assets/logo/outside.svg";
 import apexLogo from "../../public/assets/logo/apex.svg";
 import celestialLogo from "../../public/assets/logo/celestial.svg";
 import twiceLogo from "../../public/assets/logo/twice.svg";
+
+import startup1 from "../../public/assets/logo/startup1.svg";
+import startup2 from "../../public/assets/logo/startup2.svg";
+import startup3 from "../../public/assets/logo/startup3.svg";
+import startup4 from "../../public/assets/logo/startup4.svg";
+import startup5 from "../../public/assets/logo/startup5.svg";
+import startup6 from "../../public/assets/logo/startup6.svg";
+import startup7 from "../../public/assets/logo/startup7.svg";
+import startup8 from "../../public/assets/logo/startup8.svg";
+
+import meta from "../../public/assets/logo/meta-credits.svg";
+import aws from "../../public/assets/logo/aws-credits.svg";
+
 import Icon1 from "../../public/assets/icons/Icon1.png";
 import Icon2 from "../../public/assets/icons/Icon2.png";
 import Icon3 from "../../public/assets/icons/Icon3.png";
@@ -46,6 +59,7 @@ import nigeria from "../../public/assets/icons/nigeria.svg";
 import Products from "../../public/assets/icons/products.svg";
 import Solutions from "../../public/assets/icons/solutions.svg";
 import OurStory from "../../public/assets/charts/StoryImage.svg";
+import Partnerships from "../../public/assets/charts/partnerships.svg";
 import AboutUs from "../../public/assets/icons/AboutUs.svg";
 
 export {
@@ -54,6 +68,7 @@ export {
   Products,
   Solutions,
   OurStory,
+  Partnerships,
   india,
   uae,
   nigeria,
@@ -83,6 +98,16 @@ export {
   Icon5,
   Icon6,
   Icon7,
+  startup1,
+  startup2,
+  startup3,
+  startup4,
+  startup5,
+  startup6,
+  startup7,
+  startup8,
+  meta,
+  aws,
   quantumLogo,
   acmeLogo,
   echoValleyLogo,

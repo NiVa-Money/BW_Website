@@ -11,7 +11,7 @@ import {
 import InfoIcon from "@mui/icons-material/Info";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HistoryIcon from "@mui/icons-material/History";
-// import GroupIcon from "@mui/icons-material/Group";
+import GroupIcon from "@mui/icons-material/Group";
 // import NewspaperIcon from "@mui/icons-material/Newspaper";
 import WorkIcon from "@mui/icons-material/Work";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
@@ -53,12 +53,12 @@ export const navLinks = [
         icon: HistoryIcon,
         description: "Discover our journey.",
       },
-      // {
-      //   label: "Partnerships & Alliances",
-      //   href: "/about/partnerships",
-      //   icon: GroupIcon,
-      //   description: "Our collaborations and alliances.",
-      // },
+      {
+        label: "Partnerships & Alliances",
+        href: "/about/partnerships",
+        icon: GroupIcon,
+        description: "Our collaborations and alliances.",
+      },
       // {
       //   label: "Media Center",
       //   href: "/about/media-center",
