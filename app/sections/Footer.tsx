@@ -15,8 +15,8 @@ const LINKS = [
       { name: "Introduction", path: "/about/introduction" },
       { name: "Our Value Proposition", path: "/about/value-proposition" },
       { name: "Our Story", path: "/about/our-story" },
-      { name: "Partnerships & Alliances", path: "/about/partnerships" },
-      { name: "Media Center", path: "/about/media-center" },
+      // { name: "Partnerships & Alliances", path: "/about/partnerships" },
+      // { name: "Media Center", path: "/about/media-center" },
       { name: "Careers", path: "/about/careers" },
     ],
   },
@@ -231,7 +231,9 @@ export default function Footer({ border = false }: { border?: boolean }) {
               Rights Reserved.
             </p>
             <div className="flex flex-col space-y-2">
-              <p className="text-gray-500 text-sm mt-4">Subscribe to our newsletter</p>
+              <p className="text-gray-500 text-sm mt-4">
+                Subscribe to our newsletter
+              </p>
               <div className="flex items-center space-x-2">
                 <input
                   type="email"

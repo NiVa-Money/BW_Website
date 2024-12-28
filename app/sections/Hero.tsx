@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
             and consistency.
           </p>
           <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
-            <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:bg-white hover:text-indigo-600 transition duration-300">
+            <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover: hover:text-indigo-600 transition duration-300">
               Explore the Future of Workforce Now
             </button>
           </div>
@@ -26,7 +26,7 @@ const HeroSection: React.FC = () => {
         {/* Right Section */}
         <div className="relative w-full lg:w-1/2 h-full flex justify-center lg:justify-end flex-wrap gap-6 lg:gap-0">
           {/* Card 1 */}
-          <div className="relative bg-white rounded-xl p-6 shadow-xl w-full sm:w-80 h-auto md:h-48 lg:absolute lg:w-80 lg:h-50 lg:top-0 lg:left-0">
+          <div className="relative  rounded-xl p-6 shadow-xl w-full sm:w-80 h-auto md:h-48 lg:absolute lg:w-80 lg:h-50 lg:top-0 lg:left-0">
             <p className="text-xs font-light text-gray-600">
               User Active Possibility
             </p>
@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="relative bg-white rounded-xl p-6 shadow-lg w-full sm:w-96 h-auto md:h-70 lg:absolute lg:w-96 lg:h-70 lg:top-16 lg:right-0">
+          <div className="relative  rounded-xl p-6 shadow-lg w-full sm:w-96 h-auto md:h-70 lg:absolute lg:w-96 lg:h-70 lg:top-16 lg:right-0">
             <p className="text-xl font-bold text-[#4732BA]">
               <span className="text-4xl tracking-wider">$4.8k</span>{" "}
               <span className="text-xs font-light text-gray-600">/ Daily</span>
@@ -67,7 +67,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="relative bg-white rounded-xl p-6 shadow-xl w-full sm:w-96 h-auto lg:absolute lg:w-96 lg:h-65 lg:top-60 lg:left-0">
+          <div className="relative  rounded-xl p-6 shadow-xl w-full sm:w-96 h-auto lg:absolute lg:w-96 lg:h-65 lg:top-60 lg:left-0">
             <h3 className="text-lg font-semibold text-gray-700">
               Data Analysis
             </h3>

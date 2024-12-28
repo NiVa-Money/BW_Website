@@ -27,7 +27,7 @@ const AboutUsSection: React.FC = () => {
               affordably.
             </p>
             <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
-              <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:bg-white hover:text-indigo-600 transition duration-300">
+              <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover: hover:text-indigo-600 transition duration-300">
                 Learn More
               </button>
             </div>

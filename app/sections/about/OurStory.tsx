@@ -1,14 +1,21 @@
 import Image from "next/image";
 import { type FC } from "react";
-import { CEO, COO, CTO } from "../../../public/assets";
+import { CEO, COO, CTO, OurStory } from "../../../public/assets";
 import AboutUsSection from "../../components/AboutUs";
-
 
 const StoryPage: FC = () => {
   return (
     <div className="w-full">
-      <AboutUsSection/>
-     
+      <AboutUsSection />
+      <div className="lg:w-full flex items-center justify-center">
+        <Image
+          src={OurStory}
+          alt="Story Image"
+          className="w-[1400px] p-6 h-auto"
+          priority
+        />
+      </div>
+
       {/* Story Section */}
       <div id="our-story" className="container mx-auto px-4 py-10">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
@@ -89,7 +96,7 @@ const StoryPage: FC = () => {
                 src={CTO}
                 alt="Mohanraj Tamilrasu"
                 fill
-                className="object-cover"
+                className="object-cover  filter grayscale"
               />
             </div>
             <div>
@@ -118,14 +125,14 @@ const StoryPage: FC = () => {
                 src={COO}
                 alt="Namita Sharma"
                 fill
-                className="object-cover"
+                className="object-cover  filter grayscale"
               />
             </div>
             <div>
               <div className="text-xl text-gray-500 mb-2">03</div>
               <p className="text-lg">
-                <b>Namita Sharma</b> brings over two decades of expertise in customer
-                experience, digital transformation, and e-commerce. Her
+                <b>Namita Sharma</b> brings over two decades of expertise in
+                customer experience, digital transformation, and e-commerce. Her
                 leadership in driving technological innovation has consistently
                 been centered on optimizing workflows and creating value for
                 both businesses and customers. Namita’s passion for leveraging
