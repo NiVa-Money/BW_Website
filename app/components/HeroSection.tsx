@@ -5,7 +5,7 @@ import { avatar2, Products, Solutions } from "../../public/assets";
 import { usePathname } from "next/navigation";
 import Tag from "./Tag";
 
-const HeroSection = () => {
+const Hero = () => {
   const pathname = usePathname();
 
   // Extract conditions for products and solutions to avoid redundancy
@@ -83,4 +83,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

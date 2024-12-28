@@ -83,7 +83,7 @@ const Card: React.FC<CardProps> = ({
   description,
 }) => (
   <div className="flex flex-col w-full max-md:w-full">
-    <div className="flex flex-col grow justify-center items-center items-center px-4 pt-4 pb-8 w-full text-base bg-white rounded-3xl border border-solid border-zinc-100 shadow-md min-h-[300px]">
+    <div className="flex flex-col grow justify-center items-center px-4 pt-4 pb-8 w-full text-base bg-white rounded-3xl border border-solid border-zinc-100 shadow-lg min-h-[300px]">
       <Image
         src={imageSrc}
         alt={imageAlt}
