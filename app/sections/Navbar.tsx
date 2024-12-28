@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Desktop navigation links */}
-            <ul className="hidden md:flex flex-1 items-center justify-end gap-8 whitespace-nowrap">
+            <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-20 whitespace-nowrap">
               {navLinks.map((link) => (
                 <li
                   key={link.href}
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
                 >
                   <Link
                     href={link.href}
-                    className="px-2 py-4 text-black hover:text-[#A221AF] transition-colors"
+                    className="px-2 py-4 text-black text-center hover:text-[#A221AF] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
                         className={`grid ${
                           link.submenu.length <= 6
                             ? "grid-cols-1 w-[350px]"
-                            : "grid-cols-2 w-[640px]"
+                            : "grid-cols-2 w-[600px]"
                         } gap-x-4 gap-y-5`}
                       >
                         {link.submenu.map((submenuItem, index) => (

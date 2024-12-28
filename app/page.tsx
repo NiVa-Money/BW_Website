@@ -3,9 +3,8 @@ import HeroSection from "./sections/Hero";
 import Integrations from "./sections/Integrations";
 import LogoTicker from "./sections/LogoTicker";
 import { Benefits } from "./sections/Benefits";
-import Faqs from "./sections/Faqs";
+// import Faqs from "./sections/Faqs";
 import FeatureSection from "./sections/Features";
-import GetStartedSection from "./sections/GetStartedSection";
 import ScrollToTop from "./components/ScrollToTop";
 import DetailedFeatures from "./sections/DetailedFeatures";
 import TestimonialSection from "./sections/Testimonials";
@@ -14,14 +13,14 @@ export default function Home() {
     <>
       <HeroSection />
       <Benefits />
-      <FeatureSection/>
+      <FeatureSection />
       <DetailedFeatures />
       <LogoTicker />
       <Integrations />
-      <TestimonialSection/>
-      <Faqs/>
-      <GetStartedSection/>
-      <ScrollToTop/>
+      <TestimonialSection />
+      {/* <Faqs /> */}
+
+      <ScrollToTop />
     </>
   );
 }
