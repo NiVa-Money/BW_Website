@@ -5,6 +5,7 @@ import { features } from "../data/data";
 const ProductFeatures: React.FC = () => {
   return (
     <section className="py-10 px-4 sm:px-6 lg:px-8">
+      
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl lg:text-4xl bg-[#B0B7C3]/50 font-semibold text-gray-800 mb-10 text-center py-4 rounded-lg">
         Product Features

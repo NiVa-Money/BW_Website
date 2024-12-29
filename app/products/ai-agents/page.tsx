@@ -1,33 +1,22 @@
-// pages/AiAgentsPage.tsx
-import HeroSection from "../../components/HeroSection";
-import ProductSection from "../../components/ProductCard"; // Assuming it's the same ProductCard component
-import { aiAgentsContent } from "../../data/products";
+import React from "react";
+import ProductSection from "../../components/ProductCard";
+import { products } from "../../data/products";
+import Hero from "../../components/HeroSection";
 
 const AiAgentsPage = () => {
-  // Filter out duplicates based on "pageId" and ensure unique titles
-  const uniquePageData = Array.from(
-    new Map(
-      aiAgentsContent.content
-        .filter((page) => page.pageId === "ai-agents")
-        .map((item) => [item.useCases, item])
-    ).values()
+  // Filter the products data to only include the relevant section for AI Agents.
+  const aiAgentsContent = products.find(
+    (product) => product.name === "Ready-to-Go AI Workforce"
   );
 
   return (
-    <div className="p-10  flex flex-col min-h-screen">
-      {/* Render HeroSection once */}
-      <HeroSection />
-
-      {/* Render ProductSection for each unique content block */}
-      {uniquePageData.map((data, index) => (
-        <ProductSection
-          key={index}
-          pageId={data.pageId} // Now you can pass pageId
-          title={data.title}
-          description={data.description}
-          useCases={data.useCases}
-        />
-      ))}
+    <div className="mt-10">
+      <Hero />
+      {aiAgentsContent ? (
+        <ProductSection data={[aiAgentsContent]} />
+      ) : (
+        <p className="text-center text-gray-500">Content not found.</p>
+      )}
     </div>
   );
 };

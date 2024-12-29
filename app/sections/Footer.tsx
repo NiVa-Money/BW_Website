@@ -27,9 +27,6 @@ const LINKS = [
       { name: "Custom AI Solutions", path: "/products/custom-ai-solutions" },
       { name: "Reports & Analytics", path: "/products/reports-analytics" },
       { name: "BotWot LLM", path: "/products/botwot-llm" },
-      { name: "Channels", path: "/products/channels" },
-      { name: "Integrations", path: "/products/integrations" },
-      { name: "Data Security", path: "/products/data-security" },
     ],
   },
   {
@@ -65,6 +62,9 @@ const LINKS = [
     title: "Resources",
     items: [
       { name: "Case Studies", path: "/resources/use-cases" },
+      { name: "Channels", path: "/resources/channels" },
+      { name: "Integrations", path: "/resources/integrations" },
+      { name: "Data Security", path: "/resources/data-security" },
       { name: "Blogs", path: "/resources/blogs" },
       { name: "Community", path: "/resources/community" },
       { name: "Help Center & FAQ's", path: "/resources/help-center" },

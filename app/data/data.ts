@@ -18,14 +18,14 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import SettingsIcon from "@mui/icons-material/Settings";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import LanguageIcon from "@mui/icons-material/Language";
-import ShareIcon from "@mui/icons-material/Share";
-import LinkIcon from "@mui/icons-material/Link";
-import SecurityIcon from "@mui/icons-material/Security";
+// import ShareIcon from "@mui/icons-material/Share";
+// import LinkIcon from "@mui/icons-material/Link";
+// import SecurityIcon from "@mui/icons-material/Security";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import RecommendIcon from "@mui/icons-material/Recommend";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+// import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 // import RssFeedIcon from "@mui/icons-material/RssFeed";
 // import GroupWorkIcon from "@mui/icons-material/GroupWork";
 // import HelpCenterIcon from "@mui/icons-material/HelpCenter";
@@ -101,24 +101,6 @@ export const navLinks = [
         icon: LanguageIcon,
         description: "Advanced language model.",
       },
-      {
-        label: "Channels",
-        href: "/products/channels",
-        icon: ShareIcon,
-        description: "Omnichannel support.",
-      },
-      {
-        label: "Integrations",
-        href: "/products/integrations",
-        icon: LinkIcon,
-        description: "Seamless third-party sync.",
-      },
-      {
-        label: "Data Security & Privacy",
-        href: "/products/data-security",
-        icon: SecurityIcon,
-        description: "Top-tier data protection.",
-      },
     ],
   },
   {
@@ -179,24 +161,24 @@ export const navLinks = [
         icon: SettingsIcon,
         description: "Streamline processes.",
       },
-      {
-        label: "Task Automation",
-        href: "/solutions/task-automation",
-        icon: SmartToyIcon,
-        description: "Automate repetitive tasks.",
-      },
-      {
-        label: "Survey & Feedback",
-        href: "/solutions/survey-feedback",
-        icon: LibraryBooksIcon,
-        description: "AI-driven surveys.",
-      },
-      {
-        label: "Market Insights",
-        href: "/solutions/market-insights",
-        icon: BarChartIcon,
-        description: "Gain market insights.",
-      },
+      // {
+      //   label: "Task Automation",
+      //   href: "/solutions/task-automation",
+      //   icon: SmartToyIcon,
+      //   description: "Automate repetitive tasks.",
+      // },
+      // {
+      //   label: "Survey & Feedback",
+      //   href: "/solutions/survey-feedback",
+      //   icon: LibraryBooksIcon,
+      //   description: "AI-driven surveys.",
+      // },
+      // {
+      //   label: "Market Insights",
+      //   href: "/solutions/market-insights",
+      //   icon: BarChartIcon,
+      //   description: "Gain market insights.",
+      // },
     ],
   },
   {
@@ -205,11 +187,11 @@ export const navLinks = [
     description: "No Surprises—Just Value",
   },
 
-  {
-    label: "Case Studies",
-    href: "/case-studies",
-    description: "Case Studies",
-  },
+  // {
+  //   label: "Case Studies",
+  //   href: "/case-studies",
+  //   description: "Case Studies",
+  // },
   // {
   //   label: "Resources",
   //   href: "/resources",
