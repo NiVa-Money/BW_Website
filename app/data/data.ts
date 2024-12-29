@@ -12,7 +12,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HistoryIcon from "@mui/icons-material/History";
 import GroupIcon from "@mui/icons-material/Group";
-// import NewspaperIcon from "@mui/icons-material/Newspaper";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
 import WorkIcon from "@mui/icons-material/Work";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
 import SettingsIcon from "@mui/icons-material/Settings";
@@ -26,7 +26,7 @@ import RecommendIcon from "@mui/icons-material/Recommend";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 // import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-// import RssFeedIcon from "@mui/icons-material/RssFeed";
+import RssFeedIcon from "@mui/icons-material/RssFeed";
 // import GroupWorkIcon from "@mui/icons-material/GroupWork";
 // import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 
@@ -59,12 +59,12 @@ export const navLinks = [
         icon: GroupIcon,
         description: "Our collaborations and alliances.",
       },
-      // {
-      //   label: "Media Center",
-      //   href: "/about/media-center",
-      //   icon: NewspaperIcon,
-      //   description: "Stay updated with the latest news.",
-      // },
+      {
+        label: "Media Center",
+        href: "/about/media-center",
+        icon: NewspaperIcon,
+        description: "Stay updated with the latest news.",
+      },
       {
         label: "Careers",
         href: "/about/careers",
@@ -192,30 +192,30 @@ export const navLinks = [
   //   href: "/case-studies",
   //   description: "Case Studies",
   // },
-  // {
-  //   label: "Resources",
-  //   href: "/resources",
-  //   submenu: [
-  //     {
-  //       label: "Blogs",
-  //       href: "/resources/blogs",
-  //       icon: RssFeedIcon,
-  //       description: "Insights from industry leaders.",
-  //     },
-  //     {
-  //       label: "Community",
-  //       href: "/resources/community",
-  //       icon: GroupWorkIcon,
-  //       description: "Join our community of innovators.",
-  //     },
-  //     {
-  //       label: "Help Center & FAQs",
-  //       href: "/resources/help-center",
-  //       icon: HelpCenterIcon,
-  //       description: "Find answers to common questions.",
-  //     },
-  //   ],
-  // },
+  {
+    label: "Resources",
+    href: "/resources",
+    submenu: [
+      {
+        label: "Blogs",
+        href: "/resources/blogs",
+        icon: RssFeedIcon,
+        description: "Insights from industry leaders.",
+      },
+      // {
+      //   label: "Community",
+      //   href: "/resources/community",
+      //   icon: GroupWorkIcon,
+      //   description: "Join our community of innovators.",
+      // },
+      // {
+      //   label: "Help Center & FAQs",
+      //   href: "/resources/help-center",
+      //   icon: HelpCenterIcon,
+      //   description: "Find answers to common questions.",
+      // },
+    ],
+  },
 ];
 
 export const faqs = [

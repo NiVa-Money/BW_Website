@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {/* Desktop navigation links */}
-            <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-20 whitespace-nowrap">
+            <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-6 whitespace-nowrap">
               {navLinks.map((link) => (
                 <li
                   key={link.href}

@@ -26,6 +26,15 @@ import startup8 from "../../public/assets/logo/startup8.svg";
 import meta from "../../public/assets/logo/meta-credits.svg";
 import aws from "../../public/assets/logo/aws-credits.svg";
 
+import crn from "../../public/assets/logo/crn.svg";
+import cxo from "../../public/assets/logo/cxo.svg";
+import digitaltech from "../../public/assets/logo/digitaltech.svg";
+import express from "../../public/assets/logo/express.svg";
+import indianexpress from "../../public/assets/logo/indianexpress.svg";
+import indiantel from "../../public/assets/logo/indiantel.svg";
+import industrial from "../../public/assets/logo/industrial.svg";
+import ndtv from "../../public/assets/logo/ndtv.svg";
+
 import Icon1 from "../../public/assets/icons/Icon1.png";
 import Icon2 from "../../public/assets/icons/Icon2.png";
 import Icon3 from "../../public/assets/icons/Icon3.png";
@@ -108,6 +117,14 @@ export {
   startup8,
   meta,
   aws,
+  cxo,
+  crn,
+  digitaltech,
+  express,
+  indianexpress,
+  indiantel,
+  industrial,
+  ndtv,
   quantumLogo,
   acmeLogo,
   echoValleyLogo,

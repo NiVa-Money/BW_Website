@@ -9,6 +9,14 @@ import {
   startup8,
   meta,
   aws,
+  industrial,
+  crn,
+  cxo,
+  digitaltech,
+  express,
+  indianexpress,
+  indiantel,
+  ndtv,
 } from "../../public/assets";
 
 interface Achievement {
@@ -86,5 +94,40 @@ export const partnerships: Partnership[] = [
     description:
       "We are proud to be an official AWS Partner, utilizing advanced cloud solutions to provide innovative, scalable, and secure experiences. As an AWS Partner, we leverage cutting-edge technology to drive efficiency and foster growth for our clients. Our collaboration ensures that businesses can seamlessly integrate cloud services to enhance their operations and remain competitive in today's dynamic market.",
     image: aws,
+  },
+];
+
+export const mediaCenter = [
+  {
+    src: industrial,
+    text: "Industrial Automation Magazine",
+  },
+  {
+    src: crn,
+    text: "CRN news",
+  },
+  {
+    src: digitaltech,
+    text: "Digital Tech",
+  },
+  {
+    src: express,
+    text: "Express Computer",
+  },
+  {
+    src: indianexpress,
+    text: "Indian Express",
+  },
+  {
+    src: indiantel,
+    text: "Indian Telematics",
+  },
+  {
+    src: ndtv,
+    text: "NDTV",
+  },
+  {
+    src: cxo,
+    text: "CXO Today",
   },
 ];
