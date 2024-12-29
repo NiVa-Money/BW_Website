@@ -51,6 +51,11 @@ import DFeatures1 from "../../public/assets/features/DFeatures1.png";
 import DFeatures2 from "../../public/assets/features/DFeatures2.png";
 import DFeatures3 from "../../public/assets/features/DFeatures3.png";
 import DFeatures4 from "../../public/assets/features/DFeatures4.png";
+
+import blog1 from "../../public/assets/features/blog1.svg";
+import blog2 from "../../public/assets/features/blog2.svg";
+import blog3 from "../../public/assets/features/blog3.svg";
+
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
 import avatar1 from "../../public/assets/avatars/avatar-ashwin-santiago.jpg";
@@ -100,6 +105,9 @@ export {
   DFeatures2,
   DFeatures3,
   DFeatures4,
+  blog1,
+  blog2,
+  blog3,
   Icon1,
   Icon2,
   Icon3,

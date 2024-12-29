@@ -1,5 +1,9 @@
+import Blog from "../../sections/resources/Blog";
+
 const BlogsPage = () => {
-  return <></>;
+  return <>
+  <Blog/>
+  </>;
 };
 
 export default BlogsPage;
