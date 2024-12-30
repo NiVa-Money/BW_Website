@@ -32,7 +32,7 @@ const Blog = () => {
     <div className="flex flex-col">
       <div className="flex flex-col justify-center items-center px-24 pt-20 pb-12">
         <Tag>Latest Blogs</Tag>
-        <h1 className="text-6xl font-bold">Explore Latest Blog Posts</h1>
+        <h1 className="text-6xl mt-4 font-bold">Explore Latest Blog Posts</h1>
         <p className="mt-4">
           Specialising in crafting visually stunning and highly functional user
           interfaces.
