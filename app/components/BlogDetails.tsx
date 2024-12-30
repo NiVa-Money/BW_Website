@@ -17,36 +17,56 @@ interface BlogDetailProps {
 const BlogDetail: React.FC<BlogDetailProps> = ({ blog, onBack }) => {
   if (!blog) return null;
 
-  return (
-    <div className="max-w-4xl mx-auto p-6">
-      <button
-        onClick={onBack}
-        className="flex items-center gap-2 text-blue-600 hover:text-blue-800 mb-8"
-      >
-        <ChevronLeft fontSize="large" />
-        Back to blogs
-      </button>
+  const renderContent = (content: string) => {
+    // Split content by <br/> and map through to render each part
+    const sections = content.split("<br/>").map((section, index) => {
+      const renderBoldText = (text: string) => {
+        const parts = text.split("**");
+        return parts.map((part, i) =>
+          i % 2 === 1 ? <strong key={i}>{part}</strong> : part
+        );
+      };
 
-      <div className="flex flex-col lg:flex-row items-center gap-6 mb-12">
-        <div className="w-full lg:w-1/2 relative aspect-video">
+      return (
+        <div key={`section-${index}`} className="mb-6">
+          <p className="text-gray-600 mb-2">
+            {renderBoldText(section.trim())}
+          </p>
+        </div>
+      );
+    });
+
+    return sections;
+  };
+
+  return (
+    <div className="container mx-auto py-8">
+      <div className="bg-white p-8 rounded-lg shadow-lg">
+        <button
+          onClick={onBack}
+          className="flex items-center text-gray-600 mb-6"
+        >
+          <ChevronLeft />
+          <span>Back to Blogs</span>
+        </button>
+
+        <div className="relative mb-6 h-96">
           <Image
             src={blog.imageSrc}
             alt={blog.title}
             layout="fill"
             objectFit="cover"
-            className="rounded-xl"
+            className="rounded-lg"
           />
         </div>
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl font-semibold">{blog.title}</h1>
-          <p className="text-sm text-gray-500 mt-2">{blog.readTime}</p>
-        </div>
-      </div>
 
-      <div
-        className="prose max-w-none mb-12"
-        dangerouslySetInnerHTML={{ __html: blog.content }}
-      />
+        <div className="text-center mb-6">
+          <h2 className="text-3xl font-bold mb-2">{blog.title}</h2>
+          <p className="text-lg text-gray-500">{blog.readTime}</p>
+        </div>
+
+        <article>{renderContent(blog.content)}</article>
+      </div>
     </div>
   );
 };
