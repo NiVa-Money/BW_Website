@@ -56,6 +56,11 @@ import blog1 from "../../public/assets/features/blog1.svg";
 import blog2 from "../../public/assets/features/blog2.svg";
 import blog3 from "../../public/assets/features/blog3.svg";
 
+import aisolutions from "../../public/assets/products/ai-solutions.svg";
+import aiworkspace from "../../public/assets/products/ai-workspace.svg";
+import botwotllm from "../../public/assets/products/botwot-llm.svg";
+import reports from "../../public/assets/products/reports.svg";
+
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
 import avatar1 from "../../public/assets/avatars/avatar-ashwin-santiago.jpg";
@@ -66,6 +71,7 @@ import CEO from "../../public/assets/avatars/CEO.svg";
 import CTO from "../../public/assets/avatars/CTO.svg";
 import COO from "../../public/assets/avatars/COO.svg";
 import robot from "../../public/assets/avatars/robot.svg";
+import AboutHero from "../../public/assets/avatars/AboutHero.svg";
 
 import india from "../../public/assets/icons/india.svg";
 import uae from "../../public/assets/icons/uae.svg";
@@ -83,6 +89,7 @@ export {
   Solutions,
   OurStory,
   Partnerships,
+  AboutHero,
   india,
   uae,
   nigeria,
@@ -105,6 +112,10 @@ export {
   DFeatures2,
   DFeatures3,
   DFeatures4,
+  aisolutions,
+  aiworkspace,
+  botwotllm,
+  reports,
   blog1,
   blog2,
   blog3,

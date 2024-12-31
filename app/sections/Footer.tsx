@@ -33,7 +33,7 @@ const LINKS = [
     title: "Solutions",
     items: [
       {
-        name: "Reputation Management",
+        name: "Online Reputation Management",
         path: "/solutions/reputation-management",
       },
       {
@@ -42,20 +42,20 @@ const LINKS = [
       },
       { name: "Sales & Leads", path: "/solutions/sales-leads" },
       { name: "Customer Support", path: "/solutions/customer-support" },
-      { name: "Risk Management", path: "/solutions/risk-management" },
+      { name: "Compliance Management", path: "/solutions/risk-management" },
       {
-        name: "Collections & Payments",
+        name: "Payment Recovery ",
         path: "/solutions/collections-payments",
       },
       { name: "Loyalty & Retention", path: "/solutions/loyalty-retention" },
-      { name: "HR Support", path: "/solutions/hr-support" },
+      { name: "HR & Employee Support ", path: "/solutions/hr-support" },
       {
         name: "Workflow Optimization",
         path: "/solutions/workflow-optimization",
       },
-      { name: "Task Automation", path: "/solutions/task-automation" },
-      { name: "Survey & Feedback", path: "/solutions/survey-feedback" },
-      { name: "Market Insights", path: "/solutions/market-insights" },
+      { name: "Productivity Automation", path: "/solutions/productivity-automation" },
+      { name: "Survey & Feedback Collection", path: "/solutions/survey-feedback" },
+   
     ],
   },
   {

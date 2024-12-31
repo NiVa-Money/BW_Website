@@ -1,6 +1,15 @@
+import {
+  aisolutions,
+  aiworkspace,
+  botwotllm,
+  reports,
+} from "../../public/assets";
+
 export const products = [
   {
     name: "Ready-to-Go AI Workforce",
+    subtitle: "Simple to set up. Ready to transform your businesses with AI",
+    img: aiworkspace,
     useCases: [
       {
         title: "Pre-Trained Workforce for Industry-Specific Use Cases",
@@ -40,7 +49,10 @@ export const products = [
     ],
   },
   {
-    name: "Custom AI Solutions for Enterprises",
+    name: "Custom AI Solutions",
+    subtitle:
+      "Designed to adapt. Built to scale. Transform your enterprise with AI that grows with you.",
+    img: aisolutions,
     useCases: [
       {
         title: "Fastest Deployment with Pre-Built AI Workforce",
@@ -81,6 +93,9 @@ export const products = [
   },
   {
     name: "Reports & Analytics",
+    subtitle:
+      "Monitor, analyze, and optimize effortlessly. Ready to elevate your performance with data-driven strategies.",
+    img: reports,
     useCases: [
       {
         title: "Comprehensive Analytics Dashboard",
@@ -111,6 +126,9 @@ export const products = [
   },
   {
     name: "BotWot Proprietary LLM",
+    subtitle:
+      "Custom AI Solutions Built to Evolve, Empower, and Excel Your Enterprise",
+    img: botwotllm,
     useCases: [
       {
         title: "Data Privacy and Compliance",
@@ -183,5 +201,5 @@ export const productUrlMapping = {
   "/products/ai-agents": "Ready-to-Go AI Workforce",
   "/products/custom-ai-solutions": "Custom AI Solutions",
   "/products/reports-analytics": "Reports & Analytics",
-  "/products/botwot-llm": "BotWot LLM",
+  "/products/botwot-llm": "BotWot Proprietary LLM",
 };

@@ -91,12 +91,9 @@ const Navbar: React.FC = () => {
                   onMouseLeave={handleMouseLeave}
                   className="relative"
                 >
-                  <Link
-                    href={link.href}
-                    className="px-2 py-4 text-black text-center hover:text-[#A221AF] transition-colors"
-                  >
+                  <span className="px-2 py-4 text-black text-center hover:text-[#A221AF] transition-colors">
                     {link.label}
-                  </Link>
+                  </span>
 
                   {/* Submenu */}
                   {hoveredTab === link.label && link.submenu && (

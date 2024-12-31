@@ -6,7 +6,7 @@ import Hero from "../../components/HeroSection";
 const CustomAiSolutionsPage = () => {
   // Filter the products data to only include the relevant section for AI Agents.
   const customAISolutionsContent = products.find(
-    (product) => product.name === "Custom AI Solutions for Enterprises"
+    (product) => product.name === "Custom AI Solutions"
   );
 
   return (

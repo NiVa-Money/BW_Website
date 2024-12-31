@@ -2,14 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 import { mediaCenter } from "../../data/about";
-import { Partnerships } from "../../../public/assets";
 
 const MediaCenter: React.FC = () => {
   return (
     <div className="flex flex-col items-center max-w-[1440px] mx-auto px-4">
-      {/* Hero Section */}
-      <HeroSection imageSrc={Partnerships} />
-
+    
       {/* Title Section */}
       <SectionTitle
         title="Media Center"
@@ -45,20 +42,6 @@ const MediaCenter: React.FC = () => {
   );
 };
 
-// Hero Section
-const HeroSection: React.FC<{ imageSrc: string }> = ({ imageSrc }) => (
-  <div className="w-full mt-10">
-    <div className="aspect-auto relative">
-      <Image
-        src={imageSrc}
-        alt="Story Image"
-        className="object-cover"
-        priority
-      />
-    </div>
-  </div>
-);
-
 // Reusable Section Title
 interface SectionTitleProps {
   title: string;
@@ -73,7 +56,7 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 }) => (
   <div className="w-full max-w-[1099px] px-4">
     <div className="text-center">
-      <h1 className="text-4xl mt-10 font-semibold leading-tight text-[#2E2F5F] mb-4">
+      <h1 className="text-4xl mt-20 font-semibold leading-tight text-[#2E2F5F] mb-4">
         {title}
       </h1>
       {subtitle && (

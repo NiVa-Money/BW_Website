@@ -9,7 +9,7 @@ import HeroSection from "../../components/HeroSection";
 // Dynamically import the component
 const SolutionSection = dynamic(() => import("../../components/SolutionCard"));
 
-const MarketInsightsPage: React.FC = () => {
+const ProductivityAutomationPage: React.FC = () => {
   const [isMounted, setIsMounted] = useState(false);
 
   const pathname = usePathname();
@@ -45,4 +45,4 @@ const MarketInsightsPage: React.FC = () => {
   );
 };
 
-export default MarketInsightsPage;
+export default ProductivityAutomationPage;

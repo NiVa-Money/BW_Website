@@ -1,17 +1,26 @@
 import Image from "next/image";
 import { type FC } from "react";
-import { CEO, COO, CTO, OurStory } from "../../../public/assets";
-import AboutUsSection from "../../components/AboutUs";
+import { CEO, COO, CTO, AboutHero } from "../../../public/assets";
 
 const StoryPage: FC = () => {
   return (
     <div className="w-full">
-      <AboutUsSection />
+      <div className=" mt-10 flex p-10 gap-20 lg:w-full items-center justify-center">
+        <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
+          Transforming Complexity <br />
+          to Productivity,
+        </h1>
+        <p className="text-lg mt-4 text-gray-600 mb-6">
+          We take pride in democratizing AI, <br /> empowering businesses of all sizes
+          to <br /> create intelligent customer experiences <br /> effortlessly and
+          affordably.
+        </p>
+      </div>
       <div className="lg:w-full flex items-center justify-center">
         <Image
-          src={OurStory}
+          src={AboutHero}
           alt="Story Image"
-          className="w-[1400px] p-6 h-auto"
+          className="w-[1200px] p-6 h-[600px]"
           priority
         />
       </div>

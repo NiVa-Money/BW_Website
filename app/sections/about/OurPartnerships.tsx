@@ -1,28 +1,17 @@
 import React from "react";
 import Image from "next/image";
 import { achievements, partnerships } from "../../data/about";
-import { Partnerships } from "../../../public/assets";
 
 const OurPartnerships: React.FC = () => {
   return (
     <div className="flex flex-col">
-      {/* Image Section */}
-      <div className="lg:w-full mt-10 flex items-center justify-center">
-        <Image
-          src={Partnerships}
-          alt="Story Image"
-          className="w-full p-6 h-[500px]"
-          priority
-        />
-      </div>
-
       {/* Title Section */}
       <div className="flex overflow-hidden flex-col items-center px-20 pb-10 w-full max-md:px-5 max-md:py-24 max-md:max-w-full">
         <div className="flex flex-col mb-0 w-full max-w-[1099px] max-md:mb-2.5 max-md:max-w-full">
-          <h1 className="text-6xl mb-4 font-bold leading-none text-center text-neutral-800 max-md:max-w-full max-md:text-4xl">
+          <h1 className="text-4xl mt-20 text-center font-semibold leading-tight text-[#2E2F5F] mb-4">
             Partnerships & Alliances
           </h1>
-          <h2 className="self-center text-4xl font-medium text-slate-700 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
+          <h2 className="self-center text-3xl font-medium text-slate-700 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
             Startup Recognition
           </h2>
         </div>
@@ -31,10 +20,7 @@ const OurPartnerships: React.FC = () => {
       {/* Achievements Section */}
       <div className="flex flex-col self-center max-w-full rounded-3xl w-[1324px]">
         <div className="max-md:max-w-full">
-          <h2 className="text-6xl font-medium text-center text-[#2E2F5F] max-md:text-4xl">
-            Achievements
-          </h2>
-          <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 mt-10">
+          <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 mt-6">
             {achievements.map((achievement, index) => (
               <Card
                 key={index}
@@ -49,7 +35,7 @@ const OurPartnerships: React.FC = () => {
 
         {/* Partnerships Section */}
         <div className="mt-24 max-md:mt-10 max-md:max-w-full">
-          <h2 className="text-6xl font-medium text-center text-[#2E2F5F] max-md:text-4xl">
+        <h2 className="text-4xl text-center font-semibold leading-tight text-[#2E2F5F] mb-4">
             Partnerships & Credits
           </h2>
           <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 mt-10 mb-10">

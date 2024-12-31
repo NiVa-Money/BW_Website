@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import { avatar2, Products, Solutions } from "../../public/assets";
+import { avatar2, Solutions } from "../../public/assets";
 import { usePathname } from "next/navigation";
 import Tag from "./Tag";
-import { productUrlMapping } from "../data/products";
+import { products, productUrlMapping } from "../data/products";
 import solutions from "../data/solution";
 
 const Hero = () => {
@@ -27,8 +27,8 @@ const Hero = () => {
     return "";
   };
 
-   // Function to get the label for solution pages
-   const getSolutionLabel = () => {
+  // Function to get the label for solution pages
+  const getSolutionLabel = () => {
     if (isSolutionPage) {
       // Find the solution that matches the current pathname
       const solution = solutions.find((solution) => pathname === solution.href);
@@ -37,16 +37,44 @@ const Hero = () => {
     return "";
   };
 
+  const getProductImage = () => {
+    if (isProductPage) {
+      const pageName = getPageName();
+      const product = products.find((product) => product.name === pageName);
+      return product?.img || null;
+    }
+    return null;
+  };
+
+  const getSubtitle = () => {
+    if (isProductPage) {
+      const pageName = getPageName();
+      const product = products.find((product) => product.name === pageName);
+      return product?.subtitle || "Explore our cutting-edge product!";
+    }
+    return "";
+  };
+
+  const getSlogan = () => {
+    if (isSolutionPage) {
+      const solution = solutions.find((solution) => pathname === solution.href);
+      return solution?.slogan || "Unlock your potential with our solutions!";
+    }
+    return "";
+  };
 
   // Set dynamic content based on the page type
   const pageName = getPageName();
   const solutionLabel = getSolutionLabel();
+  const subtitle = getSubtitle();
+  const slogan = getSlogan();
 
   const imageToDisplay = isProductPage
-    ? Products
+    ? getProductImage()
     : isSolutionPage
     ? Solutions
     : null;
+
   const textToDisplay = isProductPage
     ? "Product Page"
     : isSolutionPage
@@ -62,16 +90,12 @@ const Hero = () => {
         {/* Left Section */}
         <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-20 space-y-6 lg:space-y-8 h-full">
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">
-             {isProductPage ? pageName : solutionLabel}
+            {isProductPage ? pageName : solutionLabel}
           </h1>
-          <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl whitespace-nowrap">
-            Simple to set up. Ready to transform your businesses with AI.
+          <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl line-clamp-2">
+          {isProductPage ? subtitle : slogan}
           </p>
-          <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
-            <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:text-indigo-600 transition duration-300">
-              Learn More
-            </button>
-          </div>
+
           <div className="rounded-lg">
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
@@ -111,9 +135,10 @@ const Hero = () => {
             {imageToDisplay && (
               <Image
                 src={imageToDisplay}
-                alt={isProductPage ? "Products" : "Solutions"}
-                fill
-                className="object-contain"
+                alt={getPageName()}
+                width={1000} // Consistent width
+                height={1000} // Consistent height
+                className="object-contain aspect-square" // Ensures the image remains within bounds
               />
             )}
           </div>

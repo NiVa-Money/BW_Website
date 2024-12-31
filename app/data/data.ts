@@ -25,7 +25,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import RecommendIcon from "@mui/icons-material/Recommend";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-// import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
+import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 // import GroupWorkIcon from "@mui/icons-material/GroupWork";
 // import HelpCenterIcon from "@mui/icons-material/HelpCenter";
@@ -108,7 +108,7 @@ export const navLinks = [
     href: "/solutions",
     submenu: [
       {
-        label: "Reputation Management",
+        label: "Online Reputation Management",
         href: "/solutions/reputation-management",
         icon: ThumbUpIcon,
         description: "Enhance your image.",
@@ -132,13 +132,13 @@ export const navLinks = [
         description: "Exceptional service.",
       },
       {
-        label: "Risk Management",
+        label: "Compliance Management",
         href: "/solutions/risk-management",
         icon: CheckCircleIcon,
         description: "Manage risks & compliance.",
       },
       {
-        label: "Collections & Payments",
+        label: "Payment Recovery ",
         href: "/solutions/collections-payments",
         icon: AttachMoneyIcon,
         description: "Automate payments & collections.",
@@ -150,7 +150,7 @@ export const navLinks = [
         description: "Build customer loyalty.",
       },
       {
-        label: "HR Support",
+        label: "HR & Employee Support ",
         href: "/solutions/hr-support",
         icon: WorkIcon,
         description: "Empower HR with AI.",
@@ -161,18 +161,18 @@ export const navLinks = [
         icon: SettingsIcon,
         description: "Streamline processes.",
       },
-      // {
-      //   label: "Task Automation",
-      //   href: "/solutions/task-automation",
-      //   icon: SmartToyIcon,
-      //   description: "Automate repetitive tasks.",
-      // },
-      // {
-      //   label: "Survey & Feedback",
-      //   href: "/solutions/survey-feedback",
-      //   icon: LibraryBooksIcon,
-      //   description: "AI-driven surveys.",
-      // },
+      {
+        label: "Productivity Automation",
+        href: "/solutions/productivity-automation",
+        icon: SmartToyIcon,
+        description: "Automate repetitive tasks.",
+      },
+      {
+        label: "Survey & Feedback Collection",
+        href: "/solutions/survey-feedback",
+        icon: LibraryBooksIcon,
+        description: "AI-driven surveys.",
+      },
       // {
       //   label: "Market Insights",
       //   href: "/solutions/market-insights",
