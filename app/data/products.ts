@@ -12,39 +12,39 @@ export const products = [
     img: aiworkspace,
     useCases: [
       {
-        title: "Pre-Trained Workforce for Industry-Specific Use Cases",
+        title: "Pre-Trained Workforce for Industry",
         description:
           "BotWot’s Ready-to-Go AI workforce are pre-trained on a variety of industry-specific scenarios. This workforce is tailored to address common challenges across sectors like retail, healthcare, financial services, and more. They’re equipped to handle a wide range of customer interactions right out of the box.",
         example:
-          "Healthcare: An AI Receptionist for patient engagement that schedules appointments, answers health-related questions, and provides appointment reminders.",
+          "Healthcare : An AI Receptionist for patient engagement that schedules appointments, answers health-related questions, and provides appointment reminders.",
       },
       {
         title: "Zero-Code Integration with Your Existing Systems",
         description:
           "These AI employees integrate effortlessly with your existing business systems—whether it's CRM, e-commerce platforms, or help desks—without requiring any coding expertise. This reduces implementation time and accelerates the time-to-value for your business.",
         example:
-          "E-commerce: Quickly connect the AI Sales executive to your online store to automate customer support, answer FAQs, and handle order processing inquiries without the need for additional development resources.",
+          "E-commerce : Quickly connect the AI Sales executive to your online store to automate customer support, answer FAQs, and handle order processing inquiries without the need for additional development resources.",
       },
       {
         title: "24/7 Multilingual Support",
         description:
           "BotWot’s Ready-to-Go AI workforce offers multilingual support, allowing your business to scale globally while offering round-the-clock assistance to customers in their preferred language. This feature enables enhanced customer satisfaction and accessibility.",
         example:
-          "Global Business Expansion: A financial services company can deploy an AI agent to assist users in multiple languages, offering consistent customer service across regions, whether in English, Spanish, Arabic, or French.",
+          "Global Business Expansion : A financial services company can deploy an AI agent to assist users in multiple languages, offering consistent customer service across regions, whether in English, Spanish, Arabic, or French.",
       },
       {
         title: "Seamless Human Handoff",
         description:
           "While the AI workforce efficiently manages routine queries, it detects when human intervention is required and smoothly escalates complex issues to a human employee, ensuring a seamless customer experience at all times.",
         example:
-          "Customer Support: A telecom company uses the agent to manage service-related inquiries like account status and billing. If the AI workforce encounters a complex issue, it automatically transfers the customer to a human representative, ensuring a fast and effective resolution.",
+          "Customer Support : A telecom company uses the agent to manage service-related inquiries like account status and billing. If the AI workforce encounters a complex issue, it automatically transfers the customer to a human representative, ensuring a fast and effective resolution.",
       },
       {
         title: "Continuous Learning and Adaptation",
         description:
           "The Ready-to-Go AI workforce have built-in machine learning capabilities that enable them to continuously learn from customer interactions. Over time, the workforce improve their responses and accuracy, providing even better service as they gather more data.",
         example:
-          "Customer Feedback Loop: An online retailer uses the AI feedback assistant to handle customer feedback after each purchase. The assistant adapts its responses based on frequent queries and customer suggestions, becoming more effective at handling concerns and improving satisfaction over time.",
+          "Customer Feedback Loop : An online retailer uses the AI feedback assistant to handle customer feedback after each purchase. The assistant adapts its responses based on frequent queries and customer suggestions, becoming more effective at handling concerns and improving satisfaction over time.",
       },
     ],
   },

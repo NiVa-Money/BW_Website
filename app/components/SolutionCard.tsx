@@ -8,9 +8,9 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ useCase, example }) => (
-  <div className="p-6 shadow-lg rounded-lg border border-gray-200 bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">
-    <h3 className="text-lg font-semibold mb-2 text-gray-900">{useCase}</h3>
-    <p className="text-base text-gray-700">{example}</p>
+  <div className="p-6 shadow-lg rounded-lg border border-gray-200 bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+    <h2 className="text-2xl font-semibold text-[#2E2F5F]">{useCase}</h2>
+    <p className="text-base mt-2 text-gray-700">{example}</p>
   </div>
 );
 

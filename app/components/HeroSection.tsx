@@ -1,15 +1,13 @@
 "use client";
 import Image from "next/image";
-import { avatar2, Products, Solutions } from "../../public/assets";
 import { usePathname } from "next/navigation";
-import Tag from "./Tag";
 import { products, productUrlMapping } from "../data/products";
+
 import solutions from "../data/solution";
+import { Products, Solutions } from "../../public/assets";
 
 const Hero = () => {
   const pathname = usePathname();
-
-  // Extract conditions for products and solutions
   const isProductPage = pathname.startsWith("/products/");
   const isSolutionPage = pathname.startsWith("/solutions/");
 
@@ -83,57 +81,63 @@ const Hero = () => {
     ? getSolutionImage()
     : null;
 
-  const textToDisplay = isProductPage
-    ? "Product Page"
-    : isSolutionPage
-    ? "Solution Page"
-    : "";
+  // const highlights = [
+  //   {
+  //     title: "Pre-Trained for Industry Use Cases",
+  //     description:
+  //       "AI workforce tailored for healthcare, finance, and retail challenges—no setup needed!",
+  //   },
+  //   {
+  //     title: "24/7 Global Availability",
+  //     description:
+  //       "Multilingual, always-on support to scale your customer service globally.",
+  //   },
+  //   {
+  //     title: "Effortless Integration",
+  //     description:
+  //       "Plug-and-play compatibility with CRMs, ERPs, and e-commerce platforms.",
+  //   },
+  // ];
+
+  // // Auto-slide carousel every 3 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentSlide((prevSlide) =>
+  //       prevSlide === highlights.length - 1 ? 0 : prevSlide + 1
+  //     );
+  //   }, 3000); // Change slide every 3 seconds
+
+  //   return () => clearInterval(interval); // Cleanup on component unmount
+  // }, [highlights.length]);
+
+  // Scroll to the "Explore More UseCases" button on click
+  const handleExploreButtonClick = () => {
+    const exploreSection = document.getElementById("explore-section");
+    if (exploreSection) {
+      exploreSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
-    <section className="relative py-18 px-6 lg:px-8 overflow-hidden w-full mb-0">
-      <div className="flex justify-center items-center h-full">
-        <Tag className="text-center mt-10">{textToDisplay}</Tag>
-      </div>
+    <section className="relative py-2 px-6 lg:px-8 w-full mb-0">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch">
         {/* Left Section */}
-        <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-20 space-y-6 lg:space-y-8 h-full">
-          <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">
+        <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-20 space-y-8">
+          <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
             {isProductPage ? pageName : solutionLabel}
           </h1>
-          <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl line-clamp-2">
+          <p className="text-lg lg:text-xl font-light">
             {isProductPage ? subtitle : slogan}
           </p>
 
-          <div className="rounded-lg">
-            <div className="flex gap-1">
-              {[...Array(5)].map((_, i) => (
-                <svg
-                  key={i}
-                  className="w-6 h-6 text-yellow-400"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                </svg>
-              ))}
-            </div>
-            <div className="font-semibold mt-2">Best AI agents in market!</div>
-            <p className="text-zinc-700 mt-1">
-              Botwot&apos;s recommendation engine has been a game-changer for
-              our platform. It&apos;s like having a personal beauty assistant
-              that knows our users better than we do.
-            </p>
-            <div className="flex items-center gap-2 mt-2">
-              <Image
-                loading="lazy"
-                src={avatar2}
-                alt="Profile Picture"
-                width={26}
-                height={26}
-                className="object-contain shrink-0 self-start rounded-full aspect-square w-[26px]"
-              />
-              <span>Arthi Benjaram</span>
-            </div>
+          {/* Call to Action */}
+          <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
+            <button
+              className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:text-indigo-600 hover:bg-white transition duration-300"
+              onClick={handleExploreButtonClick}
+            >
+              Explore More UseCases
+            </button>
           </div>
         </div>
 
@@ -151,6 +155,11 @@ const Hero = () => {
             )}
           </div>
         </div>
+      </div>
+
+      {/* The explore section */}
+      <div id="explore-section" className="mt-12">
+        {/* Your content for the explore section goes here */}
       </div>
     </section>
   );

@@ -1,7 +1,15 @@
 import {
+  DFeatures1,
+  DFeatures2,
+  DFeatures3,
+  DFeatures4,
   Icon1,
   Icon2,
   Icon3,
+  Icon4,
+  Icon5,
+  Icon6,
+  Icon7,
   intellirecog,
   multiagent,
   nocode,
@@ -364,6 +372,113 @@ export const features = [
     imgSrc: scalable,
   },
 ];
+
+export const detailedFeatures = [
+    {
+      icon: Icon4,
+      title: "Real Time Sentiment Analysis",
+      description:
+        "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
+      bgColor: "#77C9F1",
+      textColor: "#77C9F1",
+      image: DFeatures1,
+      cards: [
+        {
+          title: "Customer Emotion Detection",
+          description:
+            "Instantly identify customer emotions—whether frustration, delight, or confusion—to personalize interactions and enhance satisfaction.",
+        },
+        {
+          title: " Frustration-Triggered Solutions",
+          description:
+            "Proactively address customer frustration by detecting negative sentiment early and offering targeted solutions to turn challenges into opportunities.",
+        },
+        {
+          title: "Empathy-Powered Engagement",
+          description:
+            "Equip your AI workforce to respond with care and understanding, ensuring every interaction feels human and builds trust.",
+        },
+      ],
+    },
+    {
+      icon: Icon5,
+      title: "Vision Intelligence",
+      description:
+        "Unlock the Power of Visual Inputs for Smarter Interactions Enhance customer engagement by seamlessly integrating visual data into the conversation.",
+      bgColor: "#402282",
+      textColor: "#402282",
+      image: DFeatures2,
+      cards: [
+        {
+          title: " Visual Product Matching",
+          description:
+            "Let customers upload images to receive precise product suggestions, simplifying decision-making and boosting purchase confidence.",
+        },
+        {
+          title: "Photo-Based Issue Resolution",
+          description:
+            "Quickly resolve customer complaints by analyzing images of damaged products or issues, streamlining the support process.",
+        },
+        {
+          title: "Visual How-To Guides",
+          description:
+            "Deliver interactive tutorials using images or videos, empowering customers to easily set up or use your products.",
+        },
+      ],
+    },
+    {
+      icon: Icon6,
+      title: "Adaptive AI Recommendations",
+      description:
+        "Tailored Experiences That Evolve with Every Interaction BotWot’s AI workforce delivers dynamic, personalized suggestions that enhance every stage of the customer journey.",
+      bgColor: "#A221AF",
+      textColor: "#A221AF",
+      image: DFeatures3,
+      cards: [
+        {
+          title: "Hyper-Personalized Shopping",
+          description:
+            "Offer product recommendations tailored in real time to the customer’s unique preferences, creating memorable shopping experiences.",
+        },
+        {
+          title: "Behavioral-Based Discovery",
+          description:
+            "Adapt recommendations on the fly as user behavior evolves, making every interaction feel fresh and engaging.",
+        },
+        {
+          title: "Evolving Intelligence",
+          description:
+            "With each interaction, BotWot learns and refines its suggestions, ensuring they are consistently accurate, relevant, and valuable.",
+        },
+      ],
+    },
+    {
+      icon: Icon7,
+      title: "Emotional Intelligence AI",
+      description:
+        "Deliver Empathy at Scale with Emotion-Aware AI Detect, understand, and adapt to customer emotions to foster meaningful relationships.",
+      bgColor: "#2E2F5F",
+      textColor: "#2E2F5F",
+      image: DFeatures4,
+      cards: [
+        {
+          title: "Emotion Recognition in Action",
+          description:
+            "Identify emotional cues during conversations, allowing your AI workforce to respond with genuine care and attentiveness.",
+        },
+        {
+          title: "Empathetic Conversations That Connect",
+          description:
+            "Humanize customer interactions with emotional intelligence, ensuring every response reflects understanding and support.",
+        },
+        {
+          title: "Adaptive Tone and Response",
+          description:
+            "Recognize shifts in customer sentiment and dynamically adjust tone and messaging to create more compassionate, satisfying experiences.",
+        },
+      ],
+    },
+  ];
 
 export const testimonials = [
   {

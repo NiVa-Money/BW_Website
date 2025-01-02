@@ -5,16 +5,16 @@ const ProductCard = ({
 }: {
   useCases: { title: string; description: string; example?: string }[];
 }) => (
-  <div className="rounded-lg p-8 flex flex-col gap-4">
+  <div className="rounded-lg flex flex-col max-w-full gap-4">
     <div className="grid grid-cols-2 gap-6">
       {useCases.map((useCase, index) => (
         <div key={index} className="p-4 bg-gray-50 rounded-lg">
-          <h4 className="text-lg font-semibold text-[#2E2F5F]">
+          <h1 className=" text-2xl font-semibold text-[#2E2F5F]">
             {useCase.title}
-          </h4>
-          <p className="text-sm text-black">{useCase.description}</p>
+          </h1>
+          <p className="text-lg text-black">{useCase.description}</p>
           {useCase.example && (
-            <p className="text-sm text-[#49454F] italic mt-1">
+            <p className="text-base text-[#49454F] italic mt-1">
              <b>Example:</b>  {useCase.example}
             </p>
           )}
@@ -33,7 +33,7 @@ const ProductSection = ({
   }[];
 }) => {
   return (
-    <div className="max-w-7xl mx-auto px-8 py-10">
+    <div className="max-w-7xl mt-20 mx-auto px-8 py-10">
       {data.map((item, index) => (
         <div key={index} className="mb-5">
           <ProductCard useCases={item.useCases} />

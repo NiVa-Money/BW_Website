@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const FullScreenGradientAnimation: React.FC = () => {
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
+    <div className="absolute inset-0 -z-10 overflow-hidden ">
       {/* Top Right Circle */}
       <motion.div
         className="absolute top-0 right-0 -z-10 m-auto h-[400px] w-[400px] rounded-full bg-[#387D8C]/40 blur-[150px]"
