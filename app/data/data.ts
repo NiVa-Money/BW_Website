@@ -2,11 +2,11 @@ import {
   Icon1,
   Icon2,
   Icon3,
-  PFeatures1,
-  PFeatures2,
-  PFeatures3,
-  PFeatures4,
-  PFeatures5,
+  intellirecog,
+  multiagent,
+  nocode,
+  robust,
+  scalable,
 } from "../../public/assets";
 import InfoIcon from "@mui/icons-material/Info";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -333,35 +333,35 @@ export const features = [
     description:
       "Enable your AI workforce to work together like a well-coordinated team. BotWot’s Multi-Agent Orchestrator ensures seamless collaboration among specialized AI workforce, handling complex workflows and delivering unified, efficient outcomes across all touchpoints.",
     bgColor: "bg-[#77C9F1]",
-    imgSrc: PFeatures1,
+    imgSrc: multiagent,
   },
   {
     title: "Intelligent Intent Recognition",
     description:
       "BotWot’s AI workforce goes beyond simple queries by deeply understanding customer intent. From straightforward requests to intricate challenges, it delivers precise, actionable responses, making every interaction intelligent and impactful.",
     bgColor: "bg-[#A221AF]/65",
-    imgSrc: PFeatures2,
+    imgSrc: intellirecog,
   },
   {
     title: "Robust Context Management",
     description:
       "With BotWot, your AI workforce remembers every interaction, enabling continuity and personalization. Whether solving issues or closing deals, it leverages context to ensure each response is relevant, meaningful, and aligned with past conversations.",
     bgColor: "bg-[#402282]/65",
-    imgSrc: PFeatures3,
+    imgSrc: robust,
   },
   {
     title: "No-Code Customization",
     description:
       "Shape your AI workforce to fit your business needs—no coding required. BotWot’s no-code platform lets you easily customize workflows, dialogue, and decision-making processes, empowering you to deliver tailored solutions with minimal effort.",
     bgColor: "bg-[#2E2F5F]/65",
-    imgSrc: PFeatures4,
+    imgSrc: nocode,
   },
   {
     title: "Scalable Architecture",
     description:
       "Scale your AI workforce effortlessly as your business grows. Whether managing millions of interactions or integrating new processes, BotWot’s robust architecture ensures your digital workforce evolves with your needs, always staying one step ahead.",
     bgColor: "bg-[#A6FED6]/65",
-    imgSrc: PFeatures5,
+    imgSrc: scalable,
   },
 ];
 

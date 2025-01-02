@@ -42,11 +42,11 @@ import Icon4 from "../../public/assets/icons/Icon4.png";
 import Icon5 from "../../public/assets/icons/Icon5.png";
 import Icon6 from "../../public/assets/icons/Icon6.png";
 import Icon7 from "../../public/assets/icons/Icon7.png";
-import PFeatures1 from "../../public/assets/features/PFeatures1.png";
-import PFeatures2 from "../../public/assets/features/PFeatures2.png";
-import PFeatures3 from "../../public/assets/features/PFeatures3.png";
-import PFeatures4 from "../../public/assets/features/PFeatures4.png";
-import PFeatures5 from "../../public/assets/features/PFeatures5.png";
+import multiagent from "../../public/assets/features/multi-agent.svg";
+import intellirecog from "../../public/assets/features/intelli-recog.svg";
+import robust from "../../public/assets/features/robust.svg";
+import nocode from "../../public/assets/features/no-code.svg";
+import scalable from "../../public/assets/features/scalable-archi.svg";
 import DFeatures1 from "../../public/assets/features/DFeatures1.png";
 import DFeatures2 from "../../public/assets/features/DFeatures2.png";
 import DFeatures3 from "../../public/assets/features/DFeatures3.png";
@@ -115,11 +115,11 @@ export {
   CTO,
   CEO,
   COO,
-  PFeatures1,
-  PFeatures2,
-  PFeatures3,
-  PFeatures4,
-  PFeatures5,
+  multiagent,
+  intellirecog,
+  robust,
+  nocode,
+  scalable,
   DFeatures1,
   DFeatures2,
   DFeatures3,
