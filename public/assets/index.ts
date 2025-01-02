@@ -61,6 +61,18 @@ import aiworkspace from "../../public/assets/products/ai-workspace.svg";
 import botwotllm from "../../public/assets/products/botwot-llm.svg";
 import reports from "../../public/assets/products/reports.svg";
 
+import compmanage from "../../public/assets/solutions/comp-manage.svg";
+import customersupport from "../../public/assets/solutions/customer-support.svg";
+import feedback from "../../public/assets/solutions/feedback.svg";
+import hrsupport from "../../public/assets/solutions/hr-support.svg";
+import loyalty from "../../public/assets/solutions/loyalty.svg";
+import payment from "../../public/assets/solutions/payment.svg";
+import prodautomation from "../../public/assets/solutions/prod-automation.svg";
+import recommendengine from "../../public/assets/solutions/recommend-engine.svg";
+import repmanage from "../../public/assets/solutions/rep-manage.svg";
+import saleslead from "../../public/assets/solutions/sales-lead.svg";
+import workflowopt from "../../public/assets/solutions/workflow-opt.svg";
+
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
 import avatar1 from "../../public/assets/avatars/avatar-ashwin-santiago.jpg";
@@ -158,4 +170,15 @@ export {
   relumeIcon,
   framerIcon,
   githubIcon,
+  compmanage,
+  customersupport,
+  feedback,
+  hrsupport,
+  loyalty,
+  payment,
+  prodautomation,
+  recommendengine,
+  repmanage,
+  saleslead,
+  workflowopt,
 };

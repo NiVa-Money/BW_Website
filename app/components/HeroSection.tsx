@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { avatar2, Solutions } from "../../public/assets";
+import { avatar2, Products, Solutions } from "../../public/assets";
 import { usePathname } from "next/navigation";
 import Tag from "./Tag";
 import { products, productUrlMapping } from "../data/products";
@@ -41,7 +41,15 @@ const Hero = () => {
     if (isProductPage) {
       const pageName = getPageName();
       const product = products.find((product) => product.name === pageName);
-      return product?.img || null;
+      return product?.img || Products;
+    }
+    return null;
+  };
+
+  const getSolutionImage = () => {
+    if (isSolutionPage) {
+      const solution = solutions.find((solution) => pathname === solution.href);
+      return solution?.img || Solutions; // Fallback to default image
     }
     return null;
   };
@@ -72,7 +80,7 @@ const Hero = () => {
   const imageToDisplay = isProductPage
     ? getProductImage()
     : isSolutionPage
-    ? Solutions
+    ? getSolutionImage()
     : null;
 
   const textToDisplay = isProductPage
@@ -93,7 +101,7 @@ const Hero = () => {
             {isProductPage ? pageName : solutionLabel}
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-light max-w-2xl line-clamp-2">
-          {isProductPage ? subtitle : slogan}
+            {isProductPage ? subtitle : slogan}
           </p>
 
           <div className="rounded-lg">
@@ -131,7 +139,7 @@ const Hero = () => {
 
         {/* Right Section */}
         <div className="lg:w-2/3 flex">
-          <div className="relative w-full h-[30rem] sm:h-[36rem] lg:h-[35rem]">
+          <div className="relative w-full ml-24 mt-10 h-[30rem] sm:h-[36rem] lg:h-[35rem]">
             {imageToDisplay && (
               <Image
                 src={imageToDisplay}

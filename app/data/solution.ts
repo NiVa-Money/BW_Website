@@ -1,7 +1,22 @@
+import {
+  compmanage,
+  customersupport,
+  feedback,
+  hrsupport,
+  loyalty,
+  payment,
+  prodautomation,
+  recommendengine,
+  repmanage,
+  saleslead,
+  workflowopt,
+} from "../../public/assets";
+
 export const solutions = [
   {
     href: "/solutions/reputation-management",
     label: "Online Reputation Management",
+    img: repmanage,
     slogan: "Manage Reputation, Strengthen Trust.",
     details: [
       {
@@ -34,6 +49,7 @@ export const solutions = [
   {
     href: "/solutions/recommendation-engine",
     label: "Recommendation Engine",
+    img: recommendengine,
     slogan: "Smarter Recommendations, Increased Sales.",
     details: [
       {
@@ -66,6 +82,7 @@ export const solutions = [
   {
     href: "/solutions/sales-leads",
     label: "Sales & Leads",
+    img: saleslead,
     slogan: "Turn Leads Into Loyal Customers.",
     details: [
       {
@@ -98,6 +115,7 @@ export const solutions = [
   {
     href: "/solutions/customer-support",
     label: "Customer Support",
+    img: customersupport,
     slogan: "Faster Support, Happier Customers.",
     details: [
       {
@@ -130,6 +148,7 @@ export const solutions = [
   {
     href: "/solutions/risk-management",
     label: "Compliance Management",
+    img: compmanage,
     slogan: "Stay Compliant, Mitigate Risks.",
     details: [
       {
@@ -162,6 +181,7 @@ export const solutions = [
   {
     href: "/solutions/collections-payments",
     label: "Payment Recovery ",
+    img: payment,
     slogan: "Efficient Payments, Reduced Collections Time.",
     details: [
       {
@@ -194,6 +214,7 @@ export const solutions = [
   {
     href: "/solutions/loyalty-retention",
     label: "Loyalty & Retention",
+    img: loyalty,
     slogan: "Boost Loyalty, Retain Customers.",
     details: [
       {
@@ -226,6 +247,7 @@ export const solutions = [
   {
     href: "/solutions/hr-support",
     label: "HR & Employee Support ",
+    img: hrsupport,
     slogan: "Streamline HR, Enhance Employee Engagement.",
     details: [
       {
@@ -258,6 +280,7 @@ export const solutions = [
   {
     href: "/solutions/workflow-optimization",
     label: "Workflow Optimization",
+    img: workflowopt,
     slogan: "Optimize Workflows, Boost Productivity.",
     details: [
       {
@@ -290,6 +313,7 @@ export const solutions = [
   {
     href: "/solutions/productivity-automation",
     label: "Productivity Automation",
+    img: prodautomation,
     slogan: "Streamline Tasks, Maximize Productivity.",
     details: [
       {
@@ -322,6 +346,7 @@ export const solutions = [
   {
     href: "/solutions/survey-feedback",
     label: "Survey & Feedback Collection",
+    img: feedback,
     slogan: "Listen Better, Grow Smarter.",
     details: [
       {
