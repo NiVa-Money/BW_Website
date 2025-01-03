@@ -384,7 +384,7 @@ export const detailedFeatures = [
       title: "Real Time Sentiment Analysis",
       description:
         "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
-      bgColor: "#387D8C",
+      bgColor: "#A5FFD6",
       textColor: "#387D8C",
       image: dfeatures1,
       cards: [

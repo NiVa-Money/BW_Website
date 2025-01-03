@@ -92,7 +92,6 @@ export default function Footer({ border = false }) {
                 className="object-contain"
                 priority
               />
-              <span className="text-lg font-bold text-black">BotWot</span>
             </div>
           </div>
 
@@ -209,9 +208,9 @@ export default function Footer({ border = false }) {
               <input
                 type="email"
                 placeholder="Your Email"
-                className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
+                className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:[#387D8C]"
               />
-              <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
+              <button className="bg-[#387D8C] text-white px-4 py-2 rounded-md hover:bg-black">
                 Sign Up
               </button>
             </div>

@@ -1,4 +1,4 @@
-import logoImage from "../../public/assets/logo/Botwot.png";
+import logoImage from "../../public/assets/logo/botwot.svg";
 import figmaIcon from "../../public/assets/logo/figma-logo.svg";
 import notionIcon from "../../public/assets/logo/notion-logo.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";

@@ -23,20 +23,19 @@ const Navbar: React.FC = () => {
     <>
       <header className="fixed top-2 z-30 w-full md:top-6">
         <div className="mx-auto max-w-8xl lg:px-8 px-6 sm:px-6">
-          <div className="relative flex h-20 items-center rounded-2xl /50 px-3 shadow-lg shadow-black/30 backdrop-blur-sm before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
+          <div className="relative flex h-24 items-center rounded-2xl /50 px-3 shadow-lg shadow-black/30 backdrop-blur-lg before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
             {/* Site branding */}
             <div className="flex flex-1 items-center">
-              <Link href="/" className="flex-shrink-0">
+              <Link href="/" className="px-10 flex-shrink-0">
                 <Image
                   src={logoImage}
                   alt="BotWot Logo"
-                  width={121}
-                  height={54}
+                  width={80}
+                  height={10}
                   className="object-contain"
                   priority
                 />
               </Link>
-              <span className="text-lg font-bold text-black">BotWot</span>
             </div>
 
             {/* Mobile menu toggle */}
@@ -140,7 +139,7 @@ const Navbar: React.FC = () => {
               <li>
                 <Link
                   href="/signin"
-                  className="px-6 py-2 border-2 text-black border-[#A221AF] rounded-full hover:bg-purple-50 hover:text-black transition-colors whitespace-nowrap"
+                  className="px-6 py-2 border-2 text-black border-[#387D8C] rounded-full hover:bg-green-100 hover:text-black transition-colors whitespace-nowrap"
                 >
                   Sign in
                 </Link>
