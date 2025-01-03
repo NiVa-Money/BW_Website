@@ -76,7 +76,8 @@ const DetailedFeatures: React.FC = () => {
           {/* Section 3 - Cards and Image */}
           <div className="flex flex-col md:flex-row gap-10 justify-center mt-6">
             {/* Left Column (Cards) */}
-            <div className="flex flex-col gap-4 text-base w-full transition-all duration-300 ease-in-out hover:border-[${bgColor}] hover:shadow-[0px 0px 20px 0px ${bgColor}] max-w-[342px] flex-1">
+
+            <div className="flex flex-col gap-4 text-base w-full transition-all duration-300 ease-in-out   hover:border-[${bgColor}] hover:shadow-[0px 0px 20px 0px ${bgColor}] max-w-[342px] flex-1">
               {feature.cards.map((card, idx) => (
                 <FeatureCard
                   key={idx}

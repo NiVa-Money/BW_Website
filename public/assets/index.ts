@@ -92,10 +92,12 @@ import Products from "../../public/assets/icons/products.svg";
 import Solutions from "../../public/assets/icons/solutions.svg";
 import OurStory from "../../public/assets/charts/StoryImage.svg";
 import Partnerships from "../../public/assets/charts/partnerships.svg";
+import animation from "../../public/assets/charts/animation.gif";
 import AboutUs from "../../public/assets/icons/AboutUs.svg";
 
 export {
   logoImage,
+  animation,
   AboutUs,
   Products,
   Solutions,

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { logoImage } from "../../public/assets";
-
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -15,8 +14,6 @@ const LINKS = [
       { name: "Introduction", path: "/about/introduction" },
       { name: "Our Value Proposition", path: "/about/value-proposition" },
       { name: "Our Story", path: "/about/our-story" },
-      // { name: "Partnerships & Alliances", path: "/about/partnerships" },
-      // { name: "Media Center", path: "/about/media-center" },
       { name: "Careers", path: "/about/careers" },
     ],
   },
@@ -43,19 +40,21 @@ const LINKS = [
       { name: "Sales & Leads", path: "/solutions/sales-leads" },
       { name: "Customer Support", path: "/solutions/customer-support" },
       { name: "Compliance Management", path: "/solutions/risk-management" },
-      {
-        name: "Payment Recovery ",
-        path: "/solutions/collections-payments",
-      },
+      { name: "Payment Recovery", path: "/solutions/collections-payments" },
       { name: "Loyalty & Retention", path: "/solutions/loyalty-retention" },
-      { name: "HR & Employee Support ", path: "/solutions/hr-support" },
+      { name: "HR & Employee Support", path: "/solutions/hr-support" },
       {
         name: "Workflow Optimization",
         path: "/solutions/workflow-optimization",
       },
-      { name: "Productivity Automation", path: "/solutions/productivity-automation" },
-      { name: "Survey & Feedback Collection", path: "/solutions/survey-feedback" },
-   
+      {
+        name: "Productivity Automation",
+        path: "/solutions/productivity-automation",
+      },
+      {
+        name: "Survey & Feedback Collection",
+        path: "/solutions/survey-feedback",
+      },
     ],
   },
   {
@@ -73,45 +72,40 @@ const LINKS = [
   },
 ];
 
-export default function Footer({ border = false }: { border?: boolean }) {
+export default function Footer({ border = false }) {
   return (
-    <footer>
+    <footer className="bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div
-          className={`grid gap-10 py-8 sm:grid-cols-12 md:py-12 ${
-            border
-              ? "border-t [border-image:linear-gradient(to_right,transparent,theme(colors.slate.200),transparent)1]"
-              : ""
+          className={`grid grid-cols-1 md:grid-cols-5 gap-14 py-8 md:py-12 ${
+            border ? "border-t border-slate-200" : ""
           }`}
         >
           {/* Logo and Name */}
-          <div className="space-y-2 sm:col-span-12 lg:col-span-4">
-            <Image
-              src={logoImage}
-              alt="BotWot Logo"
-              width={121}
-              height={54}
-              className="object-contain"
-              priority
-            />
-            <span className="text-lg text-center justify-center items-center font-bold text-black">
-              BotWot
-            </span>
+          <div className="col-span-1">
+            <div className="flex flex-col items-start space-y-2">
+              <Image
+                src={logoImage}
+                alt="BotWot Logo"
+                width={121}
+                height={54}
+                className="object-contain"
+                priority
+              />
+              <span className="text-lg font-bold text-black">BotWot</span>
+            </div>
           </div>
 
           {/* Dynamic Links */}
           {LINKS.map((section, index) => (
-            <div
-              key={index}
-              className="space-y-2 sm:col-span-6 md:col-span-3 lg:col-span-2"
-            >
-              <h3 className="text-sm font-medium">{section.title}</h3>
-              <ul className="space-y-2 text-sm">
+            <div key={index} className="col-span-1">
+              <h3 className="text-sm font-medium mb-4">{section.title}</h3>
+              <ul className="space-y-3">
                 {section.items.map((item, idx) => (
                   <li key={idx}>
                     <Link
                       href={item.path}
-                      className="text-gray-600 transition hover:text-gray-900"
+                      className="text-sm text-gray-600 whitespace-nowrap hover:text-gray-900 block"
                     >
                       {item.name}
                     </Link>
@@ -123,127 +117,103 @@ export default function Footer({ border = false }: { border?: boolean }) {
         </div>
 
         {/* Line separator */}
-        <div className="my-2 border-t w-full border-gray-400" />
+        <div className="border-t border-gray-200 my-8" />
 
-        <div className="container mx-auto px-4">
-          {/* Contact Details */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            {/* India */}
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2" role="img" aria-label="India Flag">
-                  🇮🇳
-                </span>{" "}
-                India
-              </h3>
-              <p>Purpleant Technologies Pvt Ltd</p>
-              <p>
-                F-102, Microtek Greenberg, Sector 86, Gurugram, Haryana, India
-              </p>
-              <p>+91 9582474246</p>
-              <p className="text-blue-500">info@botwot.io</p>
-            </div>
-
-            {/* UAE */}
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2" role="img" aria-label="UAE Flag">
-                  🇦🇪
-                </span>{" "}
-                UAE
-              </h3>
-              <p>Purpleant Technologies FZ-LLC</p>
-              <p>
-                Premise no. HD07C, In5 Tech, Dubai Internet City, Dubai, UAE
-              </p>
-              <p>+971 501178803</p>
-              <p className="text-blue-500">info@botwot.io</p>
-            </div>
-
-            {/* Nigeria */}
-            <div className="space-y-2">
-              <h3 className="text-lg font-semibold flex items-center">
-                <span className="mr-2" role="img" aria-label="Nigeria Flag">
-                  🇳🇬
-                </span>{" "}
-                Nigeria
-              </h3>
-              <p>Purpleant Tech Services Limited</p>
-              <p>11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
-              <p>+234 (703) 789-6529</p>
-              <p className="text-blue-500">info@botwot.io</p>
-            </div>
-          </div>
-
-          {/* Social Icons and Phone Numbers */}
-          <div className="flex flex-col md:flex-row justify-between items-center border-t pt-6">
-            {/* Social Icons */}
-            <div className="flex space-x-4 mb-4 md:mb-0">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="text-gray-600 hover:text-blue-600"
-              >
-                <FacebookIcon fontSize="medium" />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="text-gray-600 hover:text-blue-600"
-              >
-                <LinkedInIcon fontSize="medium" />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="text-gray-600 hover:text-blue-600"
-              >
-                <TwitterIcon fontSize="medium" />
-              </a>
-              <a
-                href="#"
-                aria-label="YouTube"
-                className="text-gray-600 hover:text-blue-600"
-              >
-                <YouTubeIcon fontSize="medium" />
-              </a>
-              <a
-                href="#"
-                aria-label="Instagram"
-                className="text-gray-600 hover:text-blue-600"
-              >
-                <InstagramIcon fontSize="medium" />
-              </a>
-            </div>
-
-            {/* Phone Numbers */}
-            <div className="text-gray-600 text-sm text-center md:text-right">
-              <p>India : +91 9582474246</p>
-              <p>UAE : +971 501178803</p>
-              <p>Nigeria : +234 (703) 789-6529</p>
-            </div>
-          </div>
-
-          {/* Newsletter */}
-          <div className="mt-8 flex flex-col md:flex-row mb-10 items-center justify-between border-t pt-6">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              2024 &copy; Purpleant Technologies Private Limited, Inc. All
-              Rights Reserved.
+        {/* Contact Details */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+          {/* India */}
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold flex items-center">
+              <span className="mr-2" role="img" aria-label="India Flag">
+                🇮🇳
+              </span>{" "}
+              India
+            </h3>
+            <p>Purpleant Technologies Pvt Ltd</p>
+            <p>
+              F-102, Microtek Greenberg, Sector 86, Gurugram, Haryana, India
             </p>
-            <div className="flex flex-col space-y-2">
-              <p className="text-gray-500 text-sm mt-4">
-                Subscribe to our newsletter
-              </p>
-              <div className="flex items-center space-x-2">
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
-                />
-                <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
-                  Sign Up
-                </button>
-              </div>
+            <p>+91 9582474246</p>
+            <p className="text-blue-500">info@botwot.io</p>
+          </div>
+
+          {/* UAE */}
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold flex items-center">
+              <span className="mr-2" role="img" aria-label="UAE Flag">
+                🇦🇪
+              </span>{" "}
+              UAE
+            </h3>
+            <p>Purpleant Technologies FZ-LLC</p>
+            <p>Premise no. HD07C, In5 Tech, Dubai Internet City, Dubai, UAE</p>
+            <p>+971 501178803</p>
+            <p className="text-blue-500">info@botwot.io</p>
+          </div>
+
+          {/* Nigeria */}
+          <div className="space-y-2">
+            <h3 className="text-lg font-semibold flex items-center">
+              <span className="mr-2" role="img" aria-label="Nigeria Flag">
+                🇳🇬
+              </span>{" "}
+              Nigeria
+            </h3>
+            <p>Purpleant Tech Services Limited</p>
+            <p>11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
+            <p>+234 (703) 789-6529</p>
+            <p className="text-blue-500">info@botwot.io</p>
+          </div>
+        </div>
+
+        {/* Social Icons and Contact */}
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 pt-6">
+          <div className="flex space-x-4 mb-4 md:mb-0">
+            {[
+              { Icon: FacebookIcon, label: "Facebook" },
+              { Icon: LinkedInIcon, label: "LinkedIn" },
+              { Icon: TwitterIcon, label: "Twitter" },
+              { Icon: YouTubeIcon, label: "YouTube" },
+              { Icon: InstagramIcon, label: "Instagram" },
+            ].map(({ Icon, label }) => (
+              <a
+                key={label}
+                href="#"
+                aria-label={label}
+                className="text-gray-600 hover:text-blue-600"
+              >
+                <Icon fontSize="medium" />
+              </a>
+            ))}
+          </div>
+
+          <div className="text-gray-600 text-sm">
+            <p>India: +91 9582474246</p>
+            <p>UAE: +971 501178803</p>
+            <p>Nigeria: +234 (703) 789-6529</p>
+          </div>
+        </div>
+
+        {/* Newsletter and Copyright */}
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 py-6 mt-6">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0">
+            2024 &copy; Purpleant Technologies Private Limited, Inc. All Rights
+            Reserved.
+          </p>
+
+          <div className="flex flex-col items-end">
+            <p className="text-gray-500 text-sm mb-2">
+              Subscribe to our newsletter
+            </p>
+            <div className="flex space-x-2">
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="p-2 rounded-md border border-gray-300 focus:ring-2 focus:ring-blue-500"
+              />
+              <button className="bg-[#2E2F5F] text-white px-4 py-2 rounded-md hover:bg-blue-700">
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
