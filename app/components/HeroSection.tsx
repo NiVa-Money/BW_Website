@@ -119,10 +119,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative py-2 px-6 lg:px-8 w-full mb-0">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch">
+    <section className="relative mt-0 w-full">
+      <div className="max-w-7xl mx-auto mt-0 flex flex-row">
         {/* Left Section */}
-        <div className="flex flex-col w-full lg:w-1/2 text-black mt-6 lg:mt-20 space-y-8">
+        <div className="flex flex-col justify-center w-full lg:w-1/2 text-black space-y-5">
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
             {isProductPage ? pageName : solutionLabel}
           </h1>
@@ -143,7 +143,7 @@ const Hero = () => {
 
         {/* Right Section */}
         <div className="lg:w-2/3 flex">
-          <div className="relative w-full ml-24 mt-10 h-[30rem] sm:h-[36rem] lg:h-[35rem]">
+          <div className="relative w-full mt-0 h-[40rem] sm:h-[36rem] lg:h-[40rem]">
             {imageToDisplay && (
               <Image
                 src={imageToDisplay}

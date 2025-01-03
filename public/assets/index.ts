@@ -47,10 +47,10 @@ import intellirecog from "../../public/assets/features/intelli-recog.svg";
 import robust from "../../public/assets/features/robust.svg";
 import nocode from "../../public/assets/features/no-code.svg";
 import scalable from "../../public/assets/features/scalable-archi.svg";
-import DFeatures1 from "../../public/assets/features/DFeatures1.png";
-import DFeatures2 from "../../public/assets/features/DFeatures2.png";
-import DFeatures3 from "../../public/assets/features/DFeatures3.png";
-import DFeatures4 from "../../public/assets/features/DFeatures4.png";
+import dfeatures1 from "../../public/assets/features/dfeatures1.svg";
+import dfeatures2 from "../../public/assets/features/dfeatures2.svg";
+import dfeatures3 from "../../public/assets/features/dfeatures3.svg";
+import dfeatures4 from "../../public/assets/features/dfeatures4.svg";
 
 import blog1 from "../../public/assets/features/blog1.svg";
 import blog2 from "../../public/assets/features/blog2.svg";
@@ -120,10 +120,10 @@ export {
   robust,
   nocode,
   scalable,
-  DFeatures1,
-  DFeatures2,
-  DFeatures3,
-  DFeatures4,
+  dfeatures1,
+  dfeatures2,
+  dfeatures3,
+  dfeatures4,
   aisolutions,
   aiworkspace,
   botwotllm,

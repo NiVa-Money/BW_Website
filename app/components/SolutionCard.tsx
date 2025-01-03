@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import GradientAnimation from "./GradientAnimation";
 
 interface FeatureCardProps {
   useCase: string;
@@ -8,7 +9,7 @@ interface FeatureCardProps {
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ useCase, example }) => (
-  <div className="p-6 shadow-lg rounded-lg border border-gray-200 bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+  <div className="p-6 shadow-lg rounded-lg border hover:border-4 hover:border-black/50 border-gray-200 bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out">
     <h2 className="text-2xl font-semibold text-[#2E2F5F]">{useCase}</h2>
     <p className="text-base mt-2 text-gray-700">{example}</p>
   </div>
@@ -22,7 +23,8 @@ interface SolutionSectionProps {
 
 const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
   return (
-    <div>
+    <>
+      <GradientAnimation />
       {/* Solution Details Section */}
       <div className="relative py-20">
         <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
@@ -35,7 +37,7 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
           ))}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

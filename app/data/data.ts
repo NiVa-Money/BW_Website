@@ -1,8 +1,9 @@
 import {
-  DFeatures1,
-  DFeatures2,
-  DFeatures3,
-  DFeatures4,
+
+  dfeatures1,
+  dfeatures2,
+  dfeatures3,
+  dfeatures4,
   Icon1,
   Icon2,
   Icon3,
@@ -381,7 +382,7 @@ export const detailedFeatures = [
         "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
       bgColor: "#77C9F1",
       textColor: "#77C9F1",
-      image: DFeatures1,
+      image: dfeatures1,
       cards: [
         {
           title: "Customer Emotion Detection",
@@ -407,7 +408,7 @@ export const detailedFeatures = [
         "Unlock the Power of Visual Inputs for Smarter Interactions Enhance customer engagement by seamlessly integrating visual data into the conversation.",
       bgColor: "#402282",
       textColor: "#402282",
-      image: DFeatures2,
+      image: dfeatures2,
       cards: [
         {
           title: " Visual Product Matching",
@@ -433,7 +434,7 @@ export const detailedFeatures = [
         "Tailored Experiences That Evolve with Every Interaction BotWot’s AI workforce delivers dynamic, personalized suggestions that enhance every stage of the customer journey.",
       bgColor: "#A221AF",
       textColor: "#A221AF",
-      image: DFeatures3,
+      image: dfeatures3,
       cards: [
         {
           title: "Hyper-Personalized Shopping",
@@ -459,7 +460,7 @@ export const detailedFeatures = [
         "Deliver Empathy at Scale with Emotion-Aware AI Detect, understand, and adapt to customer emotions to foster meaningful relationships.",
       bgColor: "#2E2F5F",
       textColor: "#2E2F5F",
-      image: DFeatures4,
+      image: dfeatures4,
       cards: [
         {
           title: "Emotion Recognition in Action",
