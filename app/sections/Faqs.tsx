@@ -17,7 +17,7 @@ export default function Faqs() {
         </div>
         <h2 className="text-6xl font-medium mt-6 text-center max-w-xl mx-auto">
           Questions? We&#39;ve got{" "}
-          <span className="text-[#9A83DB]">answers</span>
+          <span className="text-[#387D8C]">answers</span>
         </h2>
 
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
@@ -42,7 +42,7 @@ export default function Faqs() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={twMerge(
-                    "feather feather-plus text-[#9A83DB] flex-shrink-0 transition duration-300",
+                    "feather feather-plus text-[#387D8C] flex-shrink-0 transition duration-300",
                     selectedIndex === faqIndex && "rotate-45"
                   )}
                 >

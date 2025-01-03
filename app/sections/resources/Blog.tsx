@@ -57,7 +57,7 @@ const Blog = () => {
             </div>
             <div className="p-6 space-y-4">
               <div className="text-gray-600">{blog.readTime}</div>
-              <h2 className="text-2xl font-bold group-hover:text-blue-600 transition-colors">
+              <h2 className="text-2xl font-bold group-hover:text-[#387D8C] transition-colors">
                 {blog.title}
               </h2>
               <p className="text-gray-600">{blog.description}</p>

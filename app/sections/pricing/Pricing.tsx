@@ -1,7 +1,7 @@
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import { Tag } from "../../components";
-import Faqs from "../Faqs";
+// import Faqs from "../Faqs";
 
 interface PlanProps {
   title: string;
@@ -81,7 +81,7 @@ const PricingSection: React.FC = () => {
     {
       title: "Starter",
       description: "You’re just starting out on your comms journey.",
-      price: "$4.99",
+      price: "$49.99",
       priceType: "One-time payment",
       features: ["1 site only", "Up to 2,000 contacts", "Unlimited stories"],
       buttonText: "Try Now",
@@ -89,7 +89,7 @@ const PricingSection: React.FC = () => {
     {
       title: "Core",
       description: "This isn’t your first rodeo; you know what you’re doing.",
-      price: "$49.99",
+      price: "$199.99",
       priceType: "/month",
       features: [
         "Everything in Starter plan, plus",
@@ -128,7 +128,7 @@ const PricingSection: React.FC = () => {
           <PlanCard key={index} {...plan} />
         ))}
       </div>
-      <Faqs/>
+      {/* <Faqs/> */}
     </div>
   );
 };

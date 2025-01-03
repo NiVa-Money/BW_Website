@@ -93,12 +93,12 @@ const Navbar: React.FC = () => {
                   {link.label === "Pricing" ? (
                     <Link
                       href={link.href}
-                      className="px-2 py-4 text-black text-center hover:text-[#A221AF] transition-colors"
+                      className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors"
                     >
                       {link.label}
                     </Link>
                   ) : (
-                    <span className="px-2 py-4 text-black text-center hover:text-[#A221AF] transition-colors">
+                    <span className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors">
                       {link.label}
                     </span>
                   )}
@@ -114,14 +114,14 @@ const Navbar: React.FC = () => {
                         {link.submenu.map((submenuItem, index) => (
                           <div key={index} className="flex items-start gap-4">
                             {submenuItem.icon && (
-                              <div className="flex-shrink-0 text-[#A221AF]">
+                              <div className="flex-shrink-0 text-black">
                                 <submenuItem.icon className="h-5 w-5" />
                               </div>
                             )}
                             <div>
                               <Link
                                 href={submenuItem.href}
-                                className="block font-medium text-black hover:text-[#A221AF] transition-colors"
+                                className="block font-medium text-black hover:text-[#387D8C] transition-colors"
                               >
                                 {submenuItem.label}
                               </Link>

@@ -37,9 +37,11 @@ const TestimonialCarousel: React.FC<TestimonialCarouselProps> = ({
   return (
     <>
       <section className="py-10 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl bg-[#B0B7C3]/50 font-semibold text-gray-800 mb-10 text-center py-4 rounded-lg">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-gray-800 mb-10 text-center py-4 rounded-lg">
           Testimonials
         </h2>
+        {/* Line separator */}
+        <div className="border-t border-black/50 my-8" />
 
         <div className="h-[200px] w-full flex justify-center items-center text-center overflow-hidden relative rounded-lg bg-[#f9f9f9] py-[10em]">
           <div

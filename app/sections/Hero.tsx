@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
             and consistency.
           </p>
           <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
-            <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover: hover:text-indigo-600 hover:bg-white transition duration-300">
+            <button className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover: hover:text-[#387D8C] hover:bg-white transition duration-300">
               Explore the Future of Workforce Now
             </button>
           </div>

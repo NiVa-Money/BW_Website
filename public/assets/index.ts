@@ -5,14 +5,16 @@ import slackIcon from "../../public/assets/logo/slack-logo.svg";
 import relumeIcon from "../../public/assets/logo/relume-logo.svg";
 import framerIcon from "../../public/assets/logo/framer-logo.svg";
 import githubIcon from "../../public/assets/logo/github-logo.svg";
-import quantumLogo from "../../public/assets/logo/quantum.svg";
-import acmeLogo from "../../public/assets/logo/acme-corp.svg";
-import echoValleyLogo from "../../public/assets/logo/echo-valley.svg";
-import pulseLogo from "../../public/assets/logo/pulse.svg";
-import outsideLogo from "../../public/assets/logo/outside.svg";
-import apexLogo from "../../public/assets/logo/apex.svg";
-import celestialLogo from "../../public/assets/logo/celestial.svg";
-import twiceLogo from "../../public/assets/logo/twice.svg";
+
+import unbeauty from "../../public/assets/logo/unbeauty.svg";
+import trabuli from "../../public/assets/logo/trabuli.svg";
+import prestige from "../../public/assets/logo/prestige.svg";
+import dna from "../../public/assets/logo/dna.svg";
+import govt from "../../public/assets/logo/govt.svg";
+import fusionfit from "../../public/assets/logo/fusionfit.svg";
+import chatwork from "../../public/assets/logo/chatwork.svg";
+import admardi from "../../public/assets/logo/admardi.svg";
+import travent from "../../public/assets/logo/travent.svg";
 
 import startup1 from "../../public/assets/logo/startup1.svg";
 import startup2 from "../../public/assets/logo/startup2.svg";
@@ -158,14 +160,15 @@ export {
   indiantel,
   industrial,
   ndtv,
-  quantumLogo,
-  acmeLogo,
-  echoValleyLogo,
-  pulseLogo,
-  outsideLogo,
-  apexLogo,
-  celestialLogo,
-  twiceLogo,
+  unbeauty,
+  trabuli,
+  prestige,
+  dna,
+  govt,
+  fusionfit,
+  chatwork,
+  travent,
+  admardi,
   figmaIcon,
   notionIcon,
   slackIcon,
