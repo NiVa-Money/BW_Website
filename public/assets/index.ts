@@ -80,6 +80,7 @@ import taskhandle from "../../public/assets/products/task-handle.svg";
 import analyticsdash from "../../public/assets/products/analytics-dash.svg";
 import reporting from "../../public/assets/products/reporting.svg";
 import performance from "../../public/assets/products/performance.svg";
+import historicals from "../../public/assets/products/historicals.svg";
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
@@ -170,6 +171,7 @@ export {
   analyticsdash,
   reporting,
   performance,
+  historicals,
   blog1,
   blog2,
   blog3,

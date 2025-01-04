@@ -12,6 +12,7 @@ import {
   zerocode,
   analyticsdash,
   reporting,
+  historicals,
   performance,
 } from "../../public/assets";
 
@@ -148,7 +149,7 @@ export const products = [
           "Evaluate how AI workforce stack up against human agents. Understand key performance differences and identify opportunities for bot improvement or areas where human agents outperform, driving optimization decisions.",
         example:
           "Telecom Industry :Analyze customer satisfaction scores for bot vs. agent interactions to refine escalation strategies.",
-        img: analyticsdash,
+        img: human,
       },
       {
         title: "Historical Trends & Data Analysis",
@@ -156,7 +157,7 @@ export const products = [
           "Dive into historical performance trends, examining data over time to identify recurring patterns and long-term opportunities for improvement. Use these insights to fine-tune your AI strategies and continuously improve your processes.",
         example:
           "  Education Technology (EdTech): Review chatbot performance data during enrollment periods to identify recurring user pain points and improve future interactions.",
-        img: analyticsdash,
+        img:  historicals,
       },
     ],
   },
