@@ -100,27 +100,32 @@ export const products = [
       {
         title: "Comprehensive Analytics Dashboard",
         description:
-          "Connect All the Dots for Actionable Insights: Get a consolidated view of key metrics like CSAT, response times, and issue resolution rates. Dive deeper into bot and agent performance data to help your team make informed decisions and optimize strategies for better customer engagement.",
+          "Get a consolidated view of key metrics like CSAT, response times, and issue resolution rates. Dive deeper into bot and agent performance data to help your team make informed decisions and optimize strategies for better customer engagement.",
+          example: "Ecommerce Industry :Track key metrics like CSAT and resolution rates during peak shopping periods to ensure high customer satisfaction."
       },
       {
         title: "Real-time Performance Monitoring",
         description:
-          "Track Performance in Real-Time: Gain live insights into agent and bot activities. Monitor chat statuses, agent availability, and response quality instantly, enabling quick adjustments and proactive decision-making to improve performance on the spot.",
+          "Gain live insights into agent and bot activities. Monitor chat statuses, agent availability, and response quality instantly, enabling quick adjustments and proactive decision-making to improve performance on the spot.",
+        example:"Banking Industry : Gain live insights into chat statuses and agent availability to manage inquiries during new product launches."
       },
       {
         title: "Customizable Reporting",
         description:
-          "Tailor Reports to Your Business Needs: Generate reports based on your unique business goals. Customize the data you need, whether it's specific metrics, time frames, or agent performance, ensuring the reports align perfectly with your strategic objectives.",
+          "Generate reports based on your unique business goals. Customize the data you need, whether it's specific metrics, time frames, or agent performance, ensuring the reports align perfectly with your strategic objectives.",
+          example:"SaaS Industry :Generate reports tailored to churn metrics by filtering data based on customer segments and subscription plans."
       },
       {
         title: "Bot & Agent Comparison Insights",
         description:
-          "Compare AI and Human Agent Effectiveness: Evaluate how AI workforce stack up against human agents. Understand key performance differences and identify opportunities for bot improvement or areas where human agents outperform, driving optimization decisions.",
+          "Evaluate how AI workforce stack up against human agents. Understand key performance differences and identify opportunities for bot improvement or areas where human agents outperform, driving optimization decisions.",
+          example : "Telecom Industry :Analyze customer satisfaction scores for bot vs. agent interactions to refine escalation strategies."
       },
       {
         title: "Historical Trends & Data Analysis",
         description:
-          "Gain Long-Term Insights with Historical Data: Dive into historical performance trends, examining data over time to identify recurring patterns and long-term opportunities for improvement. Use these insights to fine-tune your AI strategies and continuously improve your processes.",
+          "Dive into historical performance trends, examining data over time to identify recurring patterns and long-term opportunities for improvement. Use these insights to fine-tune your AI strategies and continuously improve your processes.",
+          example : "  Education Technology (EdTech): Review chatbot performance data during enrollment periods to identify recurring user pain points and improve future interactions."
       },
     ],
   },

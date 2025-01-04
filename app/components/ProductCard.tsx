@@ -1,47 +1,128 @@
+
+
+// "use client";
+// import React from "react";
+// import Image from "next/image";
+
+// interface UseCase {
+//   title: string;
+//   description: string;
+//   example?: string;
+// }
+
+// interface ProductData {
+//   name: string;
+//   subtitle: string;
+//   img: string;
+//   useCases: UseCase[];
+// }
+
+// const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
+//   const currentProduct = data[0]; // Assuming we only have one product
+
+//   return (
+//     <div className="w-full bg-black text-white py-24 mb-12">
+//       <div className="max-w-6xl mx-auto px-4">
+//         <div className="space-y-10">
+//           {currentProduct.useCases.map((useCase, index) => (
+//             <div key={index} className="flex gap-8 items-start mb-10">
+//               <div className="flex-1">
+//                 <div className="space-y-6">
+//                   <div className="p-6">
+//                     <div className="flex justify-center mb-6">
+//                       <h3 className="text-3xl  text-center font-semibold">{useCase.title}</h3>
+//                     </div>
+//                     <p className="text-gray-300">{useCase.description}</p>
+//                     {useCase.example && (
+//                       <p className="mt-4 text-white font-semibold italic">
+//                         {useCase.example}
+//                       </p>
+//                     )}
+//                   </div>
+//                 </div>
+//               </div>
+
+//               {currentProduct.img && (
+//                 <div className="flex-1">
+//                   <Image
+//                     src={currentProduct.img}
+//                     alt={currentProduct.name}
+//                     width={500}
+//                     height={500}
+//                   />
+//                 </div>
+//               )}
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ProductSection;
+
+"use client";
 import React from "react";
+import Image from "next/image";
 
-const ProductCard = ({
-  useCases,
-}: {
-  useCases: { title: string; description: string; example?: string }[];
-}) => (
-  <div className="rounded-lg flex flex-col max-w-full gap-4">
-    <div className="grid grid-cols-2 gap-6 ">
-      {useCases.map((useCase, index) => (
-        <div
-          key={index}
-          className="p-4 bg-gray-50 hover:shadow-xl hover:border-4 hover:border-black/50 rounded-lg"
-        >
-          <h1 className=" text-2xl font-semibold text-[#2E2F5F]">
-            {useCase.title}
-          </h1>
-          <p className="text-lg text-black">{useCase.description}</p>
-          {useCase.example && (
-            <p className="text-base text-[#49454F] italic mt-1">
-              <b>Example:</b> {useCase.example}
-            </p>
-          )}
-        </div>
-      ))}
-    </div>
-  </div>
-);
+interface UseCase {
+  title: string;
+  description: string;
+  example?: string;
+}
 
-const ProductSection = ({
-  data,
-}: {
-  data: {
-    name: string;
-    useCases: { title: string; description: string; example?: string }[];
-  }[];
-}) => {
+interface ProductData {
+  name: string;
+  subtitle: string;
+  img: string;
+  useCases: UseCase[];
+}
+
+const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
+  const currentProduct = data[0]; // Assuming we only have one product
+
   return (
-    <div className="max-w-7xl mt-20 mx-auto px-8 py-10">
-      {data.map((item, index) => (
-        <div key={index} className="mb-5">
-          <ProductCard useCases={item.useCases} />
+    <div className="w-full bg-black text-white py-24 mb-12">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="space-y-10">
+          {currentProduct.useCases.map((useCase, index) => (
+            <div
+              key={index}
+              className={`flex gap-8 items-start mb-10 ${
+                index % 2 === 0 ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
+              <div className="flex-1">
+                <div className="space-y-6">
+                  <div className="p-6">
+                    <div className="flex justify-center mb-6">
+                      <h3 className="text-3xl text-center font-semibold">{useCase.title}</h3>
+                    </div>
+                    <p className="text-gray-300">{useCase.description}</p>
+                    {useCase.example && (
+                      <p className="mt-4 text-white font-semibold italic">
+                        {useCase.example}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {currentProduct.img && (
+                <div className="flex-1">
+                  <Image
+                    src={currentProduct.img}
+                    alt={currentProduct.name}
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
