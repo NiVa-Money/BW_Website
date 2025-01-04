@@ -9,7 +9,7 @@ interface SolutionSectionProps {
 
 const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
   return (
-    <div className="w-full bg-black text-white py-24 mb-12">
+    <div className="w-full bg-white text-black py-24 mb-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-10">
           {details.map((item, index) => (
@@ -20,8 +20,8 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
               }`}
             >
               <div className="flex-1">
-                <h3 className="text-3xl text-center font-semibold">{item.title}</h3>
-                <p className="text-gray-300 mt-4">{item.description}</p>
+                <h3 className="text-3xl text-center text-black font-semibold">{item.title}</h3>
+                <p className="text-black/50 mt-4 justify-center ml-4">{item.description}</p>
               </div>
 
               <div className="flex-1 flex justify-center">

@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         <div className="mx-auto max-w-8xl lg:px-8 px-6 sm:px-6">
           <div className="relative flex h-24 items-center rounded-2xl /50 px-3 shadow-lg shadow-black/30 backdrop-blur-lg before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:border before:border-transparent before:[background:linear-gradient(theme(colors.gray.100),theme(colors.gray.200))_border-box] before:[mask-composite:exclude_!important] before:[mask:linear-gradient(white_0_0)_padding-box,_linear-gradient(white_0_0)]">
             {/* Site branding */}
-            <div className="flex flex-1 items-center">
+            <div className="flex flex-1 mb-4 ml-6 items-center">
               <Link href="/" className="px-10 flex-shrink-0">
                 <Image
                   src={logoImage}

@@ -1,5 +1,4 @@
 import {
-
   dfeatures1,
   dfeatures2,
   dfeatures3,
@@ -11,11 +10,11 @@ import {
   Icon5,
   Icon6,
   Icon7,
-  intellirecog,
-  multiagent,
-  nocode,
-  robust,
-  scalable,
+  intellirecog1,
+  multiagent1,
+  nocode1,
+  robust1,
+  scalable1,
 } from "../../public/assets";
 import InfoIcon from "@mui/icons-material/Info";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -341,149 +340,150 @@ export const features = [
     title: "Multi-Agent Orchestrator",
     description:
       "Enable your AI workforce to work together like a well-coordinated team. BotWot’s Multi-Agent Orchestrator ensures seamless collaboration among specialized AI workforce, handling complex workflows and delivering unified, efficient outcomes across all touchpoints.",
-    bgColor: "bg-transparent",
-    imgSrc: multiagent,
+    // bgColor: "bg-transparent",
+    bgColor : "bg-[#C4CFD3]",
+    imgSrc: multiagent1,
   },
   {
     title: "Intelligent Intent Recognition",
     description:
       "BotWot’s AI workforce goes beyond simple queries by deeply understanding customer intent. From straightforward requests to intricate challenges, it delivers precise, actionable responses, making every interaction intelligent and impactful.",
-    // bgColor: "bg-[#A221AF]/65",
-    bgColor: "bg-transparent",
-    imgSrc: intellirecog,
+    bgColor: "bg-[#FBFCFE]",
+    // bgColor: "bg-transparent",
+    imgSrc: intellirecog1,
   },
   {
     title: "Robust Context Management",
     description:
       "With BotWot, your AI workforce remembers every interaction, enabling continuity and personalization. Whether solving issues or closing deals, it leverages context to ensure each response is relevant, meaningful, and aligned with past conversations.",
-    // bgColor: "bg-[#402282]/65",
-    bgColor: "bg-transparent",
-    imgSrc: robust,
+    bgColor: "bg-[#C2BFBA]",
+    // bgColor: "bg-transparent",
+    imgSrc: robust1,
   },
   {
     title: "No-Code Customization",
     description:
       "Shape your AI workforce to fit your business needs—no coding required. BotWot’s no-code platform lets you easily customize workflows, dialogue, and decision-making processes, empowering you to deliver tailored solutions with minimal effort.",
-    // bgColor: "bg-[#2E2F5F]/65",
-    bgColor: "bg-transparent",
-    imgSrc: nocode,
+    bgColor: "bg-[#F2F7FD]",
+    // bgColor: "bg-transparent",
+    imgSrc: nocode1,
   },
   {
     title: "Scalable Architecture",
     description:
       "Scale your AI workforce effortlessly as your business grows. Whether managing millions of interactions or integrating new processes, BotWot’s robust architecture ensures your digital workforce evolves with your needs, always staying one step ahead.",
-    // bgColor: "bg-[#A6FED6]/65",
-    bgColor: "bg-transparent",
-    imgSrc: scalable,
+    bgColor: "bg-[#E7F1FA]",
+    // bgColor: "bg-transparent",
+    imgSrc: scalable1,
   },
 ];
 
 export const detailedFeatures = [
-    {
-      icon: Icon4,
-      title: "Real Time Sentiment Analysis",
-      description:
-        "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
-      bgColor: "#387D8C",
-      textColor: "#387D8C",
-      image: dfeatures1,
-      cards: [
-        {
-          title: "Customer Emotion Detection",
-          description:
-            "Instantly identify customer emotions—whether frustration, delight, or confusion—to personalize interactions and enhance satisfaction.",
-        },
-        {
-          title: " Frustration-Triggered Solutions",
-          description:
-            "Proactively address customer frustration by detecting negative sentiment early and offering targeted solutions to turn challenges into opportunities.",
-        },
-        {
-          title: "Empathy-Powered Engagement",
-          description:
-            "Equip your AI workforce to respond with care and understanding, ensuring every interaction feels human and builds trust.",
-        },
-      ],
-    },
-    {
-      icon: Icon5,
-      title: "Vision Intelligence",
-      description:
-        "Unlock the Power of Visual Inputs for Smarter Interactions Enhance customer engagement by seamlessly integrating visual data into the conversation.",
-      bgColor: "#387D8C",
-      textColor: "#387D8C",
-      image: dfeatures2,
-      cards: [
-        {
-          title: " Visual Product Matching",
-          description:
-            "Let customers upload images to receive precise product suggestions, simplifying decision-making and boosting purchase confidence.",
-        },
-        {
-          title: "Photo-Based Issue Resolution",
-          description:
-            "Quickly resolve customer complaints by analyzing images of damaged products or issues, streamlining the support process.",
-        },
-        {
-          title: "Visual How-To Guides",
-          description:
-            "Deliver interactive tutorials using images or videos, empowering customers to easily set up or use your products.",
-        },
-      ],
-    },
-    {
-      icon: Icon6,
-      title: "Adaptive AI Recommendations",
-      description:
-        "Tailored Experiences That Evolve with Every Interaction BotWot’s AI workforce delivers dynamic, personalized suggestions that enhance every stage of the customer journey.",
-      bgColor: "#387D8C",
-      textColor: "#387D8C",
-      image: dfeatures3,
-      cards: [
-        {
-          title: "Hyper-Personalized Shopping",
-          description:
-            "Offer product recommendations tailored in real time to the customer’s unique preferences, creating memorable shopping experiences.",
-        },
-        {
-          title: "Behavioral-Based Discovery",
-          description:
-            "Adapt recommendations on the fly as user behavior evolves, making every interaction feel fresh and engaging.",
-        },
-        {
-          title: "Evolving Intelligence",
-          description:
-            "With each interaction, BotWot learns and refines its suggestions, ensuring they are consistently accurate, relevant, and valuable.",
-        },
-      ],
-    },
-    {
-      icon: Icon7,
-      title: "Emotional Intelligence AI",
-      description:
-        "Deliver Empathy at Scale with Emotion-Aware AI Detect, understand, and adapt to customer emotions to foster meaningful relationships.",
-      bgColor: "#387D8C",
-      textColor: "#387D8C",
-      image: dfeatures4,
-      cards: [
-        {
-          title: "Emotion Recognition in Action",
-          description:
-            "Identify emotional cues during conversations, allowing your AI workforce to respond with genuine care and attentiveness.",
-        },
-        {
-          title: "Empathetic Conversations That Connect",
-          description:
-            "Humanize customer interactions with emotional intelligence, ensuring every response reflects understanding and support.",
-        },
-        {
-          title: "Adaptive Tone and Response",
-          description:
-            "Recognize shifts in customer sentiment and dynamically adjust tone and messaging to create more compassionate, satisfying experiences.",
-        },
-      ],
-    },
-  ];
+  {
+    icon: Icon4,
+    title: "Real Time Sentiment Analysis",
+    description:
+      "Empower Your Workforce to Understand Customer Emotions Transform interactions with empathy-driven insights, enabling adaptive and human-like responses.",
+    bgColor: "#387D8C",
+    textColor: "#387D8C",
+    image: dfeatures1,
+    cards: [
+      {
+        title: "Customer Emotion Detection",
+        description:
+          "Instantly identify customer emotions—whether frustration, delight, or confusion—to personalize interactions and enhance satisfaction.",
+      },
+      {
+        title: " Frustration-Triggered Solutions",
+        description:
+          "Proactively address customer frustration by detecting negative sentiment early and offering targeted solutions to turn challenges into opportunities.",
+      },
+      {
+        title: "Empathy-Powered Engagement",
+        description:
+          "Equip your AI workforce to respond with care and understanding, ensuring every interaction feels human and builds trust.",
+      },
+    ],
+  },
+  {
+    icon: Icon5,
+    title: "Vision Intelligence",
+    description:
+      "Unlock the Power of Visual Inputs for Smarter Interactions Enhance customer engagement by seamlessly integrating visual data into the conversation.",
+    bgColor: "#387D8C",
+    textColor: "#387D8C",
+    image: dfeatures2,
+    cards: [
+      {
+        title: " Visual Product Matching",
+        description:
+          "Let customers upload images to receive precise product suggestions, simplifying decision-making and boosting purchase confidence.",
+      },
+      {
+        title: "Photo-Based Issue Resolution",
+        description:
+          "Quickly resolve customer complaints by analyzing images of damaged products or issues, streamlining the support process.",
+      },
+      {
+        title: "Visual How-To Guides",
+        description:
+          "Deliver interactive tutorials using images or videos, empowering customers to easily set up or use your products.",
+      },
+    ],
+  },
+  {
+    icon: Icon6,
+    title: "Adaptive AI Recommendations",
+    description:
+      "Tailored Experiences That Evolve with Every Interaction BotWot’s AI workforce delivers dynamic, personalized suggestions that enhance every stage of the customer journey.",
+    bgColor: "#387D8C",
+    textColor: "#387D8C",
+    image: dfeatures3,
+    cards: [
+      {
+        title: "Hyper-Personalized Shopping",
+        description:
+          "Offer product recommendations tailored in real time to the customer’s unique preferences, creating memorable shopping experiences.",
+      },
+      {
+        title: "Behavioral-Based Discovery",
+        description:
+          "Adapt recommendations on the fly as user behavior evolves, making every interaction feel fresh and engaging.",
+      },
+      {
+        title: "Evolving Intelligence",
+        description:
+          "With each interaction, BotWot learns and refines its suggestions, ensuring they are consistently accurate, relevant, and valuable.",
+      },
+    ],
+  },
+  {
+    icon: Icon7,
+    title: "Emotional Intelligence AI",
+    description:
+      "Deliver Empathy at Scale with Emotion-Aware AI Detect, understand, and adapt to customer emotions to foster meaningful relationships.",
+    bgColor: "#387D8C",
+    textColor: "#387D8C",
+    image: dfeatures4,
+    cards: [
+      {
+        title: "Emotion Recognition in Action",
+        description:
+          "Identify emotional cues during conversations, allowing your AI workforce to respond with genuine care and attentiveness.",
+      },
+      {
+        title: "Empathetic Conversations That Connect",
+        description:
+          "Humanize customer interactions with emotional intelligence, ensuring every response reflects understanding and support.",
+      },
+      {
+        title: "Adaptive Tone and Response",
+        description:
+          "Recognize shifts in customer sentiment and dynamically adjust tone and messaging to create more compassionate, satisfying experiences.",
+      },
+    ],
+  },
+];
 
 export const testimonials = [
   {

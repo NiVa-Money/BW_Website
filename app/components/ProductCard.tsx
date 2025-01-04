@@ -19,7 +19,7 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
   const currentProduct = data[0]; // Assuming we only have one product
 
   return (
-    <div className="w-full bg-black text-white py-24 mb-12">
+    <div className="w-full bg-white text-black py-24 mb-12">
       <div className="max-w-6xl mx-auto px-4">
         <div className="space-y-10">
           {currentProduct.useCases.map((useCase, index) => (
@@ -37,9 +37,9 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
                         {useCase.title}
                       </h3>
                     </div>
-                    <p className="text-gray-300">{useCase.description}</p>
+                    <p className="text-black/50 ml-3 ">{useCase.description}</p>
                     {useCase.example && (
-                      <p className="mt-4 text-white font-semibold italic">
+                      <p className="mt-4 ml-3 text-black font-semibold italic">
                         {useCase.example}
                       </p>
                     )}

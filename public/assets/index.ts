@@ -49,6 +49,13 @@ import intellirecog from "../../public/assets/features/intelli-recog.svg";
 import robust from "../../public/assets/features/robust.svg";
 import nocode from "../../public/assets/features/no-code.svg";
 import scalable from "../../public/assets/features/scalable-archi.svg";
+
+import multiagent1 from "../../public/assets/features/multi-agent1.svg";
+import intellirecog1 from "../../public/assets/features/intelli-recog1.svg";
+import robust1 from "../../public/assets/features/robust1.svg";
+import nocode1 from "../../public/assets/features/no-code1.svg";
+import scalable1 from "../../public/assets/features/scalable-archi1.svg";
+
 import dfeatures1 from "../../public/assets/features/dfeatures1.svg";
 import dfeatures2 from "../../public/assets/features/dfeatures2.svg";
 import dfeatures3 from "../../public/assets/features/dfeatures3.svg";
@@ -124,6 +131,11 @@ export {
   robust,
   nocode,
   scalable,
+  multiagent1,
+  intellirecog1,
+  robust1,
+  nocode1,
+  scalable1,
   dfeatures1,
   dfeatures2,
   dfeatures3,
