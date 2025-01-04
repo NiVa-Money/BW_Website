@@ -77,6 +77,9 @@ import human from "../../public/assets/products/human-off.svg";
 import fastestdeploy from "../../public/assets/products/fastest-deploy.svg";
 import complex from "../../public/assets/products/complex-tasks.svg";
 import taskhandle from "../../public/assets/products/task-handle.svg";
+import analyticsdash from "../../public/assets/products/analytics-dash.svg";
+import reporting from "../../public/assets/products/reporting.svg";
+import performance from "../../public/assets/products/performance.svg";
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
@@ -90,6 +93,9 @@ import recommendengine from "../../public/assets/solutions/recommend-engine.svg"
 import repmanage from "../../public/assets/solutions/rep-manage.svg";
 import saleslead from "../../public/assets/solutions/sales-lead.svg";
 import workflowopt from "../../public/assets/solutions/workflow-opt.svg";
+import insights from "../../public/assets/solutions/insights.svg";
+
+import realtime from "../../public/assets/solutions/real-time.svg";
 
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
@@ -161,6 +167,9 @@ export {
   fastestdeploy,
   complex,
   taskhandle,
+  analyticsdash,
+  reporting,
+  performance,
   blog1,
   blog2,
   blog3,
@@ -215,4 +224,7 @@ export {
   repmanage,
   saleslead,
   workflowopt,
+  insights, 
+  realtime,
+
 };

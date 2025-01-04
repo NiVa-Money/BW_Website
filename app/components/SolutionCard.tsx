@@ -21,12 +21,12 @@ const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
                 index % 2 === 0 ? "flex-row-reverse" : "flex-row"
               }`}
             >
-              <div className="flex-1">
+              <div className="flex-1 justify-center mt-24">
                 <h3 className="text-3xl text-center text-black font-semibold">{item.title}</h3>
                 <p className="text-black/50 mt-4 justify-center ml-4">{item.description}</p>
               </div>
 
-              <div className="flex-1 flex justify-center">
+              <div className="flex-1 flex  justify-center">
                 {item.img && (
                   <Image
                     src={item.img} // The image src should be a valid path
