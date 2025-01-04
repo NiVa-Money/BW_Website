@@ -1,43 +1,45 @@
 "use client";
 
 import React from "react";
-import GradientAnimation from "./GradientAnimation";
-
-interface FeatureCardProps {
-  useCase: string;
-  example: string;
-}
-
-const FeatureCard: React.FC<FeatureCardProps> = ({ useCase, example }) => (
-  <div className="p-6 shadow-lg rounded-lg border hover:border-4 hover:border-black/50 border-gray-200 bg-white hover:shadow-2xl transition-shadow duration-300 ease-in-out">
-    <h2 className="text-2xl font-semibold text-[#2E2F5F]">{useCase}</h2>
-    <p className="text-base mt-2 text-gray-700">{example}</p>
-  </div>
-);
+import Image from "next/image";
 
 interface SolutionSectionProps {
-  title: string;
-  description: string;
-  details: { title: string; description: string }[];
+  details: { title: string; description: string; img: string | null }[];
 }
 
 const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
   return (
-    <>
-      <GradientAnimation />
-      {/* Solution Details Section */}
-      <div className="relative py-20">
-        <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 px-6">
+    <div className="w-full bg-black text-white py-24 mb-12">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="space-y-10">
           {details.map((item, index) => (
-            <FeatureCard
+            <div
               key={index}
-              useCase={item.title}
-              example={item.description}
-            />
+              className={`flex gap-8 items-center mb-10 ${
+                index % 2 === 0 ? "flex-row-reverse" : "flex-row"
+              }`}
+            >
+              <div className="flex-1">
+                <h3 className="text-3xl text-center font-semibold">{item.title}</h3>
+                <p className="text-gray-300 mt-4">{item.description}</p>
+              </div>
+
+              <div className="flex-1 flex justify-center">
+                {item.img && (
+                  <Image
+                    src={item.img} // The image src should be a valid path
+                    alt={item.title}
+                    width={500}
+                    height={500}
+                    className="w-full h-auto max-w-lg object-contain"
+                  />
+                )}
+              </div>
+            </div>
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
