@@ -4,7 +4,9 @@ import React from "react";
 import Image from "next/image";
 
 interface SolutionSectionProps {
-  details: { title: string; description: string; img: string | null }[];
+  title: string;
+  description: string;
+  details: { title: string; description: string; img?: string | null }[];
 }
 
 const SolutionSection: React.FC<SolutionSectionProps> = ({ details }) => {
