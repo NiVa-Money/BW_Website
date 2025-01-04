@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="relative rounded-xl p-6 shadow-lg w-full sm:w-96 h-auto md:h-70 lg:absolute lg:w-96 lg:h-70 lg:top-16 lg:right-0">
+          <div className="relative rounded-xl p-6 shadow-lg w-full sm:w-96 h-auto md:h-70 lg:absolute lg:w-96 lg:h-70 lg:top-20 lg:right-0">
             <p>Agent-wise NPS</p>
             <p className="text-xl font-bold text-[#4732BA]">
               <span className="text-4xl tracking-wider">92%</span>{" "}

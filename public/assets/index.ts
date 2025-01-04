@@ -66,13 +66,22 @@ import blog2 from "../../public/assets/features/blog2.svg";
 import blog3 from "../../public/assets/features/blog3.svg";
 
 import aisolutions from "../../public/assets/products/ai-solutions.svg";
+
 import aiworkspace from "../../public/assets/products/ai-workspace.svg";
 import botwotllm from "../../public/assets/products/botwot-llm.svg";
 import reports from "../../public/assets/products/reports.svg";
+import zerocode from "../../public/assets/products/zero-code.svg";
+import pretrained from "../../public/assets/products/pre-trained.svg";
+import multilang from "../../public/assets/products/multi-lingual.svg";
+import human from "../../public/assets/products/human-off.svg";
+import fastestdeploy from "../../public/assets/products/fastest-deploy.svg";
+import complex from "../../public/assets/products/complex-tasks.svg";
+import taskhandle from "../../public/assets/products/task-handle.svg";
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
 import feedback from "../../public/assets/solutions/feedback.svg";
+import ai from "../../public/assets/solutions/ai.svg";
 import hrsupport from "../../public/assets/solutions/hr-support.svg";
 import loyalty from "../../public/assets/solutions/loyalty.svg";
 import payment from "../../public/assets/solutions/payment.svg";
@@ -141,9 +150,17 @@ export {
   dfeatures3,
   dfeatures4,
   aisolutions,
+  ai,
   aiworkspace,
   botwotllm,
   reports,
+  zerocode,
+  pretrained,
+  multilang,
+  human,
+  fastestdeploy,
+  complex,
+  taskhandle,
   blog1,
   blog2,
   blog3,

@@ -6,12 +6,12 @@ interface UseCase {
   title: string;
   description: string;
   example?: string;
+  img?: string;
 }
 
 interface ProductData {
   name: string;
   subtitle: string;
-  img: string;
   useCases: UseCase[];
 }
 
@@ -47,16 +47,16 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
                 </div>
               </div>
 
-              {currentProduct.img && (
-                <div className="flex-1">
+              {useCase.img && useCase.img !== "" ? (
+                <div className="flex-1 mt-12">
                   <Image
-                    src={currentProduct.img}
-                    alt={currentProduct.name}
-                    width={500}
+                    src={useCase.img}
+                    alt={useCase.title}
+                    width={1000}
                     height={500}
                   />
                 </div>
-              )}
+              ) : null}
             </div>
           ))}
         </div>
