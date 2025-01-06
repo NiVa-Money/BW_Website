@@ -1,20 +1,23 @@
 import { Tag, IntegrationsColumn } from "../components/index";
 import { 
-    figmaIcon,
-    notionIcon,
+    instagram,
+    facebook,
     slackIcon,
-    relumeIcon,
-    framerIcon,
-    githubIcon 
+    linkedin,
+    shopify,
+    tiktok,
+    xtwitter,
+
 } from "../../public/assets/index";
 
 const integrations = [
-    { name: "Figma", icon: figmaIcon, description: "Figma is a collaborative interface design tool." },
-    { name: "Notion", icon: notionIcon, description: "Notion is an all-in-one workspace for notes and docs." },
+    { name: "Instagram", icon: instagram, description: "Figma is a collaborative interface design tool." },
+    { name: "Facebook", icon: facebook, description: "Notion is an all-in-one workspace for notes and docs." },
     { name: "Slack", icon: slackIcon, description: "Slack is a powerful team communication platform." },
-    { name: "Relume", icon: relumeIcon, description: "Relume is a no-code website builder and design system." },
-    { name: "Framer", icon: framerIcon, description: "Framer is a professional website prototyping tool." },
-    { name: "GitHub", icon: githubIcon, description: "GitHub is the leading platform for code collaboration." },
+    { name: "LinkedIn", icon: linkedin, description: "Relume is a no-code website builder and design system." },
+    { name: "Shopify", icon: shopify, description: "Framer is a professional website prototyping tool." },
+    { name: "Tiktok", icon: tiktok, description: "GitHub is the leading platform for code collaboration." },
+    { name: "Twitter", icon: xtwitter, description: "GitHub is the leading platform for code collaboration." },
 ];
 
 export type IntegrationsType = typeof integrations;

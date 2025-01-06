@@ -1,10 +1,12 @@
 import logoImage from "../../public/assets/logo/botwot.svg";
-import figmaIcon from "../../public/assets/logo/figma-logo.svg";
-import notionIcon from "../../public/assets/logo/notion-logo.svg";
+import instagram from "../../public/assets/logo/instagram.svg";
+import linkedin from "../../public/assets/logo/linkedin.svg";
+import facebook from "../../public/assets/logo/facebook.svg";
+import tiktok from "../../public/assets/logo/tiktok.svg";
+import shopify from "../../public/assets/logo/shopify.svg";
+import xtwitter from "../../public/assets/logo/x-twiiter.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";
-import relumeIcon from "../../public/assets/logo/relume-logo.svg";
-import framerIcon from "../../public/assets/logo/framer-logo.svg";
-import githubIcon from "../../public/assets/logo/github-logo.svg";
+
 
 import unbeauty from "../../public/assets/logo/unbeauty.svg";
 import trabuli from "../../public/assets/logo/trabuli.svg";
@@ -64,6 +66,11 @@ import dfeatures4 from "../../public/assets/features/dfeatures4.svg";
 import blog1 from "../../public/assets/features/blog1.svg";
 import blog2 from "../../public/assets/features/blog2.svg";
 import blog3 from "../../public/assets/features/blog3.svg";
+
+import mission from "../../public/assets/icons/mission-icon.svg";
+import vision from "../../public/assets/icons/vision-icon.svg";
+import background from "../../public/assets/icons/background.svg";
+
 
 import aisolutions from "../../public/assets/products/ai-solutions.svg";
 
@@ -272,12 +279,13 @@ export {
   chatwork,
   travent,
   admardi,
-  figmaIcon,
-  notionIcon,
+  instagram,
+  linkedin,
   slackIcon,
-  relumeIcon,
-  framerIcon,
-  githubIcon,
+  facebook,
+  tiktok,
+  xtwitter,
+  shopify,
   compmanage,
   customersupport,
   feedback,
@@ -339,4 +347,7 @@ export {
   feedbackanalysis,
   reportsinsights,
   followup,
+  mission,
+  vision,
+  background,
 };
