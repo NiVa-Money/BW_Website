@@ -81,11 +81,19 @@ import analyticsdash from "../../public/assets/products/analytics-dash.svg";
 import reporting from "../../public/assets/products/reporting.svg";
 import performance from "../../public/assets/products/performance.svg";
 import historicals from "../../public/assets/products/historicals.svg";
+import seamlessop from "../../public/assets/products/seamless-op.svg";
+import ownership from "../../public/assets/products/ownership.svg";
+import learning from "../../public/assets/products/learning.svg";
+import industry from "../../public/assets/products/industry.svg";
+import fastdeploy from "../../public/assets/products/fast-deploy.svg";
+import datasecurity from "../../public/assets/products/data-security.svg";
+import dataprivacy from "../../public/assets/products/data-privacy.svg";
+import customization from "../../public/assets/products/customization.svg";
+import costefficiency from "../../public/assets/products/cost-efficiency.svg";
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
 import feedback from "../../public/assets/solutions/feedback.svg";
-import ai from "../../public/assets/solutions/ai.svg";
 import hrsupport from "../../public/assets/solutions/hr-support.svg";
 import loyalty from "../../public/assets/solutions/loyalty.svg";
 import payment from "../../public/assets/solutions/payment.svg";
@@ -95,8 +103,55 @@ import repmanage from "../../public/assets/solutions/rep-manage.svg";
 import saleslead from "../../public/assets/solutions/sales-lead.svg";
 import workflowopt from "../../public/assets/solutions/workflow-opt.svg";
 import insights from "../../public/assets/solutions/insights.svg";
-
-import realtime from "../../public/assets/solutions/real-time.svg";
+import monitoring from "../../public/assets/solutions/monitoring.svg";
+import sentiment from "../../public/assets/solutions/sentiment.svg";
+import crisis from "../../public/assets/solutions/crisis.svg";
+import engagement from "../../public/assets/solutions/engagement.svg";
+import generation from "../../public/assets/solutions/generation.svg";
+import upselling from "../../public/assets/solutions/up-selling.svg";
+import scalablecus from "../../public/assets/solutions/scalable.svg";
+import processing from "../../public/assets/solutions/processing.svg";
+import suggestions from "../../public/assets/solutions/suggestions.svg";
+import recommendations from "../../public/assets/solutions/recommendations.svg";
+import qualification from "../../public/assets/solutions/qualification.svg";
+import crmintegration from "../../public/assets/solutions/crm-integration.svg";
+import multichannel from "../../public/assets/solutions/multi-channel.svg";
+import leadanalytics from "../../public/assets/solutions/lead-analytics.svg";
+import leadengage from "../../public/assets/solutions/lead-engage.svg";
+import compliance from "../../public/assets/solutions/compliance.svg";
+import privacy from "../../public/assets/solutions/privacy.svg";
+import assessment from "../../public/assets/solutions/assessment.svg";
+import audit from "../../public/assets/solutions/audit-trail.svg";
+import management from "../../public/assets/solutions/management.svg";
+import reminders from "../../public/assets/solutions/reminders.svg";
+import negotiation from "../../public/assets/solutions/negotiation.svg";
+import gateway from "../../public/assets/solutions/gateway.svg";
+import dispute from "../../public/assets/solutions/dispute.svg";
+import payinsights from "../../public/assets/solutions/pay-insights.svg";
+import loyaltypro from "../../public/assets/solutions/loyalty-pro.svg";
+import autocustomer from "../../public/assets/solutions/auto-customer.svg";
+import incentives from "../../public/assets/solutions/incentives.svg";
+import feedbackint from "../../public/assets/solutions/feedback-int.svg";
+import tracking from "../../public/assets/solutions/tracking.svg";
+import employeemoni from "../../public/assets/solutions/employee-moni.svg";
+import payrollint from "../../public/assets/solutions/payroll-int.svg";
+import assis247 from "../../public/assets/solutions/247-assis.svg";
+import aidriven from "../../public/assets/solutions/ai-driven.svg";
+import onboardinga from "../../public/assets/solutions/onboarding-a.svg";
+import taskauto from "../../public/assets/solutions/task-auto.svg";
+import workflowstand from "../../public/assets/solutions/workflow-stand.svg";
+import crosscollab from "../../public/assets/solutions/cross-collab.svg";
+import adjustments from "../../public/assets/solutions/adjustments.svg";
+import existingtools from "../../public/assets/solutions/existing-tools.svg";
+import optimization from "../../public/assets/solutions/optimization.svg";
+import smartnotifications from "../../public/assets/solutions/smart-noti.svg";
+import collabtools from "../../public/assets/solutions/collab-tools.svg";
+import performanceinsights from "../../public/assets/solutions/perfomance-insights.svg";
+import custsurveys from "../../public/assets/solutions/cust-surveys.svg";
+import distribution from "../../public/assets/solutions/distribution.svg";
+import feedbackanalysis from "../../public/assets/solutions/feedback-analysis.svg";
+import reportsinsights from "../../public/assets/solutions/reports-insi.svg";
+import followup from "../../public/assets/solutions/follow-up.svg";
 
 import MenuIcon from "../../public/assets/icons/menu.svg";
 import ArrowUp from "../../public/assets/icons/ArrowUp.svg";
@@ -157,7 +212,6 @@ export {
   dfeatures3,
   dfeatures4,
   aisolutions,
-  ai,
   aiworkspace,
   botwotllm,
   reports,
@@ -172,6 +226,15 @@ export {
   reporting,
   performance,
   historicals,
+  seamlessop,
+  ownership,
+  learning,
+  industry,
+  fastdeploy,
+  datasecurity,
+  dataprivacy,
+  customization,
+  costefficiency,
   blog1,
   blog2,
   blog3,
@@ -226,7 +289,54 @@ export {
   repmanage,
   saleslead,
   workflowopt,
-  insights, 
-  realtime,
-
+  insights,
+  monitoring,
+  sentiment,
+  crisis,
+  engagement,
+  generation,
+  upselling,
+  scalablecus,
+  processing,
+  suggestions,
+  recommendations,
+  qualification,
+  crmintegration,
+  multichannel,
+  leadanalytics,
+  leadengage,
+  compliance,
+  privacy,
+  assessment,
+  audit,
+  management,
+  reminders,
+  negotiation,
+  gateway,
+  dispute,
+  payinsights,
+  loyaltypro,
+  autocustomer,
+  incentives,
+  feedbackint,
+  tracking,
+  employeemoni,
+  payrollint,
+  assis247,
+  aidriven,
+  onboardinga,
+  taskauto,
+  workflowstand,
+  crosscollab,
+  adjustments,
+  existingtools,
+  optimization,
+  smartnotifications,
+  collabtools,
+  performanceinsights,
+  custsurveys,
+  distribution,
+  feedbackanalysis,
+  reportsinsights,
+  followup,
 };

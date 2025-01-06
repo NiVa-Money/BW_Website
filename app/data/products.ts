@@ -14,6 +14,14 @@ import {
   reporting,
   historicals,
   performance,
+  dataprivacy,
+  customization,
+  costefficiency,
+  ownership,
+  datasecurity,
+  fastdeploy,
+  learning,
+  seamlessop,
 } from "../../public/assets";
 
 export const products = [
@@ -157,7 +165,7 @@ export const products = [
           "Dive into historical performance trends, examining data over time to identify recurring patterns and long-term opportunities for improvement. Use these insights to fine-tune your AI strategies and continuously improve your processes.",
         example:
           "  Education Technology (EdTech): Review chatbot performance data during enrollment periods to identify recurring user pain points and improve future interactions.",
-        img:  historicals,
+        img: historicals,
       },
     ],
   },
@@ -173,6 +181,7 @@ export const products = [
           "BotWot’s proprietary LLM ensures that your business’s sensitive data remains within your ecosystem, adhering to the strictest privacy regulations like GDPR, HIPAA, and PCI-DSS. This eliminates the risks of breaches or regulatory violations associated with external data handling.",
         example:
           "A financial services firm implements BotWot’s proprietary LLM to handle customer account inquiries. The system keeps all client data within its own ecosystem, ensuring compliance with GDPR and avoiding third-party exposure.",
+        img: dataprivacy,
       },
       {
         title: "Customization and Accuracy",
@@ -180,6 +189,7 @@ export const products = [
           "BotWot’s proprietary LLM is fine-tuned for your specific business, offering highly accurate, industry-specific responses. This model ensures precise, context-aware solutions, whether for customer support, sales, or internal operations.",
         example:
           "An e-commerce store deploys BotWot’s proprietary LLM for customer interactions. The LLM is tailored to the store’s catalog and business model, providing hyper-accurate, product-specific responses to customer inquiries and enhancing user experience.",
+        img: customization,
       },
       {
         title: "Cost Efficiency in the Long Term",
@@ -187,6 +197,7 @@ export const products = [
           "Unlike open-source models that come with hidden costs for updates and third-party dependencies, BotWot’s proprietary LLM is designed for efficiency, ensuring no recurring fees or licensing costs while providing a scalable, future-proof solution.",
         example:
           "A logistics company adopts BotWot’s proprietary LLM to automate warehouse operations. The solution requires no ongoing licensing fees or third-party dependencies, ensuring long-term cost efficiency as the company scales.",
+        img: costefficiency,
       },
       {
         title: "Total Control and Ownership",
@@ -194,6 +205,7 @@ export const products = [
           "With BotWot’s proprietary LLM, you maintain full control over your AI ecosystem. From customization to security, you own the model and can ensure it evolves according to your business needs and internal policies.",
         example:
           "A healthcare provider uses BotWot’s proprietary LLM to manage patient interactions and medical data securely. They have full control over how the system evolves, ensuring it aligns with the hospital’s standards and policies.",
+        img: ownership,
       },
       {
         title: "Industry-Specific Customization",
@@ -201,6 +213,7 @@ export const products = [
           "BotWot’s proprietary LLM is specifically trained for industries like finance, retail, healthcare, and tech, delivering tailored solutions that directly address the unique challenges and regulations of each sector.",
         example:
           "A fintech company customizes BotWot’s proprietary LLM for handling complex financial transactions and customer queries. The LLM is specifically trained on finance-related terms and regulations, improving both accuracy and compliance.",
+        img: customization,
       },
       {
         title: "Advanced Data Security",
@@ -208,6 +221,7 @@ export const products = [
           "BotWot’s LLM is built with top-tier security protocols, ensuring that all data stays within your ecosystem. With no third-party access, your business is protected from potential breaches while ensuring compliance with data protection standards.",
         example:
           "A law firm implements BotWot’s proprietary LLM for client communications. The system ensures that all confidential case data is processed in-house, adhering to the highest security standards, preventing any external access.",
+        img: datasecurity,
       },
       {
         title: "Lightning-Fast Deployment",
@@ -215,6 +229,7 @@ export const products = [
           "BotWot’s proprietary LLM offers rapid deployment, getting your AI-powered solutions live in minutes. With simple configuration, you can start reaping the benefits of automation right away, without complex setup processes.",
         example:
           "An online retail brand quickly deploys BotWot’s proprietary LLM to handle customer support and sales inquiries. With minimal setup time, the solution is live within days, boosting operational efficiency and reducing wait times for customers.",
+        img: fastdeploy,
       },
       {
         title: "Real-Time Adaptability and Learning",
@@ -222,6 +237,7 @@ export const products = [
           "BotWot’s proprietary LLM is continuously learning and adapting to your business, ensuring that it stays relevant as your needs evolve. The model improves accuracy and responsiveness over time, optimizing customer interactions.",
         example:
           "A telecom company uses BotWot’s proprietary LLM to manage service requests and technical support. The LLM learns from ongoing interactions, improving its response accuracy over time, making it more efficient in handling customer issues as they evolve.",
+        img: learning,
       },
       {
         title: "Seamless Integration Across Your Operations",
@@ -229,6 +245,7 @@ export const products = [
           "BotWot’s proprietary LLM integrates easily with your existing business systems, ensuring smooth AI adoption and interoperability. This plug-and-play integration allows you to extend AI functionality across all your operational touchpoints.",
         example:
           "A manufacturing company integrates BotWot’s proprietary LLM into its CRM and inventory management systems. The solution connects customer inquiries with product availability, ensuring a seamless and efficient workflow across sales, inventory, and customer service.",
+        img: seamlessop,
       },
     ],
   },

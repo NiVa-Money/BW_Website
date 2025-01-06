@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 interface UseCase {
   title: string;
@@ -17,6 +18,11 @@ interface ProductData {
 
 const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
   const currentProduct = data[0]; // Assuming we only have one product
+  const pathname = usePathname();
+
+  // Check the current path
+  const isBotwotPage = pathname === "/products/botwot-llm";
+  const imageWidth = isBotwotPage ? 350 : 2000;
 
   return (
     <div className="w-full bg-white text-black py-24 mb-12">
@@ -52,8 +58,8 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
                   <Image
                     src={useCase.img}
                     alt={useCase.title}
-                    width={1000}
-                    height={500}
+                    width={imageWidth}
+                    height={300}
                   />
                 </div>
               ) : null}
