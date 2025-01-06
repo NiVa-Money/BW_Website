@@ -149,7 +149,7 @@ const Hero = () => {
                 src={imageToDisplay}
                 alt={getPageName()}
                 width={1000} // Consistent width
-                height={1000} // Consistent height
+                height={500} // Consistent height
                 className="object-contain aspect-square" // Ensures the image remains within bounds
               />
             )}

@@ -10,6 +10,7 @@ import {
   Icon5,
   Icon6,
   Icon7,
+  Icon8,
   intellirecog1,
   multiagent1,
   nocode1,
@@ -335,13 +336,31 @@ export const benefits = [
   },
 ];
 
+export const introBenefits = [
+  {
+    icon: Icon8,
+    title: "Startup India Program",
+    iconAlt: "Integration icon",
+  },
+  {
+    icon: Icon2,
+    title: "NASSCOM India",
+    iconAlt: "Launch icon",
+  },
+  {
+    icon: Icon3,
+    title: "Empowering Businesses",
+    iconAlt: "Personalization icon",
+  },
+];
+
 export const features = [
   {
     title: "Multi-Agent Orchestrator",
     description:
       "Enable your AI workforce to work together like a well-coordinated team. BotWot’s Multi-Agent Orchestrator ensures seamless collaboration among specialized AI workforce, handling complex workflows and delivering unified, efficient outcomes across all touchpoints.",
     // bgColor: "bg-transparent",
-    bgColor : "bg-[#C4CFD3]",
+    bgColor: "bg-[#C4CFD3]",
     imgSrc: multiagent1,
   },
   {

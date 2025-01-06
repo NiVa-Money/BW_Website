@@ -169,27 +169,41 @@ export default function Footer({ border = false }) {
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 pt-6">
           <div className="flex space-x-4 mb-4 md:mb-0">
             {[
-              { Icon: FacebookIcon, label: "Facebook" },
-              { Icon: LinkedInIcon, label: "LinkedIn" },
-              { Icon: TwitterIcon, label: "Twitter" },
-              { Icon: YouTubeIcon, label: "YouTube" },
-              { Icon: InstagramIcon, label: "Instagram" },
-            ].map(({ Icon, label }) => (
-              <a
+              {
+                Icon: FacebookIcon,
+                label: "Facebook",
+                url: "https://www.facebook.com/profile.php?id=61570255077935",
+              },
+              {
+                Icon: LinkedInIcon,
+                label: "LinkedIn",
+                url: "https://www.linkedin.com/company/botwot/posts/?feedView=all",
+              },
+              {
+                Icon: TwitterIcon,
+                label: "Twitter",
+                url: "https://x.com/PurpleBot24",
+              },
+              {
+                Icon: YouTubeIcon,
+                label: "YouTube",
+                url: "https://www.youtube.com/@BotWot-04",
+              },
+              {
+                Icon: InstagramIcon,
+                label: "Instagram",
+                url: "https://www.instagram.com/botwot.io/",
+              },
+            ].map(({ Icon, label , url  }) => (
+              <Link
                 key={label}
-                href="#"
+                href={url}
                 aria-label={label}
-                className="text-gray-600 hover:text-blue-600"
+                className="text-gray-600 hover:text-[#387D8C]"
               >
                 <Icon fontSize="medium" />
-              </a>
+              </Link>
             ))}
-          </div>
-
-          <div className="text-gray-600 text-sm">
-            <p>India: +91 9582474246</p>
-            <p>UAE: +971 501178803</p>
-            <p>Nigeria: +234 (703) 789-6529</p>
           </div>
         </div>
 

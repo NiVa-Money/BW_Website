@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const GetStartedSection: React.FC = () => {
@@ -22,9 +23,11 @@ const GetStartedSection: React.FC = () => {
               Try for Free
             </button>
             {/* Book a Demo Button */}
+            <Link href="https://calendly.com/botwot62/30min" passHref>
             <button className="px-5 py-3 text-emerald-500 border border-emerald-500 rounded-full transition hover:bg-emerald-100 w-full sm:w-auto">
               Book a Demo
             </button>
+            </Link>
           </div>
         </div>
       </div>

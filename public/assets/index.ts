@@ -7,7 +7,6 @@ import shopify from "../../public/assets/logo/shopify.svg";
 import xtwitter from "../../public/assets/logo/x-twiiter.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";
 
-
 import unbeauty from "../../public/assets/logo/unbeauty.svg";
 import trabuli from "../../public/assets/logo/trabuli.svg";
 import prestige from "../../public/assets/logo/prestige.svg";
@@ -20,6 +19,7 @@ import travent from "../../public/assets/logo/travent.svg";
 
 import startup1 from "../../public/assets/logo/startup1.svg";
 import startup2 from "../../public/assets/logo/startup2.svg";
+import startup22 from "../../public/assets/logo/startup22.svg";
 import startup3 from "../../public/assets/logo/startup3.svg";
 import startup4 from "../../public/assets/logo/startup4.svg";
 import startup5 from "../../public/assets/logo/startup5.svg";
@@ -27,7 +27,7 @@ import startup6 from "../../public/assets/logo/startup6.svg";
 import startup7 from "../../public/assets/logo/startup7.svg";
 import startup8 from "../../public/assets/logo/startup8.svg";
 
-import meta from "../../public/assets/logo/meta-credits.svg";
+import meta from "../../public/assets/logo/meta.svg";
 import aws from "../../public/assets/logo/aws-credits.svg";
 
 import crn from "../../public/assets/logo/crn.svg";
@@ -46,6 +46,8 @@ import Icon4 from "../../public/assets/icons/Icon4.png";
 import Icon5 from "../../public/assets/icons/Icon5.png";
 import Icon6 from "../../public/assets/icons/Icon6.png";
 import Icon7 from "../../public/assets/icons/Icon7.png";
+import Icon8 from "../../public/assets/icons/Icon8.svg";
+
 import multiagent from "../../public/assets/features/multi-agent.svg";
 import intellirecog from "../../public/assets/features/intelli-recog.svg";
 import robust from "../../public/assets/features/robust.svg";
@@ -70,7 +72,7 @@ import blog3 from "../../public/assets/features/blog3.svg";
 import mission from "../../public/assets/icons/mission-icon.svg";
 import vision from "../../public/assets/icons/vision-icon.svg";
 import background from "../../public/assets/icons/background.svg";
-
+import story from "../../public/assets/icons/Story.svg";
 
 import aisolutions from "../../public/assets/products/ai-solutions.svg";
 
@@ -179,7 +181,7 @@ import Products from "../../public/assets/icons/products.svg";
 import Solutions from "../../public/assets/icons/solutions.svg";
 import OurStory from "../../public/assets/charts/StoryImage.svg";
 import Partnerships from "../../public/assets/charts/partnerships.svg";
-import animation from "../../public/assets/charts/animation.gif";
+import animation from "../../public/assets/charts/HeroAnimation.svg";
 import AboutUs from "../../public/assets/icons/AboutUs.svg";
 
 export {
@@ -252,8 +254,10 @@ export {
   Icon5,
   Icon6,
   Icon7,
+  Icon8,
   startup1,
   startup2,
+  startup22,
   startup3,
   startup4,
   startup5,
@@ -350,4 +354,5 @@ export {
   mission,
   vision,
   background,
+  story,
 };

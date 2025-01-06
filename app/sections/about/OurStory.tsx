@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { type FC } from "react";
 import { CEO, COO, CTO, AboutHero } from "../../../public/assets";
+// AboutHero
 
 const StoryPage: FC = () => {
   return (
     <div className="w-full">
       <div className=" mt-10 flex p-10 gap-20 lg:w-full items-center justify-center">
         <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-          Transforming Complexity <br />
-          to Productivity,
+          Revolutionizing Efficiency <br /> with AI 
+          for a  Smarter Future,
         </h1>
         <p className="text-lg mt-4 text-gray-600 mb-6">
-          We take pride in democratizing AI, <br /> empowering businesses of all sizes
-          to <br /> create intelligent customer experiences <br /> effortlessly and
-          affordably.
+          We are committed to simplifying AI integration, <br />
+          empowering businesses of all sizes to <br />
+          create smarter, more effective customer experiences <br />
+          effortlessly and affordably.
         </p>
       </div>
       <div className="lg:w-full flex items-center justify-center">
@@ -27,11 +29,11 @@ const StoryPage: FC = () => {
 
       {/* Story Section */}
       <div id="our-story" className="container mx-auto px-4 py-10">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
+        <h2 className="text-4xl md:text-5xl  font-bold text-center mb-8">
           Our Story
         </h2>
 
-        <div className="space-y-6 max-w-4xl mx-auto text-lg">
+        <div className="space-y-6 max-w-6xl mx-auto text-lg">
           <p>
             BotWot was born out of a deep understanding of the challenges
             businesses face in delivering seamless, empathetic, and scalable
@@ -79,7 +81,6 @@ const StoryPage: FC = () => {
               />
             </div>
             <div>
-              <div className="text-xl text-gray-500 mb-2">01</div>
               <p className="text-lg">
                 <b>Nitya Prakhar</b> is an experienced leader with a deep
                 passion for transforming customer experiences through
@@ -109,8 +110,6 @@ const StoryPage: FC = () => {
               />
             </div>
             <div>
-              <div className="text-xl text-gray-500 mb-2">02</div>
-
               <p className="text-lg">
                 <b>Mohanraj Tamilrasu</b> is a visionary technology leader with
                 over two decades of experience in the FinTech and AI sectors.
@@ -138,7 +137,6 @@ const StoryPage: FC = () => {
               />
             </div>
             <div>
-              <div className="text-xl text-gray-500 mb-2">03</div>
               <p className="text-lg">
                 <b>Namita Sharma</b> brings over two decades of expertise in
                 customer experience, digital transformation, and e-commerce. Her

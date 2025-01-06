@@ -3,10 +3,11 @@ import React from "react";
 
 import { mediaCenter } from "../../data/about";
 
+import Link from "next/link";
+
 const MediaCenter: React.FC = () => {
   return (
     <div className="flex flex-col items-center max-w-[1440px] mx-auto px-4">
-    
       {/* Title Section */}
       <SectionTitle
         title="Media Center"
@@ -68,13 +69,18 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
 );
 
 // Media Section
-const MediaSection: React.FC<{ media: { src: string; text: string }[] }> = ({
+const MediaSection: React.FC<{ media: { src: string; text: string , link:string  }[] }> = ({
   media,
 }) => (
   <div className="w-full max-w-[1324px] px-4 py-10">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {media.map((item, index) => (
-        <Card key={index} imageSrc={item.src} title={item.text} />
+        <Card
+          key={index}
+          imageSrc={item.src}
+          title={item.text}
+          link={item.link}
+        />
       ))}
     </div>
   </div>
@@ -84,19 +90,22 @@ const MediaSection: React.FC<{ media: { src: string; text: string }[] }> = ({
 interface CardProps {
   imageSrc: string;
   title: string;
+  link: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageSrc, title }) => (
-  <div className="bg-white rounded-3xl border border-zinc-100 shadow-lg p-6 h-full flex flex-col">
-    <div className="flex-1 flex items-center justify-center min-h-[200px]">
-      <div className="relative w-full h-[160px]">
-        <Image src={imageSrc} alt={title} fill className="object-contain" />
+const Card: React.FC<CardProps> = ({ imageSrc, title , link }) => (
+  <Link href={link} passHref>
+    <div className="bg-white rounded-3xl border border-zinc-100 shadow-lg p-6 h-full flex flex-col">
+      <div className="flex-1 flex items-center justify-center min-h-[200px]">
+        <div className="relative w-full h-[160px]">
+          <Image src={imageSrc} alt={title} fill className="object-contain" />
+        </div>
+      </div>
+      <div className="mt-4 text-xl font-semibold text-slate-700 text-center">
+        {title}
       </div>
     </div>
-    <div className="mt-4 text-xl font-semibold text-slate-700 text-center">
-      {title}
-    </div>
-  </div>
+  </Link>
 );
 
 export default MediaCenter;
