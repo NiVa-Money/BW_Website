@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { type FC } from "react";
-import { CEO, COO, CTO, AboutHero } from "../../../public/assets";
+import { CEO, COO, CTO, Company } from "../../../public/assets";
 // AboutHero
 
 const StoryPage: FC = () => {
@@ -8,8 +8,7 @@ const StoryPage: FC = () => {
     <div className="w-full">
       <div className=" mt-10 flex p-10 gap-20 lg:w-full items-center justify-center">
         <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-          Revolutionizing Efficiency <br /> with AI 
-          for a  Smarter Future,
+          Revolutionizing Efficiency <br /> with AI for a Smarter Future,
         </h1>
         <p className="text-lg mt-4 text-gray-600 mb-6">
           We are committed to simplifying AI integration, <br />
@@ -20,9 +19,9 @@ const StoryPage: FC = () => {
       </div>
       <div className="lg:w-full flex items-center justify-center">
         <Image
-          src={AboutHero}
+          src={Company}
           alt="Story Image"
-          className="w-[1200px] p-6 h-[600px]"
+          className="w-[1900px] p-6 h-[600px]"
           priority
         />
       </div>
@@ -73,12 +72,7 @@ const StoryPage: FC = () => {
           {/* Founder 1 */}
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image
-                src={CEO}
-                alt="Nitya Prakhar"
-                fill
-                className="object-cover"
-              />
+              <Image src={CEO} alt="Nitya Prakhar" fill />
             </div>
             <div>
               <p className="text-lg">
@@ -102,12 +96,7 @@ const StoryPage: FC = () => {
           {/* Founder 2 */}
           <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image
-                src={CTO}
-                alt="Mohanraj Tamilrasu"
-                fill
-                className="object-cover  filter grayscale"
-              />
+              <Image src={CTO} alt="Mohanraj Tamilrasu" fill />
             </div>
             <div>
               <p className="text-lg">
@@ -129,12 +118,7 @@ const StoryPage: FC = () => {
           {/* Founder 3 */}
           <div className="flex flex-col md:flex-row gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image
-                src={COO}
-                alt="Namita Sharma"
-                fill
-                className="object-cover  filter grayscale"
-              />
+              <Image src={COO} alt="Namita Sharma" fill />
             </div>
             <div>
               <p className="text-lg">

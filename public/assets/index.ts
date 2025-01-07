@@ -173,6 +173,8 @@ import CTO from "../../public/assets/avatars/CTO.svg";
 import COO from "../../public/assets/avatars/COO.svg";
 import robot from "../../public/assets/avatars/robot.svg";
 import AboutHero from "../../public/assets/avatars/AboutHero.svg";
+import Company from "../../public/assets/avatars/company-image.svg";
+
 
 import india from "../../public/assets/icons/india.svg";
 import uae from "../../public/assets/icons/uae.svg";
@@ -206,6 +208,7 @@ export {
   CTO,
   CEO,
   COO,
+  Company , 
   multiagent,
   intellirecog,
   robust,

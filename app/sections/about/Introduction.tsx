@@ -30,7 +30,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
         src={imageSrc}
         alt={name}
         fill
-        className="rounded-lg object-cover filter grayscale"
+        className="rounded-lg object-cover"
         priority
       />
     </div>
