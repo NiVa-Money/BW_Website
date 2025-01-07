@@ -119,8 +119,8 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative mt-0 w-full">
-      <div className="max-w-7xl mx-auto mt-0 flex flex-row">
+    <section className="relative mt-[2rem] w-full">
+      <div className="max-w-7xl mx-auto flex flex-row">
         {/* Left Section */}
         <div className="flex flex-col justify-center w-full lg:w-1/2 text-black space-y-5">
           <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
@@ -136,21 +136,21 @@ const Hero = () => {
               className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:text-indigo-600 hover:bg-white transition duration-300"
               onClick={handleExploreButtonClick}
             >
-              Explore More UseCases
+              Explore UseCases
             </button>
           </div>
         </div>
 
         {/* Right Section */}
-        <div className="lg:w-2/3 flex">
-          <div className="relative w-full mt-0 h-[40rem] sm:h-[36rem] lg:h-[40rem]">
+        <div className="lg:w-2/3 flex items-center justify-center">
+          <div className="relative w-full flex items-center justify-center h-[40rem] sm:h-[36rem] lg:h-[40rem]">
             {imageToDisplay && (
               <Image
                 src={imageToDisplay}
                 alt={getPageName()}
-                width={1000} // Consistent width
-                height={500} // Consistent height
-                className="object-contain aspect-square" // Ensures the image remains within bounds
+                layout="intrinsic" // Ensures proper scaling
+                objectFit="contain" // Prevents image cropping
+                priority // Optimize image loading
               />
             )}
           </div>
@@ -158,7 +158,7 @@ const Hero = () => {
       </div>
 
       {/* The explore section */}
-      <div id="explore-section" className="mt-12">
+      <div id="explore-section" className="mt-6 justify-center items-center">
         {/* Your content for the explore section goes here */}
       </div>
     </section>

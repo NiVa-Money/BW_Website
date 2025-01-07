@@ -1,6 +1,7 @@
 import {
   adjustments,
   aidriven,
+  airesolution,
   assessment,
   assis247,
   audit,
@@ -25,7 +26,9 @@ import {
   gateway,
   generation,
   hrsupport,
+  improvement,
   incentives,
+  intelliroute,
   leadanalytics,
   leadengage,
   loyalty,
@@ -52,6 +55,7 @@ import {
   saleslead,
   scalablecus,
   sentiment,
+  service,
   smartnotifications,
   suggestions,
   taskauto,
@@ -185,32 +189,32 @@ export const solutions = [
       {
         title: "24/7 Support Availability",
         description:
-          "Provide round-the-clock support to your customers with BotWot’s AI-powered customer service solutions, ensuring no query goes unanswered.",
-        img: customersupport,
+          "BotWot’s AI-powered customer support agents provide round-the-clock assistance to your customers, ensuring they receive answers to their queries at any time, improving customer satisfaction and reducing response times.",
+        img: service,
       },
       {
         title: "AI-Powered Issue Resolution",
         description:
-          "Leverage intelligent chatbots to resolve customer issues quickly and efficiently, reducing response times and improving satisfaction rates.",
-        img: customersupport,
+          "Leverage AI-driven troubleshooting and issue resolution capabilities to handle routine inquiries and problems quickly, allowing human agents to focus on more complex tasks.",
+        img: airesolution,
       },
       {
         title: "Omnichannel Support",
         description:
-          "Engage customers across multiple channels, including email, chat, social media, and SMS, to ensure seamless and consistent support.",
+          "Provide consistent customer support across multiple channels, including web chat, social media, email, and phone, all integrated into one seamless system for a unified customer experience.",
         img: multichannel,
       },
       {
         title: "Intelligent Routing",
         description:
-          "Automatically route queries to the most suitable agent or department using advanced AI-driven routing systems, improving first-contact resolution rates.",
-        img: customersupport,
+          "BotWot intelligently routes inquiries to the appropriate department or human agent based on the nature of the query, improving response times and ensuring more efficient support.",
+        img: intelliroute,
       },
       {
         title: "Analytics for Continuous Improvement",
         description:
-          "Track and analyze customer interactions to identify trends, bottlenecks, and opportunities for enhancing support processes.",
-        img: customersupport,
+          "BotWot’s advanced analytics feature provides insights into customer interactions, helping identify recurring issues, customer pain points, and areas for improvement, leading to enhanced customer service strategies.",
+        img: improvement,
       },
     ],
   },
@@ -223,31 +227,31 @@ export const solutions = [
       {
         title: "Automated Compliance Monitoring",
         description:
-          "BotWot ensures your business stays compliant with evolving regulations through automated monitoring of compliance frameworks.",
+          "BotWot helps businesses stay on top of evolving regulations by automating compliance monitoring. It tracks regulatory changes and ensures your operations align with local, national, and international standards.",
         img: compliance,
       },
       {
         title: "Risk Assessment Automation",
         description:
-          "Identify potential risks and vulnerabilities in real-time with automated risk assessment tools tailored to your industry.",
+          "AI-driven tools analyze your business processes, identify potential risks, and automatically flag any non-compliant activities. This helps proactively manage risks before they escalate into costly issues.",
         img: assessment,
       },
       {
         title: "Real-time Audit Trail",
         description:
-          "Maintain a detailed audit trail of all activities for accountability and transparency in your business operations.",
+          "BotWot’s real-time audit trail ensures that all actions and transactions within your business are tracked and logged, providing transparency for audits and compliance reporting.",
         img: audit,
       },
       {
         title: "Document Management & Protection",
         description:
-          "Securely manage and protect sensitive documents, ensuring they are accessible only to authorized personnel.",
+          "Keep critical business documents safe with BotWot’s automated document management system, which securely stores and manages your documents while ensuring they meet compliance requirements.",
         img: management,
       },
       {
         title: "Data Security & Privacy",
         description:
-          "Ensure data integrity and privacy with robust security measures built into BotWot’s risk management solutions.",
+          "BotWot ensures data protection through encryption, secure storage, and access controls, helping businesses maintain compliance with data privacy laws like GDPR and CCPA.",
         img: privacy,
       },
     ],
@@ -261,31 +265,31 @@ export const solutions = [
       {
         title: "Automated Payment Reminders",
         description:
-          "Send automated reminders to customers for due payments, ensuring timely collections and reducing outstanding invoices.",
+          "BotWot automates payment reminder notifications to customers, reducing missed payments and improving cash flow. With personalized messages, customers are reminded of overdue invoices before they become problematic.",
         img: reminders,
       },
       {
         title: "Intelligent Payment Negotiation",
         description:
-          "Enable intelligent negotiation with customers for payment plans or discounts, improving collection rates.",
+          "Our AI Workforce intelligently negotiate payment terms with customers, offering tailored solutions like installment plans or deferred payments, ensuring a higher recovery rate.",
         img: negotiation,
       },
       {
         title: "Payment Gateway Integration",
         description:
-          "Integrate seamlessly with leading payment gateways to facilitate hassle-free transactions for customers.",
+          "BotWot integrates with popular payment gateways such as Razorpay, PayPal, and Stripe, allowing seamless transactions and efficient payment collection processes for businesses.",
         img: gateway,
       },
       {
         title: "Dispute Management",
         description:
-          "Efficiently manage disputes and resolve them quickly with BotWot’s dispute resolution tools.",
+          "Manage disputes through an automated process that gathers all relevant information, evaluates the situation, and guides customers toward resolution. This reduces manual intervention and speeds up recovery.",
         img: dispute,
       },
       {
         title: "Customer Payment Insights",
         description:
-          "Analyze customer payment behavior to identify trends and improve your collections strategy.",
+          "Gain deeper insights into your customers' payment behaviors, preferences, and trends, helping you optimize payment strategies and improve future collection efforts.",
         img: payinsights,
       },
     ],
@@ -299,31 +303,31 @@ export const solutions = [
       {
         title: "Personalized Loyalty Programs",
         description:
-          "Design and implement personalized loyalty programs that resonate with your customer base.",
+          "BotWot helps design and manage personalized loyalty programs, rewarding customers based on their behavior, purchase history, and engagement. This boosts customer retention and repeat sales.",
         img: loyaltypro,
       },
       {
         title: "Automated Customer Engagement",
         description:
-          "Engage customers with automated messages and offers based on their purchase history and preferences.",
+          "Engage with your customers automatically through personalized messages, offers, and recommendations. BotWot ensures your communication stays relevant, helping strengthen customer loyalty.",
         img: autocustomer,
       },
       {
         title: "Behavior-Based Incentives",
         description:
-          "Reward customers for specific behaviors, such as repeat purchases or referrals, to drive loyalty.",
+          "Reward customers for specific behaviors like repeat purchases, social media engagement, or referrals, driving customer retention and fostering brand loyalty.",
         img: incentives,
       },
       {
         title: "Real-time Loyalty Tracking",
         description:
-          "Track customer loyalty metrics in real-time to measure the effectiveness of your programs.",
+          "Track customer loyalty in real-time and adjust strategies as necessary to optimize retention efforts. BotWot helps businesses stay agile, ensuring customers remain engaged.",
         img: tracking,
       },
       {
         title: "Customer Feedback Integration",
         description:
-          "Incorporate customer feedback into loyalty programs to continuously improve and tailor incentives.",
+          "Gather and analyze feedback through automated surveys and interactions. BotWot uses this data to refine your retention strategies and continuously enhance the customer experience.",
         img: feedbackint,
       },
     ],
@@ -337,31 +341,31 @@ export const solutions = [
       {
         title: "Employee Onboarding Automation",
         description:
-          "Simplify the onboarding process for new hires with automated workflows and document management.",
+          "Streamline the onboarding process for new employees with automated workflows, document collection, and training material distribution, making the transition smooth and efficient.",
         img: onboardinga,
       },
       {
         title: "AI-Driven Employee Feedback",
         description:
-          "Collect and analyze employee feedback with AI tools to improve workplace satisfaction and performance.",
+          "Collect and analyze employee feedback on a regular basis to ensure satisfaction and engagement. BotWot helps automate surveys and feedback analysis, allowing HR teams to address concerns proactively.",
         img: aidriven,
       },
       {
         title: "24/7 HR Assistance",
         description:
-          "Provide employees with 24/7 access to HR-related information and assistance through intelligent chatbots.",
+          "Provide employees with 24/7 access to HR-related support, answering common queries about policies, benefits, leave balances, and payroll.",
         img: assis247,
       },
       {
         title: "Payroll Integration",
         description:
-          "Integrate with payroll systems for seamless salary disbursement and benefits management.",
+          "BotWot integrates seamlessly with payroll systems to offer automated responses related to salary details, deductions, and payslip inquiries.",
         img: payrollint,
       },
       {
         title: "Employee Performance Monitoring",
         description:
-          "Track and evaluate employee performance metrics to support data-driven decisions.",
+          "BotWot tracks performance metrics automatically, offering real-time insights to HR managers, ensuring timely interventions and promoting employee growth.",
         img: employeemoni,
       },
     ],
@@ -375,31 +379,31 @@ export const solutions = [
       {
         title: "Task Automation",
         description:
-          "Automate repetitive tasks to free up your team's time for more strategic activities.",
+          "Automate repetitive tasks, saving time and resources. BotWot allows employees to focus on higher-value tasks while the AI handles the routine work, improving productivity across your teams.",
         img: taskauto,
       },
       {
         title: "Workflow Standardization",
         description:
-          "Ensure consistency and efficiency across departments with standardized workflows.",
+          "Ensure consistency and efficiency by creating standardized workflows across teams. BotWot helps automate common business processes to ensure seamless execution across departments.",
         img: workflowstand,
       },
       {
         title: "Cross-Department Collaboration",
         description:
-          "Facilitate seamless collaboration between departments with integrated tools and processes.",
+          "With BotWot’s workflow optimization, collaboration across departments becomes smoother. The AI facilitates communication, project tracking, and task handoffs, ensuring projects move forward without delays.",
         img: crosscollab,
       },
       {
         title: "Real-Time Monitoring & Adjustments",
         description:
-          "Monitor workflows in real-time and make adjustments on the fly to address bottlenecks.",
+          "BotWot’s real-time monitoring helps detect any bottlenecks or inefficiencies in your workflows. It also provides suggestions for optimization, keeping your business operations running smoothly.",
         img: adjustments,
       },
       {
         title: "Integration with Existing Tools",
         description:
-          "Integrate with the tools your team already uses to create a unified and efficient workflow environment.",
+          "Easily integrate BotWot with your existing project management, CRM, and communication tools to optimize workflows without needing a major system overhaul.",
         img: existingtools,
       },
     ],

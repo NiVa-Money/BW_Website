@@ -322,16 +322,22 @@ export const benefits = [
   {
     icon: Icon1,
     title: "Launch in Minutes",
+    description:
+      "Transform operations instantly with BotWot’s pre-trained AI. No coding, no setup—deploy in minutes and see results immediately.",
     iconAlt: "Integration icon",
   },
   {
     icon: Icon2,
     title: "Smart Conversations",
+    description:
+      "AI that understands, decides, and acts. BotWot provides human-like interactions, handling tasks faster than you could.",
     iconAlt: "Launch icon",
   },
   {
     icon: Icon3,
     title: "Scalable & Future-Ready",
+    description:
+      "BotWot scales with your business, handling any volume while adapting to new workflows and tools as you grow.",
     iconAlt: "Personalization icon",
   },
 ];

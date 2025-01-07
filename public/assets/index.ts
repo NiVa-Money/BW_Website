@@ -87,7 +87,6 @@ import background from "../../public/assets/icons/background.svg";
 import story from "../../public/assets/icons/Story.svg";
 
 import aisolutions from "../../public/assets/products/ai-solutions.svg";
-
 import aiworkspace from "../../public/assets/products/ai-workspace.svg";
 import botwotllm from "../../public/assets/products/botwot-llm.svg";
 import reports from "../../public/assets/products/reports.svg";
@@ -111,6 +110,9 @@ import datasecurity from "../../public/assets/products/data-security.svg";
 import dataprivacy from "../../public/assets/products/data-privacy.svg";
 import customization from "../../public/assets/products/customization.svg";
 import costefficiency from "../../public/assets/products/cost-efficiency.svg";
+import  seamhandoff from "../../public/assets/products/seam-handoff.svg";
+import contiadaption from "../../public/assets/products/conti-adaption.svg";
+
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
@@ -172,6 +174,10 @@ import custsurveys from "../../public/assets/solutions/cust-surveys.svg";
 import distribution from "../../public/assets/solutions/distribution.svg";
 import feedbackanalysis from "../../public/assets/solutions/feedback-analysis.svg";
 import reportsinsights from "../../public/assets/solutions/reports-insi.svg";
+import service from "../../public/assets/solutions/service.svg";
+import intelliroute from "../../public/assets/solutions/intelli-route.svg";
+import improvement from "../../public/assets/solutions/improvement.svg";
+import airesolution from "../../public/assets/solutions/ai-resolution.svg";
 import followup from "../../public/assets/solutions/follow-up.svg";
 
 import MenuIcon from "../../public/assets/icons/menu.svg";
@@ -237,6 +243,8 @@ export {
   dfeatures4,
   aisolutions,
   aiworkspace,
+  seamhandoff,
+  contiadaption,
   botwotllm,
   reports,
   zerocode,
@@ -373,6 +381,10 @@ export {
   distribution,
   feedbackanalysis,
   reportsinsights,
+  service,
+  improvement,
+  intelliroute,
+  airesolution,
   followup,
   mission,
   vision,

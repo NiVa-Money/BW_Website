@@ -35,7 +35,7 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
                 index % 2 === 0 ? "flex-row-reverse" : "flex-row"
               }`}
             >
-              <div className="flex-1">
+              <div className="max-w-5xl flex-1">
                 <div className="space-y-6">
                   <div className="p-6">
                     <div className="flex justify-center mb-6">

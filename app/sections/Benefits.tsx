@@ -41,6 +41,7 @@ const Benefits: React.FC = () => {
             key={index}
             icon={feature.icon}
             title={feature.title}
+            description = {feature.description}
             iconAlt={feature.iconAlt}
           />
         ))}

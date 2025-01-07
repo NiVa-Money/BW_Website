@@ -22,6 +22,8 @@ import {
   fastdeploy,
   learning,
   seamlessop,
+  contiadaption,
+  seamhandoff
 } from "../../public/assets";
 
 export const products = [
@@ -60,7 +62,7 @@ export const products = [
           "While the AI workforce efficiently manages routine queries, it detects when human intervention is required and smoothly escalates complex issues to a human employee, ensuring a seamless customer experience at all times.",
         example:
           "Customer Support : A telecom company uses the agent to manage service-related inquiries like account status and billing. If the AI workforce encounters a complex issue, it automatically transfers the customer to a human representative, ensuring a fast and effective resolution.",
-        img: human,
+        img: seamhandoff,
       },
       {
         title: "Continuous Learning and Adaptation",
@@ -68,7 +70,7 @@ export const products = [
           "The Ready-to-Go AI workforce have built-in machine learning capabilities that enable them to continuously learn from customer interactions. Over time, the workforce improve their responses and accuracy, providing even better service as they gather more data.",
         example:
           "Customer Feedback Loop : An online retailer uses the AI feedback assistant to handle customer feedback after each purchase. The assistant adapts its responses based on frequent queries and customer suggestions, becoming more effective at handling concerns and improving satisfaction over time.",
-        img: human,
+        img: contiadaption,
       },
     ],
   },
@@ -157,7 +159,7 @@ export const products = [
           "Evaluate how AI workforce stack up against human agents. Understand key performance differences and identify opportunities for bot improvement or areas where human agents outperform, driving optimization decisions.",
         example:
           "Telecom Industry :Analyze customer satisfaction scores for bot vs. agent interactions to refine escalation strategies.",
-        img: human,
+        img: seamhandoff,
       },
       {
         title: "Historical Trends & Data Analysis",
