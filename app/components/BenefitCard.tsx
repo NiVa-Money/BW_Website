@@ -12,7 +12,7 @@ interface FeatureCardProps {
 
 const BenefitCard: React.FC<FeatureCardProps> = ({ icon, title, iconAlt, description }) => {
   return (
-    <div className="flex overflow-hidden flex-col flex-1 shrink justify-center self-stretch p-px my-auto rounded-xl shadow-lg basis-0 min-w-[300px] h-[200px]">
+    <div className="flex overflow-hidden flex-col flex-1 shrink justify-center self-stretch p-px my-auto rounded-xl shadow-lg basis-0 min-w-[300px] h-[100px]">
       <motion.div
         className="relative w-full h-full"
         whileHover={{ rotateY: 180 }}

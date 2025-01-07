@@ -67,6 +67,7 @@ const Introduction: React.FC = () => {
               key={index}
               icon={benefit.icon}
               title={benefit.title}
+              description={benefit.description}
               iconAlt={benefit.iconAlt}
             />
           ))}

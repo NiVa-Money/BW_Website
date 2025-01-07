@@ -322,43 +322,45 @@ export const benefits = [
   {
     icon: Icon1,
     title: "Launch in Minutes",
-    description:
-      "Transform operations instantly with BotWot’s pre-trained AI. No coding, no setup—deploy in minutes and see results immediately.",
+    description: "Deploy BotWot's pre-trained AI instantly, no coding or setup required.",
     iconAlt: "Integration icon",
   },
   {
     icon: Icon2,
     title: "Smart Conversations",
-    description:
-      "AI that understands, decides, and acts. BotWot provides human-like interactions, handling tasks faster than you could.",
+    description: "BotWot delivers human-like interactions, quickly handling tasks.",
     iconAlt: "Launch icon",
   },
   {
     icon: Icon3,
     title: "Scalable & Future-Ready",
-    description:
-      "BotWot scales with your business, handling any volume while adapting to new workflows and tools as you grow.",
+    description: "BotWot grows with your business, adapting to new workflows.",
     iconAlt: "Personalization icon",
   },
 ];
+
 
 export const introBenefits = [
   {
     icon: Icon8,
     title: "Startup India Program",
+    description: "A government initiative supporting startups with funding and resources.",
     iconAlt: "Integration icon",
   },
   {
     icon: Icon2,
     title: "NASSCOM India",
+    description: "A leading industry association driving digital transformation in India.",
     iconAlt: "Launch icon",
   },
   {
     icon: Icon3,
     title: "Empowering Businesses",
+    description: "Helping businesses scale through innovative solutions and strategies.",
     iconAlt: "Personalization icon",
   },
 ];
+
 
 export const features = [
   {
