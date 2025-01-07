@@ -7,15 +7,27 @@ import shopify from "../../public/assets/logo/shopify.svg";
 import xtwitter from "../../public/assets/logo/x-twiiter.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";
 
-import unbeauty from "../../public/assets/logo/unbeauty.svg";
-import trabuli from "../../public/assets/logo/trabuli.svg";
+
 import prestige from "../../public/assets/logo/prestige.svg";
-import dna from "../../public/assets/logo/dna.svg";
-import govt from "../../public/assets/logo/govt.svg";
-import fusionfit from "../../public/assets/logo/fusionfit.svg";
+
 import chatwork from "../../public/assets/logo/chatwork.svg";
-import admardi from "../../public/assets/logo/admardi.svg";
-import travent from "../../public/assets/logo/travent.svg";
+
+import dna from "../../public/assets/logo/dna.svg"; //
+import govt from "../../public/assets/logo/govt-haryana.svg"; //
+import uaelogo from "../../public/assets/logo/uae-logo.svg"; //
+import unbeauty from "../../public/assets/logo/unbeauty.svg"; //
+import trabuli from "../../public/assets/logo/trabuli.svg"; //
+import admardi from "../../public/assets/logo/admardi.svg"; //
+import travent from "../../public/assets/logo/travent.svg"; //
+import fusionfit from "../../public/assets/logo/fusionfit.svg"; //
+import admobs from "../../public/assets/logo/admobs.svg"; 
+import anq from "../../public/assets/logo/anq.svg"; //
+import drrevive from "../../public/assets/logo/dr-revive.svg"; //
+import govtorrisa from "../../public/assets/logo/govt-orrisa.svg";
+import govttelangana from "../../public/assets/logo/govt-telangana.svg";
+import mira from "../../public/assets/logo/mira.svg"; //
+import niyo from "../../public/assets/logo/niyo.svg"; //
+
 
 import startup1 from "../../public/assets/logo/startup1.svg";
 import startup2 from "../../public/assets/logo/startup2.svg";
@@ -280,12 +292,20 @@ export {
   unbeauty,
   trabuli,
   prestige,
+  uaelogo,
   dna,
   govt,
   fusionfit,
   chatwork,
   travent,
   admardi,
+  admobs, 
+  anq, 
+  drrevive,
+  govtorrisa,
+  govttelangana,
+  mira,
+  niyo,
   instagram,
   linkedin,
   slackIcon,
