@@ -25,47 +25,42 @@ const ProductSection: React.FC<{ data: ProductData[] }> = ({ data }) => {
   const imageWidth = isBotwotPage ? 350 : 2000;
 
   return (
-    <div className="w-full bg-white text-black py-24 mb-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="space-y-10">
-          {currentProduct.useCases.map((useCase, index) => (
-            <div
-              key={index}
-              className={`flex gap-8 items-start mb-10 ${
-                index % 2 === 0 ? "flex-row-reverse" : "flex-row"
-              }`}
-            >
-              <div className="max-w-5xl flex-1">
-                <div className="space-y-6">
-                  <div className="p-6">
-                    <div className="flex justify-center mb-6">
-                      <h3 className="text-3xl text-center font-semibold">
-                        {useCase.title}
-                      </h3>
-                    </div>
-                    <p className="text-black/50 ml-3 ">{useCase.description}</p>
-                    {useCase.example && (
-                      <p className="mt-4 ml-3 text-black font-semibold italic">
-                        {useCase.example}
-                      </p>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {useCase.img && useCase.img !== "" ? (
-                <div className="flex-1 mt-12">
-                  <Image
-                    src={useCase.img}
-                    alt={useCase.title}
-                    width={imageWidth}
-                    height={300}
-                  />
-                </div>
-              ) : null}
+    <div className="w-full bg-white text-black py-16 sm:py-24 px-4 sm:px-6 lg:px-8 mb-12">
+      <div className="max-w-6xl mx-auto space-y-12">
+        {currentProduct.useCases.map((useCase, index) => (
+          <div
+            key={index}
+            className={`flex flex-col lg:flex-row items-center gap-8 ${
+              index % 2 === 0 ? "lg:flex-row-reverse" : "lg:flex-row"
+            }`}
+          >
+            {/* Text Section */}
+            <div className="flex-1 space-y-4 text-center lg:text-left">
+              <h3 className="text-2xl sm:text-3xl font-semibold">
+                {useCase.title}
+              </h3>
+              <p className="text-black/70">{useCase.description}</p>
+              {useCase.example && (
+                <p className="mt-2 text-black font-semibold italic">
+                  {useCase.example}
+                </p>
+              )}
             </div>
-          ))}
-        </div>
+
+            {/* Image Section */}
+            {useCase.img && useCase.img !== "" && (
+              <div className="flex-1 flex justify-center items-center mt-6 lg:mt-0">
+                <Image
+                  src={useCase.img}
+                  alt={useCase.title}
+                  width={imageWidth}
+                  height={300}
+                  className="h-auto max-h-[300px] object-contain"
+                />
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </div>
   );

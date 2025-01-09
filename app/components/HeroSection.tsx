@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { products, productUrlMapping } from "../data/products";
-
 import solutions from "../data/solution";
 import { Products, Solutions } from "../../public/assets";
 
@@ -11,24 +10,18 @@ const Hero = () => {
   const isProductPage = pathname.startsWith("/products/");
   const isSolutionPage = pathname.startsWith("/solutions/");
 
-  // Function to get the name based on the pathname
   const getPageName = () => {
     if (isProductPage) {
-      // Check if the pathname exists in the productUrlMapping
-      const pageName =
-        productUrlMapping[pathname as keyof typeof productUrlMapping];
-
-      // Return the corresponding product name or "Product Not Found"
-      return pageName || "Product Not Found";
+      return (
+        productUrlMapping[pathname as keyof typeof productUrlMapping] ||
+        "Product Not Found"
+      );
     }
-
     return "";
   };
 
-  // Function to get the label for solution pages
   const getSolutionLabel = () => {
     if (isSolutionPage) {
-      // Find the solution that matches the current pathname
       const solution = solutions.find((solution) => pathname === solution.href);
       return solution ? solution.label : "Solution Not Found";
     }
@@ -37,8 +30,9 @@ const Hero = () => {
 
   const getProductImage = () => {
     if (isProductPage) {
-      const pageName = getPageName();
-      const product = products.find((product) => product.name === pageName);
+      const product = products.find(
+        (product) => product.name === getPageName()
+      );
       return product?.img || Products;
     }
     return null;
@@ -47,15 +41,16 @@ const Hero = () => {
   const getSolutionImage = () => {
     if (isSolutionPage) {
       const solution = solutions.find((solution) => pathname === solution.href);
-      return solution?.img || Solutions; // Fallback to default image
+      return solution?.img || Solutions;
     }
     return null;
   };
 
   const getSubtitle = () => {
     if (isProductPage) {
-      const pageName = getPageName();
-      const product = products.find((product) => product.name === pageName);
+      const product = products.find(
+        (product) => product.name === getPageName()
+      );
       return product?.subtitle || "Explore our cutting-edge product!";
     }
     return "";
@@ -69,48 +64,6 @@ const Hero = () => {
     return "";
   };
 
-  // Set dynamic content based on the page type
-  const pageName = getPageName();
-  const solutionLabel = getSolutionLabel();
-  const subtitle = getSubtitle();
-  const slogan = getSlogan();
-
-  const imageToDisplay = isProductPage
-    ? getProductImage()
-    : isSolutionPage
-    ? getSolutionImage()
-    : null;
-
-  // const highlights = [
-  //   {
-  //     title: "Pre-Trained for Industry Use Cases",
-  //     description:
-  //       "AI workforce tailored for healthcare, finance, and retail challenges—no setup needed!",
-  //   },
-  //   {
-  //     title: "24/7 Global Availability",
-  //     description:
-  //       "Multilingual, always-on support to scale your customer service globally.",
-  //   },
-  //   {
-  //     title: "Effortless Integration",
-  //     description:
-  //       "Plug-and-play compatibility with CRMs, ERPs, and e-commerce platforms.",
-  //   },
-  // ];
-
-  // // Auto-slide carousel every 3 seconds
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentSlide((prevSlide) =>
-  //       prevSlide === highlights.length - 1 ? 0 : prevSlide + 1
-  //     );
-  //   }, 3000); // Change slide every 3 seconds
-
-  //   return () => clearInterval(interval); // Cleanup on component unmount
-  // }, [highlights.length]);
-
-  // Scroll to the "Explore More UseCases" button on click
   const handleExploreButtonClick = () => {
     const exploreSection = document.getElementById("explore-section");
     if (exploreSection) {
@@ -118,20 +71,28 @@ const Hero = () => {
     }
   };
 
+  const pageName = getPageName();
+  const solutionLabel = getSolutionLabel();
+  const subtitle = getSubtitle();
+  const slogan = getSlogan();
+  const imageToDisplay = isProductPage
+    ? getProductImage()
+    : isSolutionPage
+    ? getSolutionImage()
+    : null;
+
   return (
-    <section className="relative mt-[2rem] w-full">
-      <div className="max-w-7xl mx-auto flex flex-row">
+    <section className="relative mt-8 w-full px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center lg:items-start gap-y-8 lg:gap-x-8">
         {/* Left Section */}
-        <div className="flex flex-col justify-center w-full lg:w-1/2 text-black space-y-5">
-          <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
+        <div className="w-full lg:w-1/2 flex flex-col justify-center text-black space-y-5">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center lg:text-left">
             {isProductPage ? pageName : solutionLabel}
           </h1>
-          <p className="text-lg lg:text-xl font-light">
+          <p className="text-lg sm:text-xl font-light text-center lg:text-left">
             {isProductPage ? subtitle : slogan}
           </p>
-
-          {/* Call to Action */}
-          <div className="flex flex-wrap items-center space-x-0 space-y-4 lg:space-y-0 lg:space-x-4">
+          <div className="flex justify-center lg:justify-start space-y-4 lg:space-y-0 lg:space-x-4">
             <button
               className="bg-[#2E2F5F] text-white font-semibold border-2 border-black rounded-full py-3 px-6 md:px-8 hover:text-indigo-600 hover:bg-white transition duration-300"
               onClick={handleExploreButtonClick}
@@ -142,24 +103,27 @@ const Hero = () => {
         </div>
 
         {/* Right Section */}
-        <div className="lg:w-2/3 flex items-center justify-center">
-          <div className="relative w-full flex items-center justify-center h-[40rem] sm:h-[36rem] lg:h-[40rem]">
+        <div className="w-full lg:w-1/2 flex items-center justify-center">
+          <div className="relative w-full h-auto max-h-[500px] lg:max-h-[600px]">
             {imageToDisplay && (
               <Image
                 src={imageToDisplay}
                 alt={getPageName()}
-                layout="intrinsic" // Ensures proper scaling
-                objectFit="contain" // Prevents image cropping
-                priority // Optimize image loading
+                layout="intrinsic"
+                objectFit="contain"
+                priority
               />
             )}
           </div>
         </div>
       </div>
 
-      {/* The explore section */}
-      <div id="explore-section" className="mt-6 justify-center items-center">
-        {/* Your content for the explore section goes here */}
+      {/* Explore Section */}
+      <div
+        id="explore-section"
+        className="mt-6 flex justify-center items-center"
+      >
+        {/* Additional content can go here */}
       </div>
     </section>
   );

@@ -44,7 +44,7 @@ const Careers: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-10">
           <Tag>We’re hiring!</Tag>
-          <h1 className="text-4xl md:text-5xl mt-4 font-bold text-gray-900">
+          <h1 className="text-4xl sm:text-5xl mt-4 font-bold text-gray-900">
             Be part of our mission
           </h1>
           <p className="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
@@ -77,10 +77,10 @@ const Careers: React.FC = () => {
             {filteredJobs.map((job) => (
               <div
                 key={job.title}
-                className="border-t border-gray-200 pt-6 flex flex-col md:flex-row justify-between items-start md:items-center"
+                className="border-t border-gray-200 pt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center px-4 sm:px-6 md:px-8 space-y-6 sm:space-y-0"
               >
-                <div>
-                  <h2 className="text-2xl font-semibold text-gray-900">
+                <div className="flex-1">
+                  <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">
                     {job.title}
                   </h2>
                   <p className="mt-2 text-gray-600">{job.description}</p>
@@ -123,7 +123,7 @@ const Careers: React.FC = () => {
                 </div>
                 <button
                   onClick={handleApplyClick}
-                  className="text-[#387D8C] hover:text-black font-medium mt-4 md:mt-0"
+                  className="text-[#387D8C] hover:text-black font-medium mt-4 sm:mt-0"
                 >
                   Apply →
                 </button>

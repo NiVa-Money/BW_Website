@@ -1,34 +1,36 @@
 import Image from "next/image";
 import { type FC } from "react";
 import { CEO, COO, CTO, Company } from "../../../public/assets";
-// AboutHero
 
 const StoryPage: FC = () => {
   return (
     <div className="w-full">
-      <div className=" mt-10 flex p-10 gap-20 lg:w-full items-center justify-center">
-        <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
-          Revolutionizing Efficiency <br /> with AI for a Smarter Future,
-        </h1>
-        <p className="text-lg mt-4 text-gray-600 mb-6">
-          We are committed to simplifying AI integration, <br />
-          empowering businesses of all sizes to <br />
-          create smarter, more effective customer experiences <br />
-          effortlessly and affordably.
-        </p>
-      </div>
-      <div className="lg:w-full flex items-center justify-center">
-        <Image
-          src={Company}
-          alt="Story Image"
-          className="w-[1900px] p-6 h-[600px]"
-          priority
-        />
+      {/* Hero Section */}
+      <div className="mt-10 flex p-6 sm:p-10 gap-8 lg:w-full items-center justify-center flex-col lg:flex-row">
+        <div className="text-center lg:text-left">
+          <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl xl:text-6xl">
+            Revolutionizing Efficiency <br /> with AI for a Smarter Future,
+          </h1>
+          <p className="text-lg mt-4 text-gray-600 mb-6">
+            We are committed to simplifying AI integration, <br />
+            empowering businesses of all sizes to <br />
+            create smarter, more effective customer experiences <br />
+            effortlessly and affordably.
+          </p>
+        </div>
+        <div className="lg:w-1/2 flex justify-center items-center">
+          <Image
+            src={Company}
+            alt="Story Image"
+            className="w-full max-w-[1900px] p-6 h-auto"
+            priority
+          />
+        </div>
       </div>
 
       {/* Story Section */}
       <div id="our-story" className="container mx-auto px-4 py-10">
-        <h2 className="text-4xl md:text-5xl  font-bold text-center mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-8">
           Our Story
         </h2>
 
@@ -70,9 +72,14 @@ const StoryPage: FC = () => {
         {/* Team Section */}
         <div className="mt-16 space-y-12">
           {/* Founder 1 */}
-          <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image src={CEO} alt="Nitya Prakhar" fill />
+              <Image
+                src={CEO}
+                alt="Nitya Prakhar"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <p className="text-lg">
@@ -94,9 +101,14 @@ const StoryPage: FC = () => {
           </div>
 
           {/* Founder 2 */}
-          <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
+          <div className="flex flex-col lg:flex-row-reverse gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image src={CTO} alt="Mohanraj Tamilrasu" fill />
+              <Image
+                src={CTO}
+                alt="Mohanraj Tamilrasu"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <p className="text-lg">
@@ -116,9 +128,14 @@ const StoryPage: FC = () => {
           </div>
 
           {/* Founder 3 */}
-          <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="w-64 h-64 relative overflow-hidden flex-shrink-0">
-              <Image src={COO} alt="Namita Sharma" fill />
+              <Image
+                src={COO}
+                alt="Namita Sharma"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <p className="text-lg">

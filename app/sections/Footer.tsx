@@ -14,6 +14,8 @@ const LINKS = [
       { name: "Introduction", path: "/about/introduction" },
       { name: "Our Value Proposition", path: "/about/value-proposition" },
       { name: "Our Story", path: "/about/our-story" },
+      { name: "Partnerships & Alliances", path: "/about/partnerships" },
+      { name: "Media Center", path: "/about/media-center" },
       { name: "Careers", path: "/about/careers" },
     ],
   },
@@ -60,13 +62,13 @@ const LINKS = [
   {
     title: "Resources",
     items: [
-      { name: "Case Studies", path: "/resources/use-cases" },
-      { name: "Channels", path: "/resources/channels" },
-      { name: "Integrations", path: "/resources/integrations" },
-      { name: "Data Security", path: "/resources/data-security" },
+      // { name: "Case Studies", path: "/resources/use-cases" },
+      // { name: "Channels", path: "/resources/channels" },
+      // { name: "Integrations", path: "/resources/integrations" },
+      // { name: "Data Security", path: "/resources/data-security" },
       { name: "Blogs", path: "/resources/blogs" },
-      { name: "Community", path: "/resources/community" },
-      { name: "Help Center & FAQ's", path: "/resources/help-center" },
+      // { name: "Community", path: "/resources/community" },
+      // { name: "Help Center & FAQ's", path: "/resources/help-center" },
       { name: "Privacy Policy", path: "/resources/policy" },
     ],
   },
@@ -194,7 +196,7 @@ export default function Footer({ border = false }) {
                 label: "Instagram",
                 url: "https://www.instagram.com/botwot.io/",
               },
-            ].map(({ Icon, label , url  }) => (
+            ].map(({ Icon, label, url }) => (
               <Link
                 key={label}
                 href={url}
