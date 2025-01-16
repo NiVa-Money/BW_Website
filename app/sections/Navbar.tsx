@@ -11,13 +11,13 @@
 //   const [isOpen, setIsOpen] = useState(false);
 //   const [hoveredTab, setHoveredTab] = useState<string | null>(null);
 
-//   const handleMouseEnter = (tab: string) => {
-//     setHoveredTab(tab);
-//   };
+// const handleMouseEnter = (tab: string) => {
+//   setHoveredTab(tab);
+// };
 
-//   const handleMouseLeave = () => {
-//     setHoveredTab(null);
-//   };
+// const handleMouseLeave = () => {
+//   setHoveredTab(null);
+// };
 
 //   return (
 //     <>
@@ -81,79 +81,79 @@
 //               </svg>
 //             </div>
 
-//             {/* Desktop navigation links */}
-//             <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-6 whitespace-nowrap">
-//               {navLinks.map((link) => (
-//                 <li
-//                   key={link.href}
-//                   onMouseEnter={() => handleMouseEnter(link.label)}
-//                   onMouseLeave={handleMouseLeave}
-//                   className="relative"
+//       {/* Desktop navigation links */}
+//       <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-6 whitespace-nowrap">
+//         {navLinks.map((link) => (
+//           <li
+//             key={link.href}
+//             onMouseEnter={() => handleMouseEnter(link.label)}
+//             onMouseLeave={handleMouseLeave}
+//             className="relative"
+//           >
+//             {link.label === "Pricing" ? (
+//               <Link
+//                 href={link.href}
+//                 className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors"
+//               >
+//                 {link.label}
+//               </Link>
+//             ) : (
+//               <span className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors">
+//                 {link.label}
+//               </span>
+//             )}
+//             {hoveredTab === link.label && link.submenu && (
+//               <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-4">
+//                 <div
+//                   className={`grid ${
+//                     link.submenu.length <= 6
+//                       ? "grid-cols-1 w-[350px]"
+//                       : "grid-cols-2 w-[600px]"
+//                   } gap-x-4 gap-y-5`}
 //                 >
-//                   {link.label === "Pricing" ? (
-//                     <Link
-//                       href={link.href}
-//                       className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors"
-//                     >
-//                       {link.label}
-//                     </Link>
-//                   ) : (
-//                     <span className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors">
-//                       {link.label}
-//                     </span>
-//                   )}
-//                   {hoveredTab === link.label && link.submenu && (
-//                     <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-4">
-//                       <div
-//                         className={`grid ${
-//                           link.submenu.length <= 6
-//                             ? "grid-cols-1 w-[350px]"
-//                             : "grid-cols-2 w-[600px]"
-//                         } gap-x-4 gap-y-5`}
-//                       >
-//                         {link.submenu.map((submenuItem, index) => (
-//                           <div key={index} className="flex items-start gap-4">
-//                             {submenuItem.icon && (
-//                               <div className="flex-shrink-0 text-black">
-//                                 <submenuItem.icon className="h-5 w-5" />
-//                               </div>
-//                             )}
-//                             <div>
-//                               <Link
-//                                 href={submenuItem.href}
-//                                 className="block font-medium text-black hover:text-[#387D8C] transition-colors"
-//                               >
-//                                 {submenuItem.label}
-//                               </Link>
-//                               <p className="text-sm text-gray-500 mt-1">
-//                                 {submenuItem.description}
-//                               </p>
-//                             </div>
-//                           </div>
-//                         ))}
+//                   {link.submenu.map((submenuItem, index) => (
+//                     <div key={index} className="flex items-start gap-4">
+//                       {submenuItem.icon && (
+//                         <div className="flex-shrink-0 text-black">
+//                           <submenuItem.icon className="h-5 w-5" />
+//                         </div>
+//                       )}
+//                       <div>
+//                         <Link
+//                           href={submenuItem.href}
+//                           className="block font-medium text-black hover:text-[#387D8C] transition-colors"
+//                         >
+//                           {submenuItem.label}
+//                         </Link>
+//                         <p className="text-sm text-gray-500 mt-1">
+//                           {submenuItem.description}
+//                         </p>
 //                       </div>
 //                     </div>
-//                   )}
-//                 </li>
-//               ))}
-//               <li>
-//                 <Link
-//                   href="/signin"
-//                   className="px-6 py-2 border-2 text-black border-[#387D8C] rounded-full hover:bg-green-100 hover:text-black transition-colors whitespace-nowrap"
-//                 >
-//                   Sign in
-//                 </Link>
+//                   ))}
+//                 </div>
+//               </div>
+//             )}
+//           </li>
+//         ))}
+//         <li>
+//           <Link
+//             href="/signin"
+//             className="px-6 py-2 border-2 text-black border-[#387D8C] rounded-full hover:bg-green-100 hover:text-black transition-colors whitespace-nowrap"
+//           >
+//             Sign in
+//           </Link>
 
-//                 <Link href="https://calendly.com/botwot62/30min" passHref>
-//                   <button className="px-5 md:px-6 py-3 ml-4 text-white bg-black rounded-full transition hover:bg-gray-800">
-//                     Request a demo
-//                   </button>
-//                 </Link>
-//               </li>
-//             </ul>
-//           </div>
-//         </div>
-//       </header>
+//           <Link href="https://calendly.com/botwot62/30min" passHref>
+//             <button className="px-5 md:px-6 py-3 ml-4 text-white bg-black rounded-full transition hover:bg-gray-800">
+//               Request a demo
+//             </button>
+//           </Link>
+//         </li>
+//       </ul>
+//     </div>
+//   </div>
+// </header>
 
 //       {/* Mobile dropdown menu */}
 //       <AnimatePresence>
@@ -208,7 +208,6 @@
 
 // export default Navbar;
 
-
 "use client";
 
 import { useState } from "react";
@@ -221,6 +220,15 @@ import { logoImage } from "../../public/assets";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const [hoveredTab, setHoveredTab] = useState<string | null>(null);
+
+  const handleMouseEnter = (tab: string) => {
+    setHoveredTab(tab);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredTab(null);
+  };
 
   const toggleSubmenu = (label: string) => {
     setActiveSubmenu(activeSubmenu === label ? null : label);
@@ -288,33 +296,36 @@ const Navbar: React.FC = () => {
               </svg>
             </div>
 
-            {/* Desktop Navigation Links */}
-            <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-6 whitespace-nowrap">
+            {/* Desktop navigation links */}
+            <ul className="hidden md:flex flex-1 py-5 items-center justify-center gap-14 whitespace-nowrap">
               {navLinks.map((link) => (
                 <li
                   key={link.href}
+                  onMouseEnter={() => handleMouseEnter(link.label)}
+                  onMouseLeave={handleMouseLeave}
                   className="relative"
                 >
-                  {link.submenu ? (
-                    <button
-                      onClick={() => toggleSubmenu(link.label)}
-                      className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors"
-                    >
-                      {link.label}
-                    </button>
-                  ) : (
+                  {link.label === "Pricing" ? (
                     <Link
                       href={link.href}
                       className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors"
                     >
                       {link.label}
                     </Link>
+                  ) : (
+                    <span className="px-2 py-4 text-black text-center hover:text-[#387D8C] transition-colors">
+                      {link.label}
+                    </span>
                   )}
-
-                  {/* Submenu */}
-                  {activeSubmenu === link.label && link.submenu && (
-                    <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-4 w-[350px] md:w-[600px]">
-                      <div className="grid grid-cols-1 gap-y-5">
+                  {hoveredTab === link.label && link.submenu && (
+                    <div className="absolute left-0 mt-2 bg-white shadow-lg rounded-lg p-4">
+                      <div
+                        className={`grid ${
+                          link.submenu.length <= 6
+                            ? "grid-cols-1 w-[350px]"
+                            : "grid-cols-2 w-[600px]"
+                        } gap-x-4 gap-y-5`}
+                      >
                         {link.submenu.map((submenuItem, index) => (
                           <div key={index} className="flex items-start gap-4">
                             {submenuItem.icon && (
@@ -349,7 +360,7 @@ const Navbar: React.FC = () => {
                 </Link>
 
                 <Link href="https://calendly.com/botwot62/30min" passHref>
-                  <button className="px-5 md:px-6 py-3 ml-4 text-white bg-black rounded-full transition hover:bg-gray-800">
+                  <button className="px-6 md:px-6 py-3 ml-4 mr-6 text-white bg-black rounded-full transition hover:bg-gray-800">
                     Request a demo
                   </button>
                 </Link>
@@ -358,7 +369,6 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </header>
-
       {/* Mobile Dropdown Menu */}
       <AnimatePresence>
         {isOpen && (
