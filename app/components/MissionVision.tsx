@@ -4,7 +4,7 @@ import Image from 'next/image';
 const MissionComponent = () => {
     return (
       <div className="flex flex-col px-4 md:px-20 text-slate-700 py-14">
-        <h2 className="text-4xl font-semibold text-center text-[#2E2F5F] mb-8">
+        <h2 className="text-4xl font-bold text-center text-[#2E2F5F] mb-8">
           Our Mission and Vision
         </h2>
         <div className="flex flex-col md:flex-row gap-8 w-full">

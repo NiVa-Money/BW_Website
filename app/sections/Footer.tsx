@@ -161,8 +161,8 @@ export default function Footer({ border = false }) {
               Nigeria
             </h3>
             <p>Purpleant Tech Services Limited</p>
-            <p>11 Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
-            <p>+234 (703) 789-6529</p>
+            <p>Commercial Ave, Yaba, Lagos 101245, Lagos, Nigeria</p>
+            <p>+234 (808) 476-0583</p>
             <p className="text-blue-500">info@botwot.io</p>
           </div>
         </div>

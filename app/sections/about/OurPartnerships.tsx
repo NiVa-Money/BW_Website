@@ -36,7 +36,7 @@ const OurPartnerships: React.FC = () => {
         {/* Partnerships Section */}
         <div className="mt-24 max-md:mt-10 max-md:max-w-full">
         <h2 className="text-4xl text-center font-semibold leading-tight text-[#2E2F5F] mb-4">
-            Partnerships & Credits
+            Partnerships
           </h2>
           <div className="grid grid-cols-2 gap-5 max-md:grid-cols-1 mt-10 mb-10">
             {partnerships.map((partnership, index) => (

@@ -53,9 +53,46 @@ const Introduction: React.FC = () => {
   return (
     <>
       <AboutUsSection />
-      <section className="py-16 px-8 bg-gray-50">
+
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold text-center text-[#2E2F5F] mb-8">
+          About BotWot
+        </h2>
+      </div>
+      <div className="max-w-5xl mx-auto text-lg leading-7 text-gray-700 space-y-6">
+        <p>
+          BotWot, the flagship product of Purpleant Technologies Pvt. Ltd.,
+          represents our bold vision to redefine how businesses operate using
+          AI-driven solutions.
+        </p>
+        <p>
+          Established in 2024 under the Startup India Program, Purpleant is on a
+          mission to revolutionize business efficiency and customer engagement
+          through automation and innovation. In September 2024, we unveiled
+          BotWot, an AI Workforce platform that is already transforming
+          industries across India and the Middle East.
+        </p>
+        <p>
+          Backed by global incubators like NASSCOM India and in5 Dubai, we’re
+          leveraging mentorship and global networks to create scalable,
+          impactful solutions that empower businesses of all sizes.
+        </p>
+        <p>
+          At Purpleant, we believe that the future of work lies in AI-powered
+          digital workforces. BotWot is not just a platform—it’s a new era in
+          operational excellence, designed to help businesses scale effortlessly
+          while maintaining superior service quality.
+        </p>
+        <p>
+          With BotWot, businesses can automate repetitive tasks, enhance
+          customer interactions, and focus on what matters most—growth and
+          innovation. Join us in leading the charge toward a smarter, more
+          efficient future.
+        </p>
+      </div>
+      <section className="py-16 px-8 mt-4">
         <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-indigo-900">Who we are</h2>
+          <h2 className="text-4xl font-bold text-[#2E2F5F]">Who we are</h2>
           <p className="text-gray-600 mt-2">
             Discover what&apos;s possible with BotWot.
           </p>
