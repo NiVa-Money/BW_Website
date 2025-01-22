@@ -1,4 +1,4 @@
-import logoImage from "../../public/assets/logo/botwot.svg";
+import logoImage from "../../public/assets/logo/BotwotLogo.svg";
 import instagram from "../../public/assets/logo/instagram.svg";
 import linkedin from "../../public/assets/logo/linkedin.svg";
 import facebook from "../../public/assets/logo/facebook.svg";
@@ -6,8 +6,6 @@ import tiktok from "../../public/assets/logo/tiktok.svg";
 import shopify from "../../public/assets/logo/shopify.svg";
 import xtwitter from "../../public/assets/logo/x-twiiter.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";
-
-
 import prestige from "../../public/assets/logo/prestige.svg";
 
 import chatwork from "../../public/assets/logo/chatwork.svg";
@@ -20,14 +18,13 @@ import trabuli from "../../public/assets/logo/trabuli.svg"; //
 import admardi from "../../public/assets/logo/admardi.svg"; //
 import travent from "../../public/assets/logo/travent.svg"; //
 import fusionfit from "../../public/assets/logo/fusionfit.svg"; //
-import admobs from "../../public/assets/logo/admobs.svg"; 
+import admobs from "../../public/assets/logo/admobs.svg";
 import anq from "../../public/assets/logo/anq.svg"; //
 import drrevive from "../../public/assets/logo/dr-revive.svg"; //
 import govtorrisa from "../../public/assets/logo/govt-orrisa.svg";
 import govttelangana from "../../public/assets/logo/govt-telangana.svg";
 import mira from "../../public/assets/logo/mira.svg"; //
 import niyo from "../../public/assets/logo/niyo.svg"; //
-
 
 import startup1 from "../../public/assets/logo/startup1.svg";
 import startup2 from "../../public/assets/logo/startup2.svg";
@@ -110,9 +107,8 @@ import datasecurity from "../../public/assets/products/data-security.svg";
 import dataprivacy from "../../public/assets/products/data-privacy.svg";
 import customization from "../../public/assets/products/customization.svg";
 import costefficiency from "../../public/assets/products/cost-efficiency.svg";
-import  seamhandoff from "../../public/assets/products/seam-handoff.svg";
+import seamhandoff from "../../public/assets/products/seam-handoff.svg";
 import contiadaption from "../../public/assets/products/conti-adaption.svg";
-
 
 import compmanage from "../../public/assets/solutions/comp-manage.svg";
 import customersupport from "../../public/assets/solutions/customer-support.svg";
@@ -193,7 +189,6 @@ import robot from "../../public/assets/avatars/robot.svg";
 import AboutHero from "../../public/assets/avatars/AboutHero.svg";
 import Company from "../../public/assets/avatars/company-image.svg";
 
-
 import india from "../../public/assets/icons/india.svg";
 import uae from "../../public/assets/icons/uae.svg";
 import nigeria from "../../public/assets/icons/nigeria.svg";
@@ -226,7 +221,7 @@ export {
   CTO,
   CEO,
   COO,
-  Company , 
+  Company,
   multiagent,
   intellirecog,
   robust,
@@ -307,8 +302,8 @@ export {
   chatwork,
   travent,
   admardi,
-  admobs, 
-  anq, 
+  admobs,
+  anq,
   drrevive,
   govtorrisa,
   govttelangana,

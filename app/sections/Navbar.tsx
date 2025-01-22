@@ -30,13 +30,13 @@ const Navbar: React.FC = () => {
         <div className="mx-auto max-w-8xl lg:px-8 px-6 sm:px-6">
           <div className="relative flex h-24 items-center rounded-2xl shadow-lg shadow-black/30 backdrop-blur-lg">
             {/* Site Branding */}
-            <div className="flex flex-1 items-center mb-2 sm:mb-4 ml-4 sm:ml-6">
+            <div className="flex flex-1 items-center mb-2 sm:mb-4 ml-4 mt-4 sm:ml-6">
               <Link href="/" className="px-10 flex-shrink-0">
                 <Image
                   src={logoImage}
                   alt="BotWot Logo"
-                  width={80}
-                  height={10}
+                  width={250}
+                  height={100}
                   className="object-contain"
                   priority
                 />

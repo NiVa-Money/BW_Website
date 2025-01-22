@@ -89,7 +89,7 @@ export default function Footer({ border = false }) {
               <Image
                 src={logoImage}
                 alt="BotWot Logo"
-                width={121}
+                width={250}
                 height={54}
                 className="object-contain"
                 priority
