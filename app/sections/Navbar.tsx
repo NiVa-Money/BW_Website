@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
                 >
                   Sign in
                 </Link> */}
-                <Link href="https://botwot-icxapp.netlify.app/" passHref>
+                <Link href="https://uatapp.botwot.io/" passHref>
                   <button className="px-6 py-2 border-2 text-black border-[#387D8C] rounded-full hover:bg-green-100 hover:text-black transition-colors whitespace-nowrap">
                     Sign in
                   </button>
@@ -207,7 +207,7 @@ const Navbar: React.FC = () => {
                 </div>
               ))}
               <div className="px-4 pt-4 flex flex-col space-y-3">
-                <Link href="https://botwot-icxapp.netlify.app/" passHref>
+                <Link href="https://uatapp.botwot.io/" passHref>
                   <button className="px-4 py-2 text-center text-black border border-[#387D8C] rounded-full hover:bg-green-50">
                     Sign in
                   </button>
