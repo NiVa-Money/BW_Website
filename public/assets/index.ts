@@ -59,6 +59,10 @@ import latestly from "../../public/assets/logo/latestly.jpg";
 import punjabnews from "../../public/assets/logo/punjabnews.jpg";
 import punjabnewsline from "../../public/assets/logo/punjabnewsline.jpg";
 import kalkinews from "../../public/assets/logo/kalkinews.jpg";
+import odishapost from "../../public/assets/logo/odishapost.jpg";
+import westbengal from "../../public/assets/logo/westbengal.jpg";
+import theceo from "../../public/assets/logo/theceo.jpg";
+import haryanatoday from "../../public/assets/logo/haryanatoday.jpg";
 
 import Icon1 from "../../public/assets/icons/Icon1.png";
 import Icon2 from "../../public/assets/icons/Icon2.png";
@@ -316,7 +320,10 @@ export {
   punjabnews,
   punjabnewsline,
   kalkinews,
-
+  odishapost,
+  westbengal,
+  theceo,
+  haryanatoday,
   unbeauty,
   trabuli,
   prestige,
