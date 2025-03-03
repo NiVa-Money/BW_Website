@@ -47,6 +47,18 @@ import indianexpress from "../../public/assets/logo/indianexpress.svg";
 import indiantel from "../../public/assets/logo/indiantel.svg";
 import industrial from "../../public/assets/logo/industrial.svg";
 import ndtv from "../../public/assets/logo/ndtv.svg";
+import lokmat from "../../public/assets/logo/lokmat.jpg";
+import ani from "../../public/assets/logo/ani.jpg";
+import bs from "../../public/assets/logo/BS.jpg";
+import presstrust from "../../public/assets/logo/presstrust.jpg";
+import theprint from "../../public/assets/logo/theprint.jpg";
+import tribune from "../../public/assets/logo/tribune.jpg";
+import dailyhunt from "../../public/assets/logo/dailyhunt.jpg";
+import googlenews from "../../public/assets/logo/googlenews.jpg";
+import latestly from "../../public/assets/logo/latestly.jpg";
+import punjabnews from "../../public/assets/logo/punjabnews.jpg";
+import punjabnewsline from "../../public/assets/logo/punjabnewsline.jpg";
+import kalkinews from "../../public/assets/logo/kalkinews.jpg";
 
 import Icon1 from "../../public/assets/icons/Icon1.png";
 import Icon2 from "../../public/assets/icons/Icon2.png";
@@ -292,6 +304,19 @@ export {
   indiantel,
   industrial,
   ndtv,
+  lokmat,
+  ani,
+  bs,
+  presstrust,
+  theprint,
+  tribune,
+  dailyhunt,
+  googlenews,
+  latestly,
+  punjabnews,
+  punjabnewsline,
+  kalkinews,
+
   unbeauty,
   trabuli,
   prestige,

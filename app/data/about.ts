@@ -18,6 +18,18 @@ import {
   indianexpress,
   indiantel,
   ndtv,
+  presstrust,
+  theprint,
+  tribune,
+  lokmat,
+  ani,
+  bs,
+  dailyhunt,
+  googlenews,
+  latestly,
+  punjabnews,
+  kalkinews,
+  punjabnewsline,
 } from "../../public/assets";
 
 interface Achievement {
@@ -138,6 +150,71 @@ export const mediaCenter = [
   {
     src: cxo,
     text: "CXO Today",
-    link: "https://cxotoday.com/press-release/purpleant-technologies-launches-botwot-revolutionary-ai-no-code-chatbot-platform/",
+    link: "https://cxotoday.com/press-release/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-uni%ef%ac%81es-multimodal-agents-content-generation-decision-orchestration/",
+  },
+
+  {
+    src: ani,
+    text: "ANI",
+    link: "https://www.lokmattimes.com/business/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration/",
+  },
+
+  {
+    src: bs,
+    text: "Business Standard",
+    link: "https://www.business-standard.com/content/press-releases-ani/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration-125030100605_1.html",
+  },
+
+  {
+    src: presstrust,
+    text: "Press Trust of India",
+    link: "https://www.ptinews.com/press-release/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation--decision-orchestration/2337957",
+  },
+
+  {
+    src: theprint,
+    text: "The Print",
+    link: "https://theprint.in/ani-press-releases/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration/2521029/",
+  },
+  {
+    src: tribune,
+    text: "The Tribune",
+    link: "https://www.tribuneindia.com/news/business/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration/",
+  },
+  {
+    src: lokmat,
+    text: "Lokmat Times",
+    link: "https://www.lokmattimes.com/business/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration/",
+  },
+  {
+    src: dailyhunt,
+    text: "Daily Hunt",
+    link: "https://m.dailyhunt.in/news/india/english/newsvoir-epaper-newsvoir/purpleant+technologies+launches+botwot+icx+next+gen+ai+platform+unifies+multimodal+agents+content+generation+decision+orchestration-newsid-n654139554?listname=newspaperLanding&topic=business&index=0&topicIndex=0&mode=pwa",
+  },
+  {
+    src: googlenews,
+    text: "Google News",
+    link: "https://news.google.com/search?q=Purpleant%20Technologies%20Launches%20BotWot%20iCX%3A%20Next-Gen%20AI%20Platform%20Unifies%20Multimodal%20Agents%2C%20Content%20Generation%20%26%20Decision%20Orchestration&hl=en-IN&gl=IN&ceid=IN%3Aen",
+  },
+  {
+    src: latestly,
+    text: "Latestly",
+    link: "https://www.latestly.com/agency-news/business-news-purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration-6679103.html",
+  },
+  {
+    src: punjabnews,
+    text: "Punjab News Express",
+    link: "https://www.punjabnewsexpress.com/press-releases/?c_article_id=31267&c_author_id=23924&type=crawlscriptpartner&old=old&originurl=https%3a%2f%2fwww.punjabnewsexpress.com%2fpress-releases%2f#google_vignette",
+  },
+
+  {
+    src : kalkinews,
+    text : "Kalki News",
+    link : "https://kalkinemedia.com/in/news/advertising-branding/purpleant-technologies-launches-botwot-icx-next-gen-ai-platform-unifies-multimodal-agents-content-generation-decision-orchestration",
+  },
+  {
+    src : punjabnewsline,
+    text : "Punjab News Line",
+    link : "https://www.punjabnewsline.com/business-news/?c_article_id=31267&c_author_id=23924&type=crawlscriptpartner&old=old&originurl=https%3a%2f%2fwww.punjabnewsline.com%2fbusiness-news%2f",
   },
 ];
