@@ -19,14 +19,18 @@ const GetStartedSection: React.FC = () => {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             {/* Try for Free Button */}
-            <button className="px-5 py-3 text-white bg-black rounded-full transition hover:bg-gray-800 w-full sm:w-auto">
+            <button
+              onClick={() => (window.location.href = "http://app.botwot.io")}
+              className="px-5 py-3 text-white bg-black rounded-full transition hover:bg-gray-800 w-full sm:w-auto"
+            >
               Try for Free
             </button>
+
             {/* Book a Demo Button */}
-            <Link href="https://calendly.com/botwot62/30min" passHref>
-            <button className="px-5 py-3 text-emerald-500 border border-emerald-500 rounded-full transition hover:bg-emerald-100 w-full sm:w-auto">
-              Book a Demo
-            </button>
+            <Link href="https://outlook.office365.com/book/BotWotDemo@nivamoney.com/" passHref>
+              <button className="px-5 py-3 text-emerald-500 border border-emerald-500 rounded-full transition hover:bg-emerald-100 w-full sm:w-auto">
+                Book a Demo
+              </button>
             </Link>
           </div>
         </div>

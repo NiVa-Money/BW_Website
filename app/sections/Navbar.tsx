@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
                   </button>
                 </Link>
 
-                <Link href="https://calendly.com/botwot62/30min" passHref>
+                <Link href="https://outlook.office365.com/book/BotWotDemo@nivamoney.com/" passHref>
                   <button className="px-6 md:px-6 py-3 ml-4 mr-6 text-white bg-black rounded-full transition hover:bg-gray-800">
                     Request a demo
                   </button>
@@ -207,7 +207,7 @@ const Navbar: React.FC = () => {
                   </button>
                 </Link>
                 <Link
-                  href="https://calendly.com/botwot62/30min"
+                  href="https://outlook.office365.com/book/BotWotDemo@nivamoney.com/"
                   className="px-4 py-2 text-center text-white bg-black rounded-full hover:bg-gray-800"
                 >
                   Request a demo

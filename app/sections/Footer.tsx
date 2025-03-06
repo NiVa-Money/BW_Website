@@ -216,7 +216,7 @@ export default function Footer({ border = false }) {
             Reserved.
           </p>
 
-          <div className="flex flex-col items-end">
+          {/* <div className="flex flex-col items-end">
             <p className="text-gray-500 text-sm mb-2">
               Subscribe to our newsletter
             </p>
@@ -230,7 +230,7 @@ export default function Footer({ border = false }) {
                 Sign Up
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
