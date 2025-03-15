@@ -1,3 +1,6 @@
+'use client'
+
+
 import React from "react";
 import Image from "next/image";
 import { ChevronLeft } from "@mui/icons-material";
