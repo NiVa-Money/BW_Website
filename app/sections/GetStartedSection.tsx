@@ -22,7 +22,7 @@ const GetStartedSection: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             {/* Try for Free Button */}
             <button
-              onClick={() => (window.location.href = "http://app.botwot.io")}
+              onClick={() => (window.location.href = "https://app.botwot.io")}
               className="px-5 py-3 text-white bg-black rounded-full transition hover:bg-gray-800 w-full sm:w-auto"
             >
               Try for Free
