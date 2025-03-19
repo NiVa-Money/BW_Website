@@ -212,7 +212,7 @@ export default function Footer({ border = false }) {
         {/* Newsletter and Copyright */}
         <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-200 py-6 mt-6">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            2024 &copy; Purpleant Technologies Private Limited, Inc. All Rights
+            2025 &copy; Purpleant Technologies Private Limited, Inc. All Rights
             Reserved.
           </p>
 
