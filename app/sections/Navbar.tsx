@@ -30,8 +30,8 @@ const Navbar: React.FC = () => {
         <div className="mx-auto max-w-8xl lg:px-8 px-6 sm:px-6">
           <div className="relative flex h-24 items-center rounded-2xl shadow-lg shadow-black/30 backdrop-blur-lg">
             {/* Site Branding */}
-            <div className="flex flex-1 mb-2 sm:mb-4 ml-2 mt-4">
-              <Link href="/" className="px-10 flex-shrink-0">
+            <div className="flex flex-1 items-center ml-2 md:ml-8 lg:ml-14">
+              <Link href="/" className="flex-shrink-0">
                 <Image
                   src={logoImage}
                   alt="BotWot Logo"
@@ -148,7 +148,10 @@ const Navbar: React.FC = () => {
                   </button>
                 </Link>
 
-                <Link href="https://outlook.office365.com/book/BotWotDemo@nivamoney.com/" passHref>
+                <Link
+                  href="https://outlook.office365.com/book/BotWotDemo@nivamoney.com/"
+                  passHref
+                >
                   <button className="px-6 md:px-6 py-3 ml-4 mr-6 text-white bg-black rounded-full transition hover:bg-gray-800">
                     Request a demo
                   </button>

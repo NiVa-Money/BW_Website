@@ -74,12 +74,12 @@ export const navLinks = [
         icon: NewspaperIcon,
         description: "Stay updated with the latest news.",
       },
-      {
-        label: "Careers",
-        href: "/about/careers",
-        icon: WorkIcon,
-        description: "Join our team.",
-      },
+      // {
+      //   label: "Careers",
+      //   href: "/about/careers",
+      //   icon: WorkIcon,
+      //   description: "Join our team.",
+      // },
     ],
   },
   {

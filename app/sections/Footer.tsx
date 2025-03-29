@@ -16,7 +16,7 @@ const LINKS = [
       { name: "Our Story", path: "/about/our-story" },
       { name: "Partnerships & Alliances", path: "/about/partnerships" },
       { name: "Media Center", path: "/about/media-center" },
-      { name: "Careers", path: "/about/careers" },
+      // { name: "Careers", path: "/about/careers" },
     ],
   },
   {
