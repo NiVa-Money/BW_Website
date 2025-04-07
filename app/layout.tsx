@@ -23,40 +23,6 @@ export default function RootLayout({
           name="description"
           content="BotWot’s ICX platform leverages proprietary AI to predict, adapt, and respond."
         />
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content={`
-            default-src 'self';
-            script-src 'self' 'unsafe-inline' 'unsafe-eval' 
-              https://www.googletagmanager.com 
-              https://www.clarity.ms 
-              https://googleads.g.doubleclick.net 
-              https://www.google.com 
-              https://www.google-analytics.com;
-            style-src 'self' 'unsafe-inline' 
-              https://fonts.googleapis.com;
-            font-src 'self' 
-              https://fonts.googleapis.com 
-              https://fonts.gstatic.com 
-              data:;
-            img-src 'self' data: 
-              https://c.clarity.ms 
-              https://www.google.com 
-              https://www.google.co.in 
-              https://www.googletagmanager.com;
-            connect-src 'self' 
-              https://www.google-analytics.com 
-              https://google-analytics.com 
-              https://www.googletagmanager.com 
-              https://googleads.g.doubleclick.net 
-              https://www.google.com
-               https://w.clarity.ms;
-            frame-src 
-              https://td.doubleclick.net 
-              https://www.googletagmanager.com 
-              https://www.google.com;
-          `.replace(/\s+/g, " ")}
-        />
 
         {/* Keep your existing scripts */}
         <Script id="clarity-script" strategy="afterInteractive">
