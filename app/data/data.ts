@@ -190,11 +190,11 @@ export const navLinks = [
       // },
     ],
   },
-  // {
-  //   label: "Pricing",
-  //   href: "/pricing",
-  //   description: "No Surprises—Just Value",
-  // },
+  {
+    label: "Pricing",
+    href: "/pricing",
+    description: "No Surprises—Just Value",
+  },
 
   // {
   //   label: "Case Studies",
