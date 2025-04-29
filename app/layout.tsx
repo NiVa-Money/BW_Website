@@ -24,6 +24,11 @@ export default function RootLayout({
           content="BotWot’s ICX platform leverages proprietary AI to predict, adapt, and respond."
         />
 
+        <Script
+          src="https://messages-dump.s3.ap-south-1.amazonaws.com/widget/67aa63d8444688c97c0e5479/67aa6aeed55d509cf2deefa2.js"
+          strategy="afterInteractive"
+        />
+
         {/* Keep your existing scripts */}
         <Script id="clarity-script" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){

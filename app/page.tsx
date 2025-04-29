@@ -11,6 +11,7 @@ import TestimonialSection from "./sections/Testimonials";
 export default function Home() {
   return (
     <>
+      
       <HeroSection />
       <Benefits />
       <FeatureSection />
