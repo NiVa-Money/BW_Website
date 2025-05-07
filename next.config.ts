@@ -40,12 +40,12 @@ const nextConfig: NextConfig = {
                 https://fonts.gstatic.com
                 data:;
               img-src 'self' data:
-  https://c.clarity.ms
-  https://www.google.com
-  https://www.google.co.in
-  https://www.googletagmanager.com
-  https://botwot-user-data-info.s3.ap-south-1.amazonaws.com
-  https://cdn1.vectorstock.com;
+                https://c.clarity.ms
+                https://www.google.com
+                https://www.google.co.in
+                https://www.googletagmanager.com
+                https://botwot-user-data-info.s3.ap-south-1.amazonaws.com
+                https://cdn1.vectorstock.com;
               connect-src 'self'
                 https://www.google-analytics.com
                 https://google-analytics.com
@@ -54,7 +54,9 @@ const nextConfig: NextConfig = {
                 https://www.google.com
                 https://w.clarity.ms
                 https://b.clarity.ms
-                https://uatapi.botwot.io;
+                https://e.clarity.ms
+                https://uatapi.botwot.io
+                wss://uatapi.botwot.io;
               frame-src
                 https://td.doubleclick.net
                 https://www.googletagmanager.com
