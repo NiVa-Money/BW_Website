@@ -7,9 +7,7 @@ import shopify from "../../public/assets/logo/shopify.svg";
 import xtwitter from "../../public/assets/logo/x-twiiter.svg";
 import slackIcon from "../../public/assets/logo/slack-logo.svg";
 import prestige from "../../public/assets/logo/prestige.svg";
-
 import chatwork from "../../public/assets/logo/chatwork.svg";
-
 import dna from "../../public/assets/logo/dna.svg"; //
 import govt from "../../public/assets/logo/govt-haryana.svg"; //
 import uaelogo from "../../public/assets/logo/uae-logo.svg"; //
